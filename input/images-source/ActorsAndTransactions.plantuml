@@ -1,6 +1,15 @@
 @startuml
-skinparam svgDimensionStyle false
-agent "[[#client Client]]" as Client
-agent "[[#server Server]]" as Server
-Client -down-> Server : "go [[domain-YY.html Domain-YY]]"
+'hide footbox
+'skinparam svgDimensionStyle false
+skinparam linetype polyline
+agent "\n\n[[#beneficiary-requestor Beneficiary\nRequestor]]\n\n" as BenReq
+agent "\n\n[[#beneficiary-manager Beneficiary\nManager]]\n\n" as BenMan
+agent "\n\n[[#claims-requestor Claims\nRequestor]]\n\n" as ClaimReq
+agent "\n\n[[#claims-manager Claims\nManager]]\n\n" as ClaimMan
+BenReq -> BenMan : "[[ITI-YY1.html Enroll Beneficiary ITI-YY1]]"
+BenReq -> BenMan : "[[ITI-YY2.html Query Beneficiary ITI-YY2]]"
+BenReq -> BenMan : "[[ITI-YY3.html Check Coverage Eligibility ITI-YY3]]"
+BenReq -[hidden]-> ClaimReq: ""
+ClaimReq -> ClaimMan : "[[ITI-YY4.html Submit Claim ITI-YY4]]"
+ClaimReq -> ClaimMan : "[[ITI-YY5.html Track Claim ITI-YY5]]"
 @enduml

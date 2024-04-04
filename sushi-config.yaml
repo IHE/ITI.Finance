@@ -2,17 +2,17 @@
 # ───────────────────────────────────────────────────
 # the id should be lowercase made up of "ihe." + {domain acronym} + "." + {profile acronym/short-name}
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
-id: ihe.domain.profile
-canonical: https://profiles.ihe.net/Domain/Profile
+id: ihe.iti.fais
+canonical: https://profiles.ihe.net/ITI/FAIS
 version: 0.0.1-current
-name: IHE_Domain_Profile
-title: "spelled out name of the IHE Profile"
-description: put the short description of the profile here. it should explain what problem is being solved
+name: IHE_ITI_FAIS
+title: "Finance and Insurance Service (FAIS)"
+description: Finance and Insurance Service stores, categorizes, and facilitates the administration of centralized claims and finance related data to care provision to patients.
 releaseLabel: ci-build
 #releaseLabel: ballot
 #releaseLabel: trial-use
 #releaseLabel: release
-#date: 2022-01-02
+date: 2024-03-26
 status: draft
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
@@ -28,7 +28,7 @@ license:  CC-BY-4.0
 fhirVersion: 4.0.1
 jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 #copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
-copyrightYear: 2021+
+copyrightYear: 2024+
 
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
@@ -57,19 +57,28 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate. The order they appear here is the order they will appear in the TOC and on the next/prev navigation.
   index.md:
-    title: ToDo Home
+    title: Finance and Insurance Service
     generation: markdown
   volume-1.md:
-    title: 1:XX ToDo Volume 1
+    title: 1:XX Finance and Insurance Service
     generation: markdown
-  domain-YY.md:
-    title: 2:3.YY Transaction one [Domain-YY]
+  ITI-YY1.md:
+    title: 2:3.YY1 Enroll Beneficiary [ITI-YY1]
     generation: markdown
-  domain-ZZ.md:
-    title: 3:?.ZZ Content one [Domain-ZZ]
+  ITI-YY2.md:
+    title: 2:3.YY2 Query Beneficiary [ITI-YY2]
+    generation: markdown
+  ITI-YY3.md:
+    title: 2:3.YY3 Check Coverage Eligibility [ITI-YY3]
+    generation: markdown
+  ITI-YY4.md:
+    title: 2:3.YY4 Submit Claim [ITI-YY4]
+    generation: markdown
+  ITI-YY5.md:
+    title: 2:3.YY5 Track Claim [ITI-YY5]
     generation: markdown
   testplan.md:
-    title: "Test Plan"
+    title: "FAIS Test Plan"
     generation: markdown
   other.md:
     title: Changes to Other IHE Specifications
@@ -92,9 +101,11 @@ menu:
     Security Considerations: volume-1.html#security-considerations
     Cross-Profile Considerations: volume-1.html#other-grouping
   Volume 2:
-    "Transaction one [Domain-YY]": domain-YY.html
-  Volume 3:
-    "Content one [Domain-ZZ]": domain-ZZ.html
+    "Enroll Beneficiary [ITI-YY1]": ITI-YY1.html
+    "Query Beneficiary [ITI-YY2]": ITI-YY2.html
+    "Check Coverage Eligibility [ITI-YY3]": ITI-YY3.html
+    "Submit Claim [ITI-YY4]": ITI-YY4.html
+    "Track Claim [ITI-YY5]": ITI-YY5.html
   Artifacts: artifacts.html
   Other:
     Changes to Other IHE Specifications: other.html

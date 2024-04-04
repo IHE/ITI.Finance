@@ -5,10 +5,11 @@ Instructions [are found here](https://github.com/IHE/supplement-template/wiki/Ge
 
 
 # Parking Lot:
-##
-### How should we manange relationships between billing codes and service codes?
-## Actor Groupings 
-### mCSD for IDs of health workers and facilities as recommened?
-### mCSD for list of services offered by facility or worker?
 
+* How should we manage relationships between billing codes and service codes?
+* Actor Groupings 
+  * mCSD for IDs of health workers and facilities as recommened?
+  * mCSD for list of services offered by facility or worker?
+* Use cases
+  * Should use case 1 interact with a client registry?
 

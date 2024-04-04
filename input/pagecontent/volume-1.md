@@ -1,83 +1,105 @@
 
-# 1:XX Profile name
+# 1:XX Finance and Insurance Service
 
-**TODO: Provide an end-user friendly overview of what the profile does for them. Keep it brief (a paragraph or two, up to a page). If extensive detail is needed, it should be included in Section XX.4- Use Cases.**
+The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance related data to care provision to patients within the HIE. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
 
-**TODO: Explicitly state whether this is a Workflow, Transport, or Content Module (or combination) profile. See the IHE Technical Frameworks General Introduction for definitions of these profile types. The IHE Technical Frameworks [General Introduction](https://profiles.ihe.net/GeneralIntro/). **
+This collection of workflows allows an external system with access to the HIE to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems that have access to the HIE.
+
+1. A point-of-care system can enroll a beneficiary
+1. A point-of-care system can search for a beneficiary in the Finance and Insurance Services system
+1. A point-of-care system can check a beneficiary's eligibility
+1. A point-of-care system can run a pre-determination, pre-authorization and claim
+1. A point-of-care system can track a claim's status
 
 <a name="actors-and-transactions"> </a>
 
-## 1:X.1 ToDo Actors, Transactions, and Content Modules
+## 1:XX.1 FAIS Actors, Transactions, and Content Modules
+
+This section defines the actors, transactions, and/or content modules in this profile.
+Further information about actor and transaction definitions can be found
+in the IHE Technical Frameworks General Introduction [Appendix A: Actors](https://profiles.ihe.net/GeneralIntro/ch-A.html)
+and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
+
+Figure 1:XX.1-1 shows the actors directly involved in the FAIS Profile and the relevant
+transactions between them. If needed for context, other actors that may
+be indirectly involved due to their participation in other related profiles are
+shown in dotted lines. Actors which have a mandatory grouping are shown in conjoined boxes.
+
 
 * Actors
-  * [Client](#client)
-  * [Server](#server)
+  * [Beneficiary Requestor](#beneficiary-requestor)
+  * [Beneficiary Manager](#beneficiary-manager)
+  * [Claims Requestor](#claims-requestor)
+  * [Claims Manager](#claims-manager)
 * Transactions
-  * [do domain-Y](domain-YY.html)
-
-Actors and transactions are used to achieve this use-case...
-
-<figure>
-{%include usecase1-processflow.svg%}
-<p id="fX.X.X.X-X" class="figureTitle">Figure X.X.X.X-X: Use Case 1 Process Flow</p>
-</figure>
-<br clear="all">
+  * [Enroll Beneficiary [ITI-YY1]](ITI-YY1.html)
+  * [Query Beneficiary [ITI-YY2]](ITI-YY2.html)
+  * [Check Coverage Eligibility [ITI-YY3]](ITI-YY3.html)
+  * [Submit Claim [ITI-YY4]](ITI-YY4.html)
+  * [Track Claim [ITI-YY5]](ITI-YY5.html)
 
 This section defines the actors and transactions in this implementation guide.
 
-Figure below shows the actors directly
-involved in the ToDo 
+Figure XX.1-1 below shows the actors directly
+involved in the Finance and Insurance Service 
 Profile and the relevant transactions between them.
 
 <figure>
 {%include ActorsAndTransactions.svg%}
-<figcaption><b>Figure XX.1-2: ToDo Actor Diagram</b></figcaption>
+<figcaption><b>Figure XX.1-1: FAIS Actor Diagram</b></figcaption>
 </figure>
 <br clear="all">
 
-<p id ="tXX.1-1" class="tableTitle">Table XX.1-1: Profile Acronym Profile - Actors and Transactions</p>
+<p id ="tXX.1-1" class="tableTitle">Table XX.1-1: FAIS - Actors and Transactions</p>
 
-|         |               |                        |                 |                                   |
-|---------|---------------|------------------------|-----------------|-----------------------------------|
 | Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
-| Actor A | Transaction 1 |                        | R               | Domain Acronym TF-2: 3.Y1 |
-|         | Transaction 2 |                        | R               | Domain Acronym TF-2: 3.Y2 |
-| Actor F | Transaction 1 |                        | R               | Domain Acronym TF-2: 3.Y1 |
-|         | Transaction 2 |                        | R               | Domain Acronym TF-2: 3.Y2 |
-| Actor D | Transaction 1 |                        | R               | Domain Acronym TF-2: 3.Y1 |
-| Actor E | Transaction 2 |                        | R               | Domain Acronym TF-2: 3.Y2 |
-|         | Transaction 3 |                        | O ( See Note 1) | Domain Acronym TF-2: 3.Y3 |
-|         | Transaction 4 |                        | O ( See Note 1) | Domain Acronym TF-2: 3.Y4 |
-| Actor B | Transaction 3 |                        | R               | Domain Acronym TF-2: 3.Y3 |
-|         | Transaction 4 |                        | O ( See Note 2) | Domain Acronym TF-2: 3.Y4 |
+|---------|---------------|------------------------|-----------------|-----------------------------------|
+| Beneficiary Requestor | Enroll Beneficiary | Initiator | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
+|         | Query Beneficiary | Initiator  | O               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+|         | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+| Beneficiary Manager | Enroll Beneficiary | Responder | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
+|         | Query Beneficiary | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+|         | Check Coverage Eligibility | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+| Claims Requestor | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+|         | Track Claim | Initiator  | O               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
+| Claims Manager | Submit Claim | Responder | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+|         | Track Claim | Responder  | R               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
 {: .grid}
-
-Note 1: *For example, a note could specify that at least one of the
-transactions shall be supported by an actor or other variations. For
-example: Note: Either Transaction Y3 or Transaction Y4 shall be
-implemented for Actor E.*
-
-Note 2: *For example, could specify that Transaction Y4 is required
-if Actor B supports XYZ Option, see Section XX.3.X.*
 
 ### XX.1.1 Actors
 The actors in this profile are described in more detail in the sections below.
 
-<a name="client"> </a>
+<a name="beneficiary-requestor"> </a>
 
-#### XX.1.1.1 Client
+#### XX.1.1.1 Beneficiary Requestor
 
 The Client queries for blah meeting certain criteria and may retrieve selected blah.
 
-FHIR Capability Statement for [Client]{CapabilityStatement-IHE.ToDo.client.html}
+TODO: FHIR Capability Statement for [Client]{CapabilityStatement-IHE.ToDo.client.html}
 
-<a name="server"> </a>
+<a name="beneficiary-manager"> </a>
 
-#### XX.1.1.2 Server
+#### XX.1.1.2 Beneficiary Manager
 
 The Sever processes query request from the Client actor.
 
-FHIR Capability Statement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+TODO: FHIR Capability Statement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+
+<a name="claims-requestor"> </a>
+
+#### XX.1.1.3 Claims Requestor
+
+The Client queries for blah meeting certain criteria and may retrieve selected blah.
+
+TODO: FHIR Capability Statement for [Client]{CapabilityStatement-IHE.ToDo.client.html}
+
+<a name="claims-manager"> </a>
+
+#### XX.1.1.4 Claims Manager
+
+The Sever processes query request from the Client actor.
+
+TODO: FHIR Capability Statement for [Server](CapabilityStatement-IHE.ToDo.server.html)
 
 ### Transaction Descriptions
 
@@ -389,44 +411,67 @@ different.
 
 ### XX.4.2 Use Cases
 
-#### XX.4.2.1 Use Case \#1: simple name
+#### XX.4.2.1 Use Case \#1: Register Household
 
-One or two sentence simple description of this particular use
-case.
+A field agent of the national insurance provider registers a household into a specific insurance scheme.
 
-Note that Section XX.4.2.1 repeats in its entirety for additional use
-cases (replicate as Section XX.4.2.2, XX.4.2.3, etc.).
+##### XX.4.2.1.1 Register Household Use Case Description
 
-##### XX.4.2.1.1 simple name Use Case Description
+Amara Nwosu is a field agent for the National Health Insurance Scheme (NHIS)
+and is registering a household into the scheme.  Amara uses a tablet
+to input the beneficiary information in the Financing and Insurance System.
 
-Describe the key use cases addressed by the profile. Limit to a
-maximum of one page of text or consider an appendix.
+##### XX.4.2.1.2 Register Household Process Flow
 
-##### XX.4.2.1.2 simple name Process Flow
-
-Diagram and describe the process flow(s) covered by this profile in
-order to satisfy the use cases. Demonstrate how the profile transactions
-are combined/sequenced. To provide context and demonstrate how the
-profile interacts with other profiles, feel free to include transactions
-and events that are "external" to this profile (using appropriate
-notation.)
-
-The set of process flows will typically be exemplary, not exhaustive
-(i.e., it will address all the use cases, but will not show all possible
-combinations of actors, or all possible sequencing of transactions).
-
-If there are detailed behavioral rules that apply to a specific process
-flow or multiple process flows, an appendix may be added as needed.
-
-The roles at the top of the swimlane diagram should correspond to
-actor names, include the profile acronym:actor name if referencing an
-actor from a different profile.
-
-Modify the following "Swimlane Diagram".
+* PoS - The point of service system is a Beneficiary Requestor that captures an enrollment request.
+* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
+* FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
 
 <figure>
 {%include usecase1-processflow.svg%}
-<figcaption><b>Figure XX.4.2.2-1: Basic Process Flow in Profile Acronym Profile</b></figcaption>
+<figcaption><b>Figure XX.4.2.1.2-1: Register Household Process Flow in Profile FAIS</b></figcaption>
+</figure>
+<br clear="all">
+
+#### XX.4.2.2 Use Case \#2: Lookup Beneficiary
+
+An insurance agent is looking for information about a beneficiary to respond to a service desk call.
+
+##### XX.4.2.2.1 Lookup Beneficiary Use Case Description
+
+Amara Nwosu is a field agent for the National Health Insurance Scheme (NHIS)
+and need to lookup a beneficiary to respond to a service desk call.
+
+##### XX.4.2.2.2 Lookup Beneficiary Process Flow
+
+* PoS - The point of service system is a Beneficiary Requestor that can lookup beneficiary information.
+* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
+* FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
+
+<figure>
+{%include usecase2-processflow.svg%}
+<figcaption><b>Figure XX.4.2.2.2-1: Lookup Beneficiary Process Flow in Profile FAIS</b></figcaption>
+</figure>
+<br clear="all">
+
+
+#### XX.4.2.3 Use Case \#3: Check Coverage
+
+A patient is diagnosed with cancer and needs chemotherapy. The hospital inquires about coverage for chemotherapy.
+
+##### XX.4.2.3.1 Check Coverage Use Case Description
+
+
+
+##### XX.4.2.3.2 Check Coverage Process Flow
+
+* PoS - The point of service system is a Beneficiary Requestor that captures a patient clinical encounter, it is responsible for sending this encounter on to the HIE.
+* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
+* FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
+
+<figure>
+{%include usecase3-processflow.svg%}
+<figcaption><b>Figure XX.4.2.3.2-1: Check Coverage Process Flow in Profile FAIS</b></figcaption>
 </figure>
 <br clear="all">
 
@@ -435,25 +480,93 @@ to clarify conditional flows, or flow variations need to be described
 where alternate systems may be playing different actor roles, document
 those conditional flows here.
 
-Delete the material below if this is a workflow or transport
-profile. Delete the material above if this profile is a content module
-only profile.
+#### XX.4.2.4 Use Case \#4: File a Claim
 
-**Pre-conditions**:
+A patient was treated in the hospital and the hospital requests reimbursement of the incurred costs.
 
-Very briefly (typically one sentence) describe the conditions or
-timing when this content module would be used.
+##### XX.4.2.4.1 File a Claim Use Case Description
 
-**Main Flow**:
+Claiming: a PoS system (e.g. Hospital) sends a request for reimbursement of costs incurred for a certain treatment to the FIS
 
-Typically in an enumerated list, describe the clinical workflow
-when, where, and how this content module would be used.
+##### XX.4.2.4.2 File a Claim Process Flow
 
-**Post-conditions:**
+* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
+* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
+* FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
+* EXT - an external payment layer
 
-Very briefly (typically one sentence) describe the state of the
-clinical scenario after this content module has been created including
-examples of potential next steps.
+<figure>
+{%include usecase4-processflow.svg%}
+<figcaption><b>Figure XX.4.2.4.2-1: File a Claim Process Flow in Profile FAIS</b></figcaption>
+</figure>
+<br clear="all">
+
+
+#### XX.4.2.5 Use Case \#5: Pre Determination
+
+An expensive treatment is needed and the Hospital wants to estimate the inputs they can apply.
+
+##### XX.4.2.5.1 Pre Determination Use Case Description
+
+Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the expected reimbursement for a beneficiary’s specific treatment from the FIS (e.g Insurance).
+
+##### XX.4.2.5.2 Pre Determination Process Flow
+
+* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
+* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
+* FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
+* EXT - an external payment layer
+
+<figure>
+{%include usecase5-processflow.svg%}
+<figcaption><b>Figure XX.4.2.5.2-1: Pre Determination Process Flow in Profile FAIS</b></figcaption>
+</figure>
+<br clear="all">
+
+#### XX.4.2.6 Use Case \#6: Pre Authorization
+
+A costly surgery is needed and has to be pre-approved by the insurance before it can be done.
+
+##### XX.4.2.6.1 Pre Authorization Use Case Description
+
+Pre-authorization: A PoS system (e.g. Hospital) requests an approval for a specific treatment from the FIS (e.g Insurance). At the FIS a manual intervention is needed to authorize the requested 
+
+##### XX.4.2.6.2 Pre Authorization Process Flow
+
+* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
+* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
+* FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
+* EXT - an (OpenHIE) external payment layer
+
+<figure>
+{%include usecase6-processflow.svg%}
+<figcaption><b>Figure XX.4.2.6.2-1: Pre Authorization Process Flow in Profile FAIS</b></figcaption>
+</figure>
+<br clear="all">
+
+#### XX.4.2.7 Use Case \#7: Claim Tracking
+
+Request the current processing status of a claim in the FIS
+
+##### XX.4.2.7.1 Claim Tracking Use Case Description
+
+A hospital has sent an electronic reimbursement claim to the insurance company. After a waiting period the hospital wants to verify if the claim was processed.
+
+##### XX.4.2.7.2 Claim Tracking Process Flow
+
+* PoS - The point of service system is a Claims Requestor that has formulated a claim and waits for a response from the FIS.
+* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
+* FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinisation.
+
+<figure>
+{%include usecase7-processflow.svg%}
+<figcaption><b>Figure XX.4.2.7.2-1: Claim Tracking Process Flow in Profile FAIS</b></figcaption>
+</figure>
+<br clear="all">
+
+
+
+
 
 <a name="security-considerations"> </a>
 

@@ -1,0 +1,28 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber "<b>[0]"
+
+participant PoS
+participant IOL
+participant FIS
+
+PoS -> IOL: Submit claim response query (Claim ID)
+IOL -> FIS: Forward query
+FIS -> FIS: Process query
+
+alt accepted
+	FIS -> IOL: Return positive claim result
+	IOL -> PoS: Forward positive claim result
+else rejected
+	FIS -> IOL: Return negative claim result
+	IOL -> PoS: Forward negative claim result
+else queued
+	FIS -> IOL: Return queued status notification
+	IOL -> PoS: Forward queued status notification
+else not found
+	FIS -> IOL: Return not found notification
+	IOL -> PoS: Forward not found notification
+end
+
+@enduml
