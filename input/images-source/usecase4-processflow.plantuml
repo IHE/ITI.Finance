@@ -4,37 +4,30 @@ hide footbox
 autonumber "<b>[0]"
 
 participant PoS
-participant IOL
 participant FIS
 participant EXT
 
 
 opt Get code lists for medical procedures & items
-	PoS -> IOL: Submit medical procedures & items query
-	IOL -> FIS: Forward query
+	PoS -> FIS: Submit medical procedures & items query
 	FIS -> FIS: Process query
-	FIS -> IOL: Return  medical procedures & items
-	IOL -> PoS: Forward medical procedures & items
+	FIS -> PoS: Return  medical procedures & items
 end opt
  
 
 PoS -> PoS: Build claim
-PoS -> IOL: Submit claim (use)
-IOL -> FIS: Forward query
+PoS -> FIS: Submit claim (use)
 FIS -> FIS: Process claim
 
 alt accepted
 	opt Payout
     	note over IOL, EXT: Process payment
 	end opt
-	FIS -> IOL: Return positive claim result
-	IOL -> PoS: Forward positive claim result
+	FIS -> PoS: Return positive claim result
 else rejected
-	FIS -> IOL: Return negative claim result
-	IOL -> PoS: Forward negative claim result
+	FIS -> PoS: Return negative claim result
 else queued
-	FIS -> IOL: Return queued status notification
-	IOL -> PoS: Forward queued status notification
+	FIS -> PoS: Return queued status notification
 end
 
 @enduml

@@ -4,17 +4,13 @@ hide footbox
 autonumber "<b>[0]"
 
 participant PoS
-participant IOL
 participant FIS
 
 
-PoS->IOL: Submit Patient/Beneficiary Query (Demographics / ID)
-IOL->FIS: Forward Query details
+PoS->FIS: Submit Patient/Beneficiary Query (Demographics / ID)
 
 FIS->FIS: Process query
 
-FIS->IOL: Return Beneficiary Details response
-
-IOL->PoS: Forward Beneficiary Details response
+FIS->PoS: Return Beneficiary Details response
 
 @enduml

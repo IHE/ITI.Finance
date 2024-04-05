@@ -424,7 +424,6 @@ to input the beneficiary information in the Financing and Insurance System.
 ##### XX.4.2.1.2 Register Household Process Flow
 
 * PoS - The point of service system is a Beneficiary Requestor that captures an enrollment request.
-* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
 * FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
 
 <figure>
@@ -445,7 +444,6 @@ and need to lookup a beneficiary to respond to a service desk call.
 ##### XX.4.2.2.2 Lookup Beneficiary Process Flow
 
 * PoS - The point of service system is a Beneficiary Requestor that can lookup beneficiary information.
-* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
 * FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
 
 <figure>
@@ -466,7 +464,6 @@ A patient is diagnosed with cancer and needs chemotherapy. The hospital inquires
 ##### XX.4.2.3.2 Check Coverage Process Flow
 
 * PoS - The point of service system is a Beneficiary Requestor that captures a patient clinical encounter, it is responsible for sending this encounter on to the HIE.
-* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
 * FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
 
 <figure>
@@ -475,10 +472,6 @@ A patient is diagnosed with cancer and needs chemotherapy. The hospital inquires
 </figure>
 <br clear="all">
 
-If process flow "swimlane" diagrams require additional explanation
-to clarify conditional flows, or flow variations need to be described
-where alternate systems may be playing different actor roles, document
-those conditional flows here.
 
 #### XX.4.2.4 Use Case \#4: File a Claim
 
@@ -491,7 +484,6 @@ Claiming: a PoS system (e.g. Hospital) sends a request for reimbursement of cost
 ##### XX.4.2.4.2 File a Claim Process Flow
 
 * PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
-* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 * EXT - an external payment layer
 
@@ -513,9 +505,7 @@ Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the ex
 ##### XX.4.2.5.2 Pre Determination Process Flow
 
 * PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
-* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
-* EXT - an external payment layer
 
 <figure>
 {%include usecase5-processflow.svg%}
@@ -534,9 +524,7 @@ Pre-authorization: A PoS system (e.g. Hospital) requests an approval for a speci
 ##### XX.4.2.6.2 Pre Authorization Process Flow
 
 * PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
-* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
-* EXT - an (OpenHIE) external payment layer
 
 <figure>
 {%include usecase6-processflow.svg%}
@@ -555,7 +543,6 @@ A hospital has sent an electronic reimbursement claim to the insurance company. 
 ##### XX.4.2.7.2 Claim Tracking Process Flow
 
 * PoS - The point of service system is a Claims Requestor that has formulated a claim and waits for a response from the FIS.
-* IOL - Mediates the transactions between the PoS system and the infrastructure services to facilitate easier interoperability.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinisation.
 
 <figure>

@@ -4,24 +4,19 @@ hide footbox
 autonumber "<b>[0]"
 
 participant PoS
-participant IOL
 participant FIS
 
 
 opt Get code lists for Medical Procedures & Items
-	PoS -> IOL: Submit Medical Procedures & Items Query
-	IOL -> FIS: Forward query
+	PoS -> FIS: Submit Medical Procedures & Items Query
 	FIS -> FIS: Process query
-	FIS -> IOL: Return  Medical Procedures & Items
-	IOL -> PoS: Forward Medical Procedures & Items
+	FIS -> PoS: Return  Medical Procedures & Items
 end opt
  
 
-PoS -> IOL: Submit Coverage Eligibility Query
-IOL -> FIS: Forward Query
+PoS -> FIS: Submit Coverage Eligibility Query
 FIS -> FIS: Process Insuree Query
 FIS -> FIS: Process Policy Query
-FIS -> IOL: Return Coverage Eligibility Result
-IOL -> PoS: Forward Coverage Eligibility Result
+FIS -> PoS: Return Coverage Eligibility Result
 
 @enduml

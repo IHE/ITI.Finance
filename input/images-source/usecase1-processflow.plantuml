@@ -4,21 +4,17 @@ hide footbox
 autonumber "<b>[0]"
 
 participant PoS
-participant IOL
 participant FIS
 
-PoS->IOL: Submit enrollment request
-IOL->FIS: Forward enrollment request
+PoS->FIS: Submit enrollment request
 FIS->FIS: Verify enrollment eligibility
 
 alt success
   FIS->FIS: Process enrollment
-  FIS->IOL: Return positive enrollment response
-  IOL->PoS: Forward positive enrollment response
+  FIS->PoS: Return positive enrollment response
   PoS->PoS: Add details to patient record
 else validation error
-  FIS->IOL: Return negative enrollment response
-  IOL->PoS: Forward negative enrollment response
+  FIS->PoS: Return negative enrollment response
 end
 
 @enduml
