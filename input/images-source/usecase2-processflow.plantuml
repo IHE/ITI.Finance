@@ -3,14 +3,18 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant PoS
-participant FIS
+participant "App\nBeneficiary Requestor" as App
+participant "FIS\nBeneficiary Manager" as FIS
+participant "Client Registry\nPatient Identity Registry" as CR
 
 
-PoS->FIS: Submit Patient/Beneficiary Query (Demographics / ID)
+opt
+  App->CR: Request demograhpics data\nITI-78 Mobile Patient Demographics Query
+  CR->App: Return demographics details
+end
 
+App->FIS: Submit Patient/Beneficiary Query (Demographics / ID)
 FIS->FIS: Process query
-
-FIS->PoS: Return Beneficiary Details response
+FIS->App: Return Beneficiary Details response
 
 @enduml

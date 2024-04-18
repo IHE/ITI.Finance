@@ -3,31 +3,31 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant PoS
-participant FIS
-participant EXT
+participant "PoS\nClaims Requestor" as App
+participant "FIS\nClaims Manager" as FIS
+participant "External Payment System" as EXT
 
 
-opt Get code lists for medical procedures & items
-	PoS -> FIS: Submit medical procedures & items query
-	FIS -> FIS: Process query
-	FIS -> PoS: Return  medical procedures & items
+opt Get code lists for Medical Procedures & Items
+	App -> App: Lookup Medical Procedures & Items codes
+	App -> FIS: Verify codes
+	FIS -> App: Confirm codes
 end opt
  
-
-PoS -> PoS: Build claim
-PoS -> FIS: Submit claim (use)
+App -> App: Build claim
+App -> FIS: Submit claim
 FIS -> FIS: Process claim
 
 alt accepted
 	opt Payout
-    	note over IOL, EXT: Process payment
+		FIS->EXT: Send payment request
+   	EXT->EXT: Process payment
 	end opt
-	FIS -> PoS: Return positive claim result
+	FIS -> App: Return positive claim result
 else rejected
-	FIS -> PoS: Return negative claim result
+	FIS -> App: Return negative claim result
 else queued
-	FIS -> PoS: Return queued status notification
+	FIS -> App: Return queued status notification
 end
 
 @enduml
