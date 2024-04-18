@@ -411,7 +411,7 @@ different.
 
 ### XX.4.2 Use Cases
 
-#### XX.4.2.1 Use Case \#1: Register Household
+#### XX.4.2.1 Use Case \#1: Enroll Household or Beneficiary
 
 A field agent of the national insurance provider registers a household into a specific insurance scheme.
 
@@ -420,6 +420,15 @@ A field agent of the national insurance provider registers a household into a sp
 Amara Nwosu is a field agent for the National Health Insurance Scheme (NHIS)
 and is registering a household into the scheme.  Amara uses a tablet
 to input the beneficiary information in the Financing and Insurance System.
+
+1. Amara arrives at the home of the beneficiaries who identify themsleves with their national ID card(s).
+1. Amara queries the existance of the beneficiaries from the central ID or beneficiary register through the enrolment app (PoS) on his tablet. The client register returns basic attributes of the beneficiaries (e.g. full names, adress, birthdate etc)
+1. Amara captures all additional data needed for enrollemnt into a specific insurance scheme and submits it to the central Finance and Insurance System (FIS).
+1. The elegibility of the benificiary for this specific scheme is verifeid by eihter manual or automatic processes suing the FIS.
+1. If the elegibility cirteria are fullfilled, the beneficiary / household is being enrolled into the scheme in the FIS by creating a policy.
+1. optionally: The FIS updates the insuree or policiy number to the client register.
+1. The FIS return a status notification about the successfull enrollement back to the enrollemtn app.
+1. Amara adds any addintional data needed to the beneficiary record.
 
 ##### XX.4.2.1.2 Register Household Process Flow
 
@@ -439,7 +448,13 @@ An insurance agent is looking for information about a beneficiary to respond to 
 ##### XX.4.2.2.1 Lookup Beneficiary Use Case Description
 
 Amara Nwosu is a field agent for the National Health Insurance Scheme (NHIS)
-and need to lookup a beneficiary to respond to a service desk call.
+and needs to lookup a beneficiary to respond to a service desk call.
+
+1. The beneficary calls Amara in her office, identifies themselves and formulates the service request.
+1. optionally: Amara enters the beneficiary ID into her app (PoS) which verifies the beneficiary data from the CR and pre-fetches the demographic information.
+1. Amara sends an information request to the FIS using the beneficiary ID to the FIS.
+1. The FIS sends a notification with the requested insurance details to the app.
+2. Amary responds to the beneficiary request.
 
 ##### XX.4.2.2.2 Lookup Beneficiary Process Flow
 
@@ -459,7 +474,15 @@ A patient is diagnosed with cancer and needs chemotherapy. The hospital inquires
 
 ##### XX.4.2.3.1 Check Coverage Use Case Description
 
+A patient is diagnosed with cancer in the local hospital. The responsible doctor want to apply a chemotherapy to the patient and needs to know whether the costs are coverd by the insurance of the patient.
 
+1. The patient arrives at the hospital and is diagnosed.
+1. optionally: the doctor queries the needed procedures and medical items from a product catalogue in the Hospital Information Sytem (POS)
+1. optionally: the hospital information system verifes the product codifications from the FIS.
+1. the doctor selects the needed procedures and items in the POS and sends a coverage eligibility request to the FIS
+1. In a manual or automatic process, the eleibigility for the requested procedures and items is verified in the FIS.
+1. An eligibility response is sent from the FIS to the POS.
+1. The doctor and the patient agree on teh further treatment based on the elegibilty response.
 
 ##### XX.4.2.3.2 Check Coverage Process Flow
 
@@ -480,6 +503,15 @@ A patient was treated in the hospital and the hospital requests reimbursement of
 ##### XX.4.2.4.1 File a Claim Use Case Description
 
 Claiming: a PoS system (e.g. Hospital) sends a request for reimbursement of costs incurred for a certain treatment to the FIS
+
+1. A patient was treated with chemo-therapy in their local hopsital and cured.
+1. The hospital wants to prepare a hospital bill to recalim the incurred costs.
+1. optionally: the hsopital admin queries the applied procedures and medical items from a product catalogue in the Hospital Information Sytem (POS)
+1. optionally: the hospital information system verifes the product codifications from the FIS.
+1. the hospital admin builds a claim with the applied procedures and items in the POS which sends a claim to the FIS
+1. In a manual or automatic process, the claim is adjudicated in the FIS.
+1. otpionally: a payment request is sent from the FIS to the payment system.
+1. An claim response is sent from the FIS to the POS.
 
 ##### XX.4.2.4.2 File a Claim Process Flow
 
@@ -516,6 +548,7 @@ Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the ex
 #### XX.4.2.6 Use Case \#6: Pre Authorization
 
 A costly surgery is needed and has to be pre-approved by the insurance before it can be done.
+
 
 ##### XX.4.2.6.1 Pre Authorization Use Case Description
 
