@@ -294,6 +294,14 @@ An expensive treatment is needed and the Hospital wants to estimate the inputs t
 
 Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the expected reimbursement for a beneficiary’s specific treatment from the FIS (e.g Insurance).
 
+1. A patient needs to be treated with chemo-therapy in their local hospital.
+1. The hospital wants to inquire whether the expected reimbursement will cover the expected costs.
+1. optionally: the hospital admin queries the planned procedures and medical items from a product catalogue in the Hospital Information System (POS)
+1. optionally: the hospital information system verifies the product codifications from the FIS.
+1. the hospital admin builds a pre-determination with the planned procedures and items in the POS which sends it to the FIS
+1. In a manual or automatic process, the pre-determination is adjudicated in the FIS.
+1. A pre-determination result is sent from the FIS to the POS.
+
 ##### XX.4.2.5.2 Pre Determination Process Flow
 
 * PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
@@ -307,8 +315,15 @@ Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the ex
 
 #### XX.4.2.6 Use Case \#6: Pre Authorization
 
-A costly surgery is needed and has to be pre-approved by the insurance before it can be done.
+A costly treatment is needed and has to be pre-approved by the insurance before it can be done.
 
+1. A patient needs to be treated with chemo-therapy in their local hospital.
+1. The hospital wants to confirm from the insurance that the costs for the treatment will be covered.
+1. optionally: the hospital admin queries the planned procedures and medical items from a product catalogue in the Hospital Information System (POS)
+1. optionally: the hospital information system verifies the product codifications from the FIS.
+1. the hospital admin builds a pre-authorization with the planned procedures and items in the POS which sends it to the FIS
+1. In a manual or automatic process, the pre-authorization is adjudicated in the FIS.
+1. A pre-authorization result is sent from the FIS to the POS.
 
 ##### XX.4.2.6.1 Pre Authorization Use Case Description
 
@@ -332,6 +347,14 @@ Request the current processing status of a claim in the FIS
 ##### XX.4.2.7.1 Claim Tracking Use Case Description
 
 A hospital has sent an electronic reimbursement claim to the insurance company. After a waiting period the hospital wants to verify if the claim was processed.
+
+1. a patient was treated with chemo-therapy in their local hospital.
+1. the hospital has sent a claim to the insurer a few days ago and stored the queued claim ID in the hopspital IS (=POS).
+1. the hospital wants to confirm the processing status from the insurance.
+1. the hospital admin sends a claim response query with the claim ID from the POS to the FIS
+1. in an automated process, the FIS looks up the claim status.
+1. a claim response is sent from the FIS to the POS.
+
 
 ##### XX.4.2.7.2 Claim Tracking Process Flow
 
