@@ -89,7 +89,7 @@ TODO: FHIR Capability Statement for [Beneficiary Manager](CapabilityStatement-IH
 
 The Claims Requestor submits and tracks claims from the Claims Manager.
 
-TODO: FHIR Capability Statement for [Claims Requestor]{CapabilityStatement-IHE.ToDo.client.html}
+TODO: FHIR Capability Statement for [Claims Requestor](CapabilityStatement-IHE.ToDo.client.html)
 
 <a name="claims-manager"> </a>
 
