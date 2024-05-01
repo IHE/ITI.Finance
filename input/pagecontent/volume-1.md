@@ -1,6 +1,4 @@
 
-# 1:XX Finance and Insurance Service
-
 The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance related data to care provision to patients within the HIE. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
 
 This collection of workflows allows an external system with access to the HIE to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems that have access to the HIE.
@@ -73,81 +71,79 @@ The actors in this profile are described in more detail in the sections below.
 
 #### XX.1.1.1 Beneficiary Requestor
 
-The Client queries for blah meeting certain criteria and may retrieve selected blah.
+The Beneficiary Requestor can enroll beneficiaries, check the coverage eligibility of beneficiaries and optionally query beneficiaries from a Beneficiary Manager.
 
-TODO: FHIR Capability Statement for [Client]{CapabilityStatement-IHE.ToDo.client.html}
+TODO: FHIR Capability Statement for [Beneficiary Requestor]{CapabilityStatement-IHE.ToDo.client.html}
 
 <a name="beneficiary-manager"> </a>
 
 #### XX.1.1.2 Beneficiary Manager
 
-The Sever processes query request from the Client actor.
+The Beneficiary Manager processes requests from the Beneficiary Requestor actor.  It follows internal business processes to enroll beneficiaries from the Beneficiary Requestor that are beyond the scope of this profile and will return the result of the enrollment.  It also responds to queries about beneficiaries and coverage eligibility.
 
-TODO: FHIR Capability Statement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+TODO: FHIR Capability Statement for [Beneficiary Manager](CapabilityStatement-IHE.ToDo.server.html)
 
 <a name="claims-requestor"> </a>
 
 #### XX.1.1.3 Claims Requestor
 
-The Client queries for blah meeting certain criteria and may retrieve selected blah.
+The Claims Requestor submits and tracks claims from the Claims Manager.
 
-TODO: FHIR Capability Statement for [Client]{CapabilityStatement-IHE.ToDo.client.html}
+TODO: FHIR Capability Statement for [Claims Requestor]{CapabilityStatement-IHE.ToDo.client.html}
 
 <a name="claims-manager"> </a>
 
 #### XX.1.1.4 Claims Manager
 
-The Sever processes query request from the Client actor.
+The Claims Manager processes claims requests from the Claims Requestor.  It follows internal business processes to create the claim that are beyond the scope of this profile.  It also responds to claim tracking requests to return the status of the requested claim.
 
-TODO: FHIR Capability Statement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+TODO: FHIR Capability Statement for [Claims Manager](CapabilityStatement-IHE.ToDo.server.html)
 
-### Transaction Descriptions
+### XX.1.2 Transaction Descriptions
 
 The transactions in this profile are summarized in the sections below.
 
-#### ToDo do transaction
+#### XX.1.2.1 Enroll Beneficiary Transaction
 
-This transaction is used to **do things**
+This transaction is used to enroll or update a beneficiary.
 
-For more details see the detailed [transaction description](domain-YY.html)
+For more details see the detailed [transaction description](ITI-YY1.html)
+
+#### XX.1.2.2 Query Beneficiary Transaction
+
+This transaction is used to query beneficiary details.
+
+For more details see the detailed [transaction description](ITI-YY2.html)
+
+#### XX.1.2.3 Check Coverage Eligibility Transaction
+
+This transaction is used to check the coverage eligibility for a given beneficiary.
+
+For more details see the detailed [transaction description](ITI-YY3.html)
+
+#### XX.1.2.4 Submit Claim Transaction
+
+This transaction is used to submit a claim.  This can be either a pre-determination, pre-authorization, or a final claim ready for payment.
+
+For more details see the detailed [transaction description](ITI-YY4.html)
+
+#### XX.1.2.5 Track Claim Transaction
+
+This transaction is used to return the status of a given claim.
+
+For more details see the detailed [transaction description](ITI-YY5.html)
 
 <a name="actor-options"> </a>
 
-## XX.2 ToDo Actor Options
-
-Options that may be selected for each actor in this implementation guide, are listed in Table 3.2-1 below. Dependencies
-between options when applicable are specified in notes.
-
-<p id ="tXX.1-1" class="tableTitle">Table XX.1-1: Actor Options</p>
-
-|         |             |
-|---------|-------------|
-| Actor   | Option Name |
-| Actor A | Option AB  |
-| Actor B | none |
-{: .grid}
-
-### XX.2.1 AB Option
-
-**TODO: describe this option and the Volume 1 requirements for this option
+## XX.2 FAIS Actor Options
 
 <a name="required-groupings"> </a>
 
-## XX.3 ToDo Required Actor Groupings
-
-*Describe any requirements for actors in this profile to be grouped
-with other actors.*
-
-*This section specifies all REQUIRED Actor Groupings (although
-"required" sometimes allows for a selection of one of several). To
-SUGGEST other profile groupings or helpful references for other profiles
-to consider, use Section XX.6 Cross Profile Considerations. Use Section
-X.5 for security profile recommendations.*
-
+## XX.3 FAIS Required Actor Groupings
 
 <a name="overview"> </a>
 
-## XX.4 ToDo Overview
+## XX.4 FAIS Overview
 
 This section shows how the transactions/content modules of the profile
 are combined to address the use cases.
@@ -350,113 +346,28 @@ A hospital has sent an electronic reimbursement claim to the insurance company. 
 
 <a name="security-considerations"> </a>
 
-## XX.5 ToDo Security Considerations
+## XX.5 FAIS Security Considerations
 
 See ITI TF-2x: [Appendix Z.8 "Mobile Security Considerations"](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations)
 
-The following is instructions to the editor and this text is not to be included in a publication.
-The material initially from [RFC 3552 "Security Considerations Guidelines" July 2003](https://tools.ietf.org/html/rfc3552).
+The resources exchanged in this profile may contain information which pose a privacy risk.  This includes PII for the beneficiaries as well as information about performed procedures.
 
-This section should address downstream design considerations, specifically for: Privacy, Security, and Safety. These might need to be individual header sections if they are significant or need to be referenced.
+There are many reasonable methods of security for interoperability transactions which can be implemented without modifying the characteristics of the transactions in this profile. The use of TLS is encouraged, specifically the use of the ATNA Profile (see [ITI TF-1: 9](https://profiles.ihe.net/ITI/TF/Volume1/ch-9.html)).
 
-The editor needs to understand Security and Privacy fundamentals.
-General [Security and Privacy guidance]({{site.data.fhir.path}}secpriv-module.html) is provided in the FHIR Specification. 
-The FHIR core specification should be leveraged where possible to inform the reader of your specification.
-
-IHE FHIR based profiles should reference the [ITI Appendix Z](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html) section 8 Mobile Security and Privacy Considerations base when appropriate.
-
-IHE Document Content profiles can reference the security and privacy provided by the Document Sharing infrastructure as directly grouped or possibly to be grouped.
-
-   While it is not a requirement that any given specification or system be
-   immune to all forms of attack, it is still necessary for authors of specifications to
-   consider as many forms as possible.  Part of the purpose of the
-   Security and Privacy Considerations section is to explain what attacks have been
-   considered and what countermeasures can be applied to defend against them.
-
-   There should be a clear description of the kinds of threats on the
-   described specification.  This should be approached as an
-   effort to perform "due diligence" in describing all known or
-   foreseeable risks and threats to potential implementers and users.
-
-Authors MUST describe:
-
-* which attacks have been considered and addressed in the specification
-* which attacks have been considered but not addressed in the specification
-* what could be done in system design, system deployment, or user training
-
-   At least the following forms of attack MUST be considered:
-   eavesdropping, replay, message insertion, deletion, modification, and
-   man-in-the-middle.  Potential denial of service attacks MUST be
-   identified as well.  If the specification incorporates cryptographic
-   protection mechanisms, it should be clearly indicated which portions
-   of the data are protected and what the protections are (i.e.,
-   integrity only, confidentiality, and/or endpoint authentication,
-   etc.).  Some indication should also be given to what sorts of attacks
-   the cryptographic protection is susceptible.  Data which should be
-   held secret (keying material, random seeds, etc.) should be clearly
-   labeled.
-
-   If the specification involves authentication, particularly user-host
-   authentication, the security of the authentication method MUST be
-   clearly specified.  That is, authors MUST document the assumptions
-   that the security of this authentication method is predicated upon.
-
-   The threat environment addressed by the Security and Privacy Considerations
-   section MUST at a minimum include deployment across the global
-   Internet across multiple administrative boundaries without assuming
-   that firewalls are in place, even if only to provide justification
-   for why such consideration is out of scope for the protocol.  It is
-   not acceptable to only discuss threats applicable to LANs and ignore
-   the broader threat environment.  In
-   some cases, there might be an Applicability Statement discouraging
-   use of a technology or protocol in a particular environment.
-   Nonetheless, the security issues of broader deployment should be
-   discussed in the document.
-
-   There should be a clear description of the residual risk to the user
-   or operator of that specification after threat mitigation has been
-   deployed.  Such risks might arise from compromise in a related
-   specification (e.g., IPsec is useless if key management has been
-   compromised), from incorrect implementation, compromise of the
-   security technology used for risk reduction (e.g., a cipher with a
-   40-bit key), or there might be risks that are not addressed by the
-   specification (e.g., denial of service attacks on an
-   underlying link protocol).  Particular care should be taken in
-   situations where the compromise of a single system would compromise
-   an entire protocol.  For instance, in general specification designers
-   assume that end-systems are inviolate and don't worry about physical
-   attack.  However, in cases (such as a certificate authority) where
-   compromise of a single system could lead to widespread compromises,
-   it is appropriate to consider systems and physical security as well.
-
-   There should also be some discussion of potential security risks
-   arising from potential misapplications of the specification or technology
-   described in the specification.  
-  
-This section also include specific considerations regarding Digital Signatures, Provenance, Audit Logging, and De-Identification.
-
-Where audit logging is specified, a StructureDefinition profile(s) should be included, and Examples of those logs might be included.
+User authentication on mobile devices and browsers is typically handled by more lightweight authentication schemes such as HTTP Authentication, OAuth 2.0, or OpenID Connect. IHE has a set of profiles for user authentication including [Internet User Authentication (IUA)](https://profiles.ihe.net/ITI/IUA/index.html) for REST-based authentication. The network communication security and user authentication are layered in the HTTP transport layer.
 
 <a name="other-grouping"> </a>
 
-## XX.6 ToDo Cross-Profile Considerations
+## XX.6 FAIS Cross-Profile Considerations
 
-This section is informative, not normative. It is intended to put
-this profile in context with other profiles. Any required groupings
-should have already been described above. Brief descriptions can go
-directly into this section; lengthy descriptions should go into an
-appendix. Examples of this material include ITI Cross Community Access
-(XCA) Grouping Rules (Section 18.2.3), the Radiology associated profiles
-listed at wiki.ihe.net, or ITI Volume 1 Appendix E "Cross Profile
-Considerations", and the "See Also" sections Radiology Profile
-descriptions on the wiki such as
-<http://wiki.ihe.net/index.php/Scheduled_Workflow#See_Also>. If this
-section is left blank, add "Not applicable."
+### XX.6.1 Patient Demographics Query for Mobile -- PDQm
 
-Consider using a format such as the following:
+A Beneficiary Requestor or Beneficiary Manager could be grouped with a PDQm Patient Demographics Consumer to look up or validate beneficiary demographic details.
 
-other profile acronym - other profile name
+### XX.6.2 Patient Identifier Cross-reference for Mobile -- PIXm
 
-A other profile actor name in other profile name might
-be grouped with a this profile actor name to describe
-benefit/what is accomplished by grouping.
+A Beneficiary Requestor or Beneficiary Manager could be grouped with a PIXm Patient Identifier Cross-reference Consumer to look up additional beneficiary identifiers.  The Beneficiary Manager could also be grouped with a PIXm Patient Identity Source to add the beneficiary identifier using the [Patient Identity Feed FHIR [ITI-104]](https://profiles.ihe.net/ITI/PIXm/ITI-104.html).
+
+### XX.6.3 Patient Master Identity Registry -- PMIR
+
+A Beneficiary Requestor or Beneficiary Manager could also be grouped with a Patient Demographics Consumer or Patient Identifier Cross-reference Consumer in PMIR to perform the same queries as the previous sections on PDQm and PIXm. The Beneficiary Manager may be grouped with a PMIR Patient Identity Consumer to subscribe to updates from the PMIR Patient Identity Registry.  The Beneficiary Manager could also be grouped with a PMIR Patient Identity Source to update patient details in the Patient Identity Registry using [Mobile Patient Identity Feed [ITI-93]](https://profiles.ihe.net/ITI/PMIR/ITI-93.html).
