@@ -137,9 +137,13 @@ For more details see the detailed [transaction description](ITI-YY5.html)
 
 ## XX.2 FAIS Actor Options
 
+No options.
+
 <a name="required-groupings"> </a>
 
 ## XX.3 FAIS Required Actor Groupings
+
+No required actor groupings.
 
 <a name="overview"> </a>
 
