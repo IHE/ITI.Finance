@@ -1,7 +1,11 @@
-# Status
-This is the supplement template for IHE-Profiles using the IG publisher. repository is under-construction. Please try using it. If you have questions, contact John Moehrke. 
 
-Instructions [are found here](https://github.com/IHE/supplement-template/wiki/Getting-Started)
+The Finance and Insurance Service (FAIS) stores, categorizes, and facilitates the administration of centralized claims and finance
+related data to care provision to patients within the HIE. The service receives claims/financial data from Point of Service
+applications (including financing applications acting as a point of service interface outside of other PoS systems) and
+curates the management of them.
+
+# Status
+Continuous Build: http://build.fhir.org/ig/IHE/ITI.Finance/index.html
 
 
 # Parking Lot:
