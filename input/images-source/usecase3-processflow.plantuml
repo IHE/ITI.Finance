@@ -3,8 +3,8 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant "PoS\nBeneficiary Requestor" as App
-participant "FIS\nBeneficiary Manager" as FIS
+participant "PoS\Claims Requestor" as App
+participant "FIS\Claims Manager" as FIS
 
 
 opt Get code lists for Medical Procedures & Items
@@ -13,9 +13,9 @@ opt Get code lists for Medical Procedures & Items
 	FIS -> App: Confirm codes
 end opt
 
-App -> FIS: Submit Coverage Eligibility Query
+App -> FIS: Submit Coverage Eligibility Query\nITI-YY3 Check Coverage Eligibility request
 FIS -> FIS: Process Insuree Query
 FIS -> FIS: Process Policy Query
-FIS -> App: Return Coverage Eligibility Result
+FIS -> App: Return Coverage Eligibility Result\nITI-YY3 Check Coverage Eligibility response
 
 @enduml

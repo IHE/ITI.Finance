@@ -3,26 +3,26 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant "App\nBeneficiary Requestor" as App
+participant "App\nBeneficiary Requestor\nPatient Demographics Consumer\nPatient Identity Source" as App
 participant "FIS\nBeneficiary Manager" as FIS
 participant "Client Registry\nPatient Identity Registry" as CR
 
 opt Demographics Lookup
-  App->CR: Query for beneficiary demographics\nITI-78 Mobile Patient Demographics Query
-  CR->App: Return Demographics Details
+  App->CR: Query for beneficiary demographics\nITI-78 Mobile Patient Demographics Query request
+  CR->App: Return Demographics Details\nITI-78 Mobile Patient Demographics Query response
 end
 App->App: Capture additional data
-App->FIS: Submit enrollment
+App->FIS: Submit enrollment\nITI-YY1 Enroll Beneficiary request
 FIS->FIS: Verify eligibility
 alt Success
   FIS->FIS: Process enrollment
-  FIS->App: Return positive enrollment response
+  FIS->App: Return positive enrollment response\nITI-YY1 Enroll Beneficiary response
   App->App: Add details to patient record
   opt
     App->CR: Add beneficiary ID to registry\nITI-93 Mobile Patient Identity Feed
   end
 else Validation Error
-  FIS->App: Return negative enrollment response
+  FIS->App: Return negative enrollment response\nITI-YY1 Enroll Beneficiary response
 end
 
 @enduml

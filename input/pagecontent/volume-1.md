@@ -54,13 +54,13 @@ Profile and the relevant transactions between them.
 |---------|---------------|------------------------|-----------------|-----------------------------------|
 | Beneficiary Requestor | Enroll Beneficiary | Initiator | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
 |         | Query Beneficiary | Initiator  | O               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
-|         | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
 | Beneficiary Manager | Enroll Beneficiary | Responder | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
 |         | Query Beneficiary | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
-|         | Check Coverage Eligibility | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
-| Claims Requestor | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+| Claims Requestor | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+|         | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
 |         | Track Claim | Initiator  | O               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
-| Claims Manager | Submit Claim | Responder | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+| Claims Manager | Check Coverage Eligibility | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+|         | Submit Claim | Responder | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
 |         | Track Claim | Responder  | R               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
 {: .grid}
 
@@ -149,22 +149,9 @@ No required actor groupings.
 
 ## XX.4 FAIS Overview
 
-This section shows how the transactions/content modules of the profile
-are combined to address the use cases.
-
-Use cases are informative, not normative, and "SHALL" language is
-not allowed in use cases.
-
 ### XX.4.1 Concepts
 
-If needed, this section provides an overview of the concepts that
-provide necessary background for understanding the profile. If not
-needed, state "Not applicable." For an example of why/how this section
-may be needed, please see ITI Cross Enterprise Workflow (XDW).
-
-It may be useful in this section but is not necessary, to provide a
-short list of the use cases described below and explain why they are
-different.
+These use cases can be combined in an overall workflow for handling beneficiaries and claims.  First a beneficiary will be enrolled due to a qualifying life event. When visiting a new doctor or updating an existing one, that office would query the beneficiary details.  Before starting a procedure, the provider's office can check coverage eligibility for the patient and procedure to make sure it's covered.  If the office needs to know the amount that would be covered, they can submit a pre-determination claim.  If the procedure needs a pre-authorization, the office would submit a pre-authorization claim.  Once the procedure has been completed, the office would submit the claim.  If any of the three types of claims aren't approved immediately or to see where the claim is in the process, the office can track the status of the claim.
 
 ### XX.4.2 Use Cases
 
@@ -398,3 +385,7 @@ A Beneficiary Requestor or Beneficiary Manager could be grouped with a PIXm Pati
 ### XX.6.3 Patient Master Identity Registry -- PMIR
 
 A Beneficiary Requestor or Beneficiary Manager could also be grouped with a Patient Demographics Consumer or Patient Identifier Cross-reference Consumer in PMIR to perform the same queries as the previous sections on PDQm and PIXm. The Beneficiary Manager may be grouped with a PMIR Patient Identity Consumer to subscribe to updates from the PMIR Patient Identity Registry.  The Beneficiary Manager could also be grouped with a PMIR Patient Identity Source to update patient details in the Patient Identity Registry using [Mobile Patient Identity Feed [ITI-93]](https://profiles.ihe.net/ITI/PMIR/ITI-93.html).
+
+### XX.6.4 Mobile Care Services Discovery -- mCSD
+
+Any of the actors in this profile may need to look up other resources using mCSD, for example, for Practitioners, Facilities, or Organizations.  They Requestor actors could also look up the correct Endpoint for submitting the Beneficiary or Claims transaction from the Manager actors.

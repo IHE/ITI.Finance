@@ -15,7 +15,7 @@ opt Get code lists for Medical Procedures & Items
 end opt
  
 App -> App: Build claim
-App -> FIS: Submit claim
+App -> FIS: Submit claim\nITI-YY4 Submit Claim request
 FIS -> FIS: Process claim
 
 alt accepted
@@ -23,11 +23,11 @@ alt accepted
 		FIS->EXT: Send payment request
    	EXT->EXT: Process payment
 	end opt
-	FIS -> App: Return positive claim result
+	FIS -> App: Return positive claim result\nITI-YY4 Submit Claim response
 else rejected
-	FIS -> App: Return negative claim result
+	FIS -> App: Return negative claim result\nITI-YY4 Submit Claim response
 else queued
-	FIS -> App: Return queued status notification
+	FIS -> App: Return queued status notification\nITI-YY4 Submit Claim response
 end
 
 @enduml
