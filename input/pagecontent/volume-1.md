@@ -73,7 +73,7 @@ The actors in this profile are described in more detail in the sections below.
 
 The Beneficiary Requestor can enroll beneficiaries, check the coverage eligibility of beneficiaries and optionally query beneficiaries from a Beneficiary Manager.
 
-TODO: FHIR Capability Statement for [Beneficiary Requestor]{CapabilityStatement-IHE.ToDo.client.html}
+TODO: FHIR Capability Statement for [Beneficiary Requestor](CapabilityStatement-IHE.ToDo.client.html)
 
 <a name="beneficiary-manager"> </a>
 
