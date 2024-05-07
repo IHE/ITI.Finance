@@ -15,15 +15,15 @@ end opt
  
 
 PoS -> PoS: Build pre-determination
-PoS -> FIS: Submit pre-determination
+PoS -> FIS: Submit pre-determination\nITI-YY4 Submit Claim request
 FIS -> FIS: Process pre-determiniation
 
 alt accepted
-	FIS -> PoS: Return positive pre-determiniation result
+	FIS -> PoS: Return positive pre-determination result\nITI-YY4 Submit Claim response
 else rejected
-	FIS -> PoS: Return negative pre-determiniation result
+	FIS -> PoS: Return negative pre-determination result\nITI-YY4 Submit Claim response
 else queued
-	FIS -> PoS: Return queued status notification
+	FIS -> PoS: Return queued status notification\nITI-YY4 Submit Claim response
 end
 
 @enduml

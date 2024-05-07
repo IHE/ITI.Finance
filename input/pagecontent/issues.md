@@ -3,18 +3,13 @@
 
 ### Significant Changes from Revision x.x
 
-- change 1
-- change 2
-- etc.
-
 ## Issues
 
 ### Submit an Issue
 
 ### Open Issues
 
-- ToDo_001: this is open issue 1
+- FAIS-001: Should there be a required grouping with ATNA actors or other security profiles?
 
 ### Closed Issues
 
-- ToDo_002: this is closed issue 2

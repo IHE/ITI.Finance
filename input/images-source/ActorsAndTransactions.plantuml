@@ -8,8 +8,8 @@ agent "\n\n[[#claims-requestor Claims\nRequestor]]\n\n" as ClaimReq
 agent "\n\n[[#claims-manager Claims\nManager]]\n\n" as ClaimMan
 BenReq -> BenMan : "[[ITI-YY1.html Enroll Beneficiary ITI-YY1]]"
 BenReq -> BenMan : "[[ITI-YY2.html Query Beneficiary ITI-YY2]]"
-BenReq -> BenMan : "[[ITI-YY3.html Check Coverage Eligibility ITI-YY3]]"
 BenReq -[hidden]-> ClaimReq: ""
+ClaimReq -> ClaimMan : "[[ITI-YY3.html Check Coverage Eligibility ITI-YY3]]"
 ClaimReq -> ClaimMan : "[[ITI-YY4.html Submit Claim ITI-YY4]]"
 ClaimReq -> ClaimMan : "[[ITI-YY5.html Track Claim ITI-YY5]]"
 @enduml
