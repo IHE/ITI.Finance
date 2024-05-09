@@ -3,8 +3,8 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant "PoS\Claims Requestor" as App
-participant "FIS\Claims Manager" as FIS
+participant "PoS\Coverage Requestor" as App
+participant "FIS\nClaims Manager" as FIS
 
 
 opt Get code lists for Medical Procedures & Items
