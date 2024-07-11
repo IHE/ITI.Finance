@@ -6,7 +6,6 @@ agent "\n\n[[#beneficiary-requestor Beneficiary\nRequestor]]\n\n" as BenReq
 agent "\n\n[[#beneficiary-manager Beneficiary\nManager]]\n\n" as BenMan
 agent "\n\n[[#coverage-requestor Coverage\nRequestor]]\n\n" as CovReq
 agent "\n\n[[#claims-requestor Claims\nRequestor]]\n\n" as ClaimReq
-<<<<<<< HEAD
 agent "\n\n[[#claims-manager Claims\nManager]]\n\n" as ClaimMan
 agent "\n\n[[#claims-manager Claims\nManager]]\n\n" as ClaimMan1
 BenReq -> BenMan : "[[ITI-YY1.html Enroll Beneficiary ITI-YY1]]"
@@ -22,14 +21,4 @@ ClaimReq -> ClaimMan : "[[ITI-YY4.html Submit Claim ITI-YY4]]"
 ClaimReq -> ClaimMan : "[[ITI-YY8.html Cancel Claim ITI-YY8]]"
 ClaimReq -> ClaimMan : "[[ITI-YY9.html Re-process Claim ITI-YY9]]"
 ClaimReq -> ClaimMan : "[[ITI-YY5.html Track Claim ITI-YY5]]"
-=======
-agent "\n\n\n\n\n\n[[#claims-manager Claims\nManager]]\n\n\n\n\n\n" as ClaimMan
-BenReq -right-> BenMan : "[[ITI-YY1.html Enroll Beneficiary ITI-YY1]]"
-BenReq -right-> BenMan : "[[ITI-YY2.html Query Beneficiary ITI-YY2]]"
-BenReq -[hidden]-> CovReq: ""
-CovReq -[hidden]-> ClaimReq: ""
-CovReq -right-> ClaimMan : "[[ITI-YY3.html Check Coverage Eligibility ITI-YY3]]"
-ClaimReq -right-> ClaimMan : "[[ITI-YY4.html Submit Claim ITI-YY4]]"
-ClaimReq -right-> ClaimMan : "[[ITI-YY5.html Track Claim ITI-YY5]]"
->>>>>>> refs/remotes/origin/master
 @enduml

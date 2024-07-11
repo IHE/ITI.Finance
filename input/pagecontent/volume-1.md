@@ -63,7 +63,6 @@ Profile and the relevant transactions between them.
 |         | Query Insurance Plan | Initiator  | O               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
 |         | Check Enrollment Status | Initiator  | O               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
 | Beneficiary Manager | Enroll Beneficiary | Responder | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
-<<<<<<< HEAD
 |         | Check Enrollment Status | Responder  | R               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
 |         | Query Insurance Plan | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
 | Coverage Requestor | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
@@ -71,11 +70,6 @@ Profile and the relevant transactions between them.
 | Claims Requestor | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
 |         | Cancel Claim | Initiator  | R               | [FAIS TF-2: 3.YY8](ITI-YY8.html) |
 |         | Re-process Claim | Initiator  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
-=======
-|         | Query Beneficiary | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
-| Coverage Requestor | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
-| Claims Requestor | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
->>>>>>> refs/remotes/origin/master
 |         | Track Claim | Initiator  | O               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
 | Claims Manager | Check Coverage Eligibility | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
 |         | Check Coverage Eligibility Status | Responder  | R               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
