@@ -26,8 +26,16 @@ alt accepted
 	FIS -> App: Return positive claim result\nITI-YY4 Submit Claim response
 else rejected
 	FIS -> App: Return negative claim result\nITI-YY4 Submit Claim response
+	opt Re-process claim
+		App -> FIS: Re-submit claim for re-processing\nITI-YY6 Update Claim request
+		Fis -> App: Return claim re-process response\nITI-YY6 Update Claim response
+	end opt
 else queued
 	FIS -> App: Return queued status notification\nITI-YY4 Submit Claim response
+	opt Cancel claim
+		App -> FIS: Cancel claim\nITI-YY6 Update Claim request
+		Fis -> App: Return claim cancellation response\nITI-YY6 Update Claim response
+	end opt
 end
 
 @enduml
