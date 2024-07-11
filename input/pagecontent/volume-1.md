@@ -1,6 +1,8 @@
 
 The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance related data to care provision to patients within the HIE. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
 
+This profile is initially focused on a greenfield implementation in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.
+
 This collection of workflows allows an external system with access to the HIE to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems that have access to the HIE.
 
 1. A point-of-care system can enroll a beneficiary
@@ -27,13 +29,18 @@ shown in dotted lines. Actors which have a mandatory grouping are shown in conjo
 * Actors
   * [Beneficiary Requestor](#beneficiary-requestor)
   * [Beneficiary Manager](#beneficiary-manager)
+  * [Coverage Requestor](#coverage-requestor)
   * [Claims Requestor](#claims-requestor)
   * [Claims Manager](#claims-manager)
 * Transactions
   * [Enroll Beneficiary [ITI-YY1]](ITI-YY1.html)
-  * [Query Beneficiary [ITI-YY2]](ITI-YY2.html)
+  * [Query Insurance Plan [ITI-YY2]](ITI-YY2.html)
+  * [Check Enrollment Status [ITI-YY6]](ITI-YY6.html)
   * [Check Coverage Eligibility [ITI-YY3]](ITI-YY3.html)
+  * [Check Coverage Eligibility Status [ITI-YY7]](ITI-YY7.html)
   * [Submit Claim [ITI-YY4]](ITI-YY4.html)
+  * [Cancel Claim [ITI-YY8]](ITI-YY8.html)
+  * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
   * [Track Claim [ITI-YY5]](ITI-YY5.html)
 
 This section defines the actors and transactions in this implementation guide.
@@ -53,14 +60,22 @@ Profile and the relevant transactions between them.
 | Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
 |---------|---------------|------------------------|-----------------|-----------------------------------|
 | Beneficiary Requestor | Enroll Beneficiary | Initiator | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
-|         | Query Beneficiary | Initiator  | O               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+|         | Query Insurance Plan | Initiator  | O               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+|         | Check Enrollment Status | Initiator  | O               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
 | Beneficiary Manager | Enroll Beneficiary | Responder | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
-|         | Query Beneficiary | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
-| Claims Requestor | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
-|         | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+|         | Check Enrollment Status | Responder  | R               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
+|         | Query Insurance Plan | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+| Coverage Requestor | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+|         | Check Coverage Eligibility Status | Initiator  | O               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
+| Claims Requestor | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+|         | Cancel Claim | Initiator  | R               | [FAIS TF-2: 3.YY8](ITI-YY8.html) |
+|         | Re-process Claim | Initiator  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
 |         | Track Claim | Initiator  | O               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
 | Claims Manager | Check Coverage Eligibility | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+|         | Check Coverage Eligibility Status | Responder  | R               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
 |         | Submit Claim | Responder | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+|         | Cancel Claim | Responder  | R               | [FAIS TF-2: 3.YY8](ITI-YY8.html) |
+|         | Re-process Claim | Responder  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
 |         | Track Claim | Responder  | R               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
 {: .grid}
 
@@ -71,7 +86,7 @@ The actors in this profile are described in more detail in the sections below.
 
 #### XX.1.1.1 Beneficiary Requestor
 
-The Beneficiary Requestor can enroll beneficiaries, check the coverage eligibility of beneficiaries and optionally query beneficiaries from a Beneficiary Manager.
+The Beneficiary Requestor can enroll beneficiaries and optionally query beneficiaries from a Beneficiary Manager.
 
 TODO: FHIR Capability Statement for [Beneficiary Requestor](CapabilityStatement-IHE.ToDo.client.html)
 
@@ -83,9 +98,17 @@ The Beneficiary Manager processes requests from the Beneficiary Requestor actor.
 
 TODO: FHIR Capability Statement for [Beneficiary Manager](CapabilityStatement-IHE.ToDo.server.html)
 
+<a name="coverage-requestor"> </a>
+
+#### XX.1.1.3 Coverage Requestor
+
+The Coverage Requestor can check the coverage eligibility of beneficiaries from a Claims Manager.
+
+TODO: FHIR Capability Statement for [Coverage Requestor](CapabilityStatement-IHE.ToDo.client.html)
+
 <a name="claims-requestor"> </a>
 
-#### XX.1.1.3 Claims Requestor
+#### XX.1.1.4 Claims Requestor
 
 The Claims Requestor submits and tracks claims from the Claims Manager.
 
@@ -93,7 +116,7 @@ TODO: FHIR Capability Statement for [Claims Requestor](CapabilityStatement-IHE.T
 
 <a name="claims-manager"> </a>
 
-#### XX.1.1.4 Claims Manager
+#### XX.1.1.5 Claims Manager
 
 The Claims Manager processes claims requests from the Claims Requestor.  It follows internal business processes to create the claim that are beyond the scope of this profile.  It also responds to claim tracking requests to return the status of the requested claim.
 
@@ -109,29 +132,54 @@ This transaction is used to enroll or update a beneficiary.
 
 For more details see the detailed [transaction description](ITI-YY1.html)
 
-#### XX.1.2.2 Query Beneficiary Transaction
+#### XX.1.2.2 Check Enrollment Status Transaction
 
-This transaction is used to query beneficiary details.
+This transaction is used to check the status of an enrollment.
+
+For more details see the detailed [transaction description](ITI-YY6.html)
+
+#### XX.1.2.3 Query Insurance Plan Transaction
+
+This transaction is used to search for available insurance plans.
 
 For more details see the detailed [transaction description](ITI-YY2.html)
 
-#### XX.1.2.3 Check Coverage Eligibility Transaction
+#### XX.1.2.4 Check Coverage Eligibility Transaction
 
 This transaction is used to check the coverage eligibility for a given beneficiary.
 
 For more details see the detailed [transaction description](ITI-YY3.html)
 
-#### XX.1.2.4 Submit Claim Transaction
+#### XX.1.2.5 Check Coverage Eligibility Transaction
+
+This transaction is used to check the status of a coverage eligibility request.
+
+For more details see the detailed [transaction description](ITI-YY7.html)
+
+#### XX.1.2.6 Submit Claim Transaction
 
 This transaction is used to submit a claim.  This can be either a pre-determination, pre-authorization, or a final claim ready for payment.
 
 For more details see the detailed [transaction description](ITI-YY4.html)
 
-#### XX.1.2.5 Track Claim Transaction
+#### XX.1.2.7 Cancel Claim Transaction
+
+This transaction is used to cancel a previously submitted claim.
+
+For more details see the detailed [transaction description](ITI-YY8.html)
+
+#### XX.1.2.8 Re-process Claim Transaction
+
+This transaction is used to re-process a previously submitted claim that was denied.
+
+For more details see the detailed [transaction description](ITI-YY9.html)
+
+#### XX.1.2.9 Track Claim Transaction
 
 This transaction is used to return the status of a given claim.
 
 For more details see the detailed [transaction description](ITI-YY5.html)
+
 
 <a name="actor-options"> </a>
 
@@ -258,7 +306,9 @@ Claiming: a PoS system (e.g. Hospital) sends a request for reimbursement of cost
 1. the hospital admin builds a claim with the applied procedures and items in the POS which sends a claim to the FIS
 1. In a manual or automatic process, the claim is adjudicated in the FIS.
 1. optionally: a payment request is sent from the FIS to the payment system.
-1. An claim response is sent from the FIS to the POS.
+1. A claim response is sent from the FIS to the POS.
+
+In some instances a claim request may need to be cancelled or re-submitted for re-processing.  The PoS system can send a follow up request to cancel a previously submitted claim.  If the claim was rejected and it needs to be re-adjudicated, then the PoS can also re-submit the claim to be re-processed.
 
 ##### XX.4.2.4.2 File a Claim Process Flow
 
