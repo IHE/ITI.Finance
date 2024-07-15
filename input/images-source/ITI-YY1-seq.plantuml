@@ -1,0 +1,13 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber "<b>[0]"
+participant "Beneficiary Requestor" as Req
+participant "Beneficiary Manager" as Man
+activate Req
+activate Man
+Req -> Man : Enrollment Request [ITI-YY1]
+Man --> Req : Enrollment Response [ITI-YY1]
+deactivate Man
+deactivate Req
+@enduml

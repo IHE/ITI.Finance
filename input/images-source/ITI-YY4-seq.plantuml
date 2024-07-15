@@ -1,0 +1,13 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber "<b>[0]"
+participant "Beneficiary Requestor" as Req
+participant "Claims Manager" as Man
+activate Req
+activate Man
+Req -> Man : Check Coverage Eligibility Request [ITI-YY4]
+Man --> Req : Check Coverage Eligibility Response [ITI-YY4]
+deactivate Man
+deactivate Req
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber "<b>[0]"
+participant "Coverage Requestor" as Req
+participant "Claims Manager" as Man
+activate Req
+activate Man
+Req -> Man : "Search Coverage Eligibility Response Request:\nHTTP GET <Base>/CoverageEligibilityResponse [ITI-YY2]"
+Man --> Req : "Search Coverage Eligibility Response Response:\nBundle"
+deactivate Man
+deactivate Req
+
+Req -[hidden]> Man
+activate Req
+activate Man 
+Req -> Man : "Read Coverage Eligibility Response Request:\nHTTP GET <Base>/CoverageEligibilityResponse/<ResourceId> [ITI-YY2]"
+Man --> Req : "Read Coverage Eligibility Response Response:\nCoverageEligibilityResponse"
+deactivate Man
+deactivate Req
+
+@enduml
