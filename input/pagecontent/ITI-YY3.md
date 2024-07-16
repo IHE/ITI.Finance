@@ -58,8 +58,8 @@ GET [base]/EnrollmentResponse?[parameter=value]
 Where \[base\] is the URL of Beneficiary Manager.
 
 A Beneficiary Manager SHALL support responding to a request for both
-the JSON and the XML messaging formats as defined in FHIR. A Terminology
-Consumer SHALL accept either the JSON or the XML messaging formats as
+the JSON and the XML messaging formats as defined in FHIR. A Beneficiary
+Requestor SHALL accept either the JSON or the XML messaging formats as
 defined in FHIR. See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format) for more details.
 
 A Beneficiary Manager SHALL implement the parameters described below.
@@ -158,8 +158,8 @@ they reference two different resource instances.
 to use TLS for security purposes.*
 
 A Beneficiary Manager SHALL support responding to a request for both
-the JSON and the XML messaging formats as defined in FHIR. A Terminology
-Consumer SHALL accept either the JSON or the XML messaging formats as
+the JSON and the XML messaging formats as defined in FHIR. A Beneficiary
+Requestor SHALL accept either the JSON or the XML messaging formats as
 defined in FHIR. See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format) for more details.
 
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
