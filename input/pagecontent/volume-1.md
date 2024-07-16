@@ -201,11 +201,15 @@ No required actor groupings.
 
 These use cases can be combined in an overall workflow for handling beneficiaries and claims.  First a beneficiary will be enrolled due to a qualifying life event. When visiting a new doctor or updating an existing one, that office would query the beneficiary details.  Before starting a procedure, the provider's office can check coverage eligibility for the patient and procedure to make sure it's covered.  If the office needs to know the amount that would be covered, they can submit a pre-determination claim.  If the procedure needs a pre-authorization, the office would submit a pre-authorization claim.  Once the procedure has been completed, the office would submit the claim.  If any of the three types of claims aren't approved immediately or to see where the claim is in the process, the office can track the status of the claim.
 
-Figure 4.1-1 shows how all these actors and transactions can work together for a Patient enrolling and filing claims.
+Figure 4.1-1 shows the enrollment workflow.  Figure 4.1-2 shows the claims workflow.
 
 <figure>
-{%include overview.svg%}
-<figcaption><b>Figure XX.4.1-1: FAIS Overview</b></figcaption>
+{%include overview-enroll.svg%}
+<figcaption><b>Figure XX.4.1-1: FAIS Enrollment Workflow</b></figcaption>
+</figure>
+<figure>
+{%include overview-visit.svg%}
+<figcaption><b>Figure XX.4.1-1: FAIS Claims Workflow</b></figcaption>
 </figure>
 <br clear="all">
 

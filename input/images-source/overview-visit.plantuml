@@ -1,0 +1,55 @@
+@startuml
+
+title Claims Workflow
+
+start
+:patient makes appointment;
+:check coverage eligibility;
+:submit coverage eligibility request\nITI-YY4;
+while (check results ?) is (queued)
+  :query response updates\nITI-YY7;
+endwhile (completed)
+:process eligibility response;
+if (eligibility ?) then (covered)
+  :patient clinical visit;
+
+  if (service needs pre-determination ?) then (yes)
+    :pre-determiniation of service;
+    :submit pre-determination claim\nITI-YY5;
+    while (check results ?) is (queued)
+      :track claim\nITI-YY6;
+    endwhile (completed)
+    :process pre-determination response;
+  else (no)
+    :continue service;
+  endif 
+  if (service needs pre-authorization ?) then (yes)
+  :pre-authorization of service;
+  :submit pre-authorization claim\nITI-YY5;
+  while (check results ?) is (queued)
+    :track claim\nITI-YY6;
+  endwhile (completed)
+  :process pre-authorization response;
+  else (no)
+    :continue service;
+  endif
+  :service complete;
+  :submit claim;
+  while (check results ?) is (queued)
+    if (claim is cancelled ?) then (yes)
+      :cancel claim\nITI-YY8;
+    endif
+    :track claim\nITI-YY6;
+  endwhile (completed)
+  if (claim is denied ?) then (yes)
+    :re-process claim\nITI-YY9;
+    while (check results ?) is (queued)
+      :track claim\nITI-YY6;
+    endwhile (completed)
+  endif
+  stop
+else (not covered)
+  :notify patient;
+  stop
+
+@enduml
