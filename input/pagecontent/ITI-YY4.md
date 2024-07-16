@@ -18,11 +18,11 @@ This transaction is used by the Coverage Requestor to check if a product or serv
 
 **FHIR-R4** [HL7 FHIR Release 4.0]({{site.data.fhir.path}})
 
-### 2:3.YY2.4 Messages
+### 2:3.YY4.4 Messages
 
 <figure>
 {%include ITI-YY4-seq.svg%}
-<p id="f2.3.YY4.3-1" class="figureTitle">Figure 2:3.YY4.3-1: Interaction Diagram</p>
+<p id="f2.3.YY4.4-1" class="figureTitle">Figure 2:3.YY4.4-1: Interaction Diagram</p>
 </figure>
 <br clear="all">
 

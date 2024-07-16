@@ -18,11 +18,11 @@ This transaction is used by the Beneficiary Requestor to request that a patient 
 
 **FHIR-R4** [HL7 FHIR Release 4.0]({{site.data.fhir.path}})
 
-### 2:3.YY2.4 Messages
+### 2:3.YY1.4 Messages
 
 <figure>
 {%include ITI-YY1-seq.svg%}
-<p id="f2.3.YY1.3-1" class="figureTitle">Figure 2:3.YY1.3-1: Interaction Diagram</p>
+<p id="f2.3.YY1.4-1" class="figureTitle">Figure 2:3.YY1.4-1: Interaction Diagram</p>
 </figure>
 <br clear="all">
 

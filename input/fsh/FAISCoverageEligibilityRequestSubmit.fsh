@@ -19,12 +19,12 @@ Usage: #definition
   * use = #in 
   * min = 1
   * max = "1"
-  * documentation = "An CoverageEligibilityRequest resource or a Bundle with an CoverageEligibilityRequest and any referenced resources."
+  * documentation = "A CoverageEligibilityRequest resource or a Bundle with a CoverageEligibilityRequest and any referenced resources."
   * type = #Resource
 * parameter[+]
   * name = #return
   * use = #out
   * min = 1
   * max = "1"
-  * documentation = "An EnrollmentResponse resource or an OperationOutcome if there was an error."
+  * documentation = "A CoverageEligibilityResponse resource or an OperationOutcome if there was an error."
   * type = #Resource

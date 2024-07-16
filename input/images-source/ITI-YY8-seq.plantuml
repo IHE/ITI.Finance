@@ -1,0 +1,13 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber "<b>[0]"
+participant "Claims Requestor" as Req
+participant "Claims Manager" as Man
+activate Req
+activate Man
+Req -> Man : Cancel Claim Request [ITI-YY8]
+Man --> Req : Cancel Claim Response [ITI-YY8]
+deactivate Man
+deactivate Req
+@enduml

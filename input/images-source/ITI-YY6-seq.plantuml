@@ -1,0 +1,22 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+autonumber "<b>[0]"
+participant "Claims Requestor" as Req
+participant "Claims Manager" as Man
+activate Req
+activate Man
+Req -> Man : Search Claim Response Request:\nHTTP GET <Base>/ClaimResponse [ITI-YY2]
+Man --> Req : Search Claim Response Response:\nBundle
+deactivate Man
+deactivate Req
+
+Req -[hidden]> Man
+activate Req
+activate Man 
+Req -> Man : Read Claim Response Request:\nHTTP GET <Base>/ClaimResponse/<ResourceId> [ITI-YY2]
+Man --> Req : Read Claim Response Response:\nClaimResponse
+deactivate Man
+deactivate Req
+
+@enduml
