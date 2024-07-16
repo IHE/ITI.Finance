@@ -12,6 +12,7 @@ The Client [ITI-Y] transaction passes a go Request from a Client to a Server.
 |-------------------+--------------------------|
 | [Client](volume-1.html#client)    | Sends query to Server |
 | [Server](volume-1.html#server) | Receives the query and responds |
+{:.grid .table-striped}
 
 ### 2:3.YY.3 Referenced Standards
 

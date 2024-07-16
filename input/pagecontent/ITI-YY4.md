@@ -12,6 +12,7 @@ This transaction is used by the Coverage Requestor to check if a product or serv
 |-------------------+--------------------------|
 | [Coverage Requestor](volume-1.html#coverage-requestor)    | Sends the coverage eligibility request to the Claims Manager. |
 | [Claims Manager](volume-1.html#claims-manager) | Receives and processes the request and returns a response to the Coverage Requestor |
+{:.grid .table-striped}
 
 ### 2:3.YY4.3 Referenced Standards
 
@@ -46,7 +47,7 @@ The HTTP body SHALL consist of either a FHIR CoverageEligibilityRequest resource
 
 ##### 2:3.YY4.4.1.3 Expected Actions
 
-The Claims Manager SHALL process the CoverageEligibilityRequest and return an CoverageEligibilityResponse resource with an `HTTP 200` (OK) status code or an HTTP error code with an OperationOutcome resource if there was an error.  The Beneficary Manager SHALL respond with a [Check Coverage Eligibility Response message](#enroll-reponse).
+The Claims Manager SHALL process the CoverageEligibilityRequest and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and a [Check Coverage Eligibility Response Message](#enroll-reponse).
 
 The Claims Manager SHALL persist the CoverageEligibilityRequest resource and include a reference to it in the CoverageEligibilityResponse resource.
 

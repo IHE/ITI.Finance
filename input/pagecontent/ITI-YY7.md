@@ -1,7 +1,7 @@
 This section corresponds to transaction [ITI-YY7] of the IHE IT
 Infrastructure Technical Framework. Transaction [ITI-YY7] is used by
 the Claims Manager and Coverage Requestor Actors.  The Check
-Enrollment Status [ITI-YY7] transaction is used to get the status of an coverage eligibility request.
+Coverage Eligibility Status [ITI-YY7] transaction is used to get the status of an coverage eligibility request.
 
 ### 2:3.YY7.1 Scope
 
@@ -90,9 +90,9 @@ the `_lastUpdated` parameter: `gt`, `lt`, `ge`, `le`, `sa`, and `eb`.
 
 ##### 2:3.YY7.4.1.3 Expected Actions
 
-The Claims Manager shall process the query to retrieve the coverage eligibility response(s) that match the search parameters given, and return a response as
-per Section 2:3.YY7.4.2 or an error as per
-<{{site.data.fhir.path}}search.html#errors>.
+The Claims Manager SHALL process the query to retrieve the coverage eligibility response(s) that match the search parameters given and return a [ Search Coverage Eligibility Response Response Message](#query-response) or an error as per <{{site.data.fhir.path}}search.html#errors>.
+
+<a name="query-response"></a>
 
 #### 2:3.YY7.4.2 Search Coverage Eligibility Response Response Message
 
@@ -168,10 +168,12 @@ this transaction.
 
 ##### 2:3.YY7.4.3.3 Expected Actions
 
-The Claims Manager shall process the request to retrieve the
+The Claims Manager SHALL process the request to retrieve the
 CoverageEligibilityResponse that matches the given resource id, and return a response as
-defined at <{{site.data.fhir.path}}http.html#read> or an error code as
+defined at <{{site.data.fhir.path}}http.html#read> with the [Read Coverage Eligibility Response Response Message](#read-response) or an error code as
 defined at <{{site.data.fhir.path}}http.html#Status-Codes>.
+
+<a name="read-response"></a>
 
 #### 2:3.YY7.4.4 Read Coverage Eligibility Response Response Message
 

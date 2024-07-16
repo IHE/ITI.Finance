@@ -12,6 +12,7 @@ This transaction is used by the Beneficiary Requestor to request that a patient 
 |-------------------+--------------------------|
 | [Beneficiary Requestor](volume-1.html#beneficiary-requestor)    | Sends the enrollment request to the Beneficiary Manager. |
 | [Beneficiary Manager](volume-1.html#beneficiary-manager) | Receives and processes the request and returns a response to the Beneficiary Requestor |
+{:.grid .table-striped}
 
 ### 2:3.YY1.3 Referenced Standards
 
@@ -46,7 +47,7 @@ The HTTP body SHALL consist of either a FHIR EnrollmentRequest resource conformi
 
 ##### 2:3.YY1.4.1.3 Expected Actions
 
-The Beneficiary Manager SHALL process the EnrollmentRequest and return an EnrollmentResponse resource with an `HTTP 200` (OK) status code or an HTTP error code with an OperationOutcome resource if there was an error.  The Beneficary Manager SHALL respond with a [Enroll Beneficiary Response message](#enroll-reponse).
+The Beneficiary Manager SHALL process the EnrollmentRequest and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and an [Enroll Beneficiary Response Message](#enroll-response).
 
 The Beneficiary Manager SHALL persist the EnrollmentRequest resource and include a reference to it in the EnrollmentResponse resource.
 

@@ -33,15 +33,15 @@ shown in dotted lines. Actors which have a mandatory grouping are shown in conjo
   * [Claims Requestor](#claims-requestor)
   * [Claims Manager](#claims-manager)
 * Transactions
-  * [Enroll Beneficiary [ITI-YY1]](ITI-YY1.html)
   * [Query Insurance Plan [ITI-YY2]](ITI-YY2.html)
-  * [Check Enrollment Status [ITI-YY6]](ITI-YY6.html)
-  * [Check Coverage Eligibility [ITI-YY3]](ITI-YY3.html)
+  * [Enroll Beneficiary [ITI-YY1]](ITI-YY1.html)
+  * [Check Enrollment Status [ITI-YY3]](ITI-YY3.html)
+  * [Check Coverage Eligibility [ITI-YY4]](ITI-YY4.html)
   * [Check Coverage Eligibility Status [ITI-YY7]](ITI-YY7.html)
-  * [Submit Claim [ITI-YY4]](ITI-YY4.html)
+  * [Submit Claim [ITI-YY5]](ITI-YY5.html)
   * [Cancel Claim [ITI-YY8]](ITI-YY8.html)
   * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
-  * [Track Claim [ITI-YY5]](ITI-YY5.html)
+  * [Track Claim [ITI-YY6]](ITI-YY6.html)
 
 This section defines the actors and transactions in this implementation guide.
 

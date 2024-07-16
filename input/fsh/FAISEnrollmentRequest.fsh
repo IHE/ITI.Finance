@@ -25,7 +25,7 @@ Title: "FAIS EnrollmentRequest Bundle Profile"
 * entry ^slicing.ordered = false
 * entry contains
   FAISEnrollmentRequest 1..1
-  and Organization 0..1
+  and Organization 0..*
   and Provider 0..1
   and Candidate 0..1
   and Coverage 0..1

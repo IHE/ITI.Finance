@@ -1,24 +1,59 @@
 @startuml
-'hide footbox
+skinparam package {
+  BorderColor transparent
+  BackgroundColor transparent
+  Shadowing false
+}
+skinparam rectangle {
+  BorderColor black
+  BackgroundColor lightgrey
+  Shadowing false
+  FontStyle normal
+}
+skinparam agent {
+  BorderColor lightgrey
+  BackgroundColor lightgrey
+  FontColor lightgrey
+  Shadowing false
+}
+
+hide footbox
 'skinparam svgDimensionStyle false
 skinparam linetype polyline
-agent "\n\n[[#beneficiary-requestor Beneficiary\nRequestor]]\n\n" as BenReq
-agent "\n\n[[#beneficiary-manager Beneficiary\nManager]]\n\n" as BenMan
-agent "\n\n[[#coverage-requestor Coverage\nRequestor]]\n\n" as CovReq
-agent "\n\n[[#claims-requestor Claims\nRequestor]]\n\n" as ClaimReq
-agent "\n\n[[#claims-manager Claims\nManager]]\n\n" as ClaimMan
-agent "\n\n[[#claims-manager Claims\nManager]]\n\n" as ClaimMan1
+package "  "  {
+  rectangle "[[#beneficiary-requestor Beneficiary        \nRequestor]]" as br {
+    agent "Benefits" as BenReq
+  }
+  rectangle "[[#coverage-requestor Coverage        \nRequestor]]" as cr {
+    agent "Coverage" as CovReq
+  }
+  rectangle "[[#claims-requestor Claims               \nRequestor]]" as cl {
+    agent "Claims" as ClaimReq
+  }
+}
+
+package " "  {
+  rectangle "[[#beneficiary-manager Beneficiary\nManager]]" as Ben {
+    agent "Benefits" as BenMan
+  }
+  rectangle "[[#claims-manager Claims            \nManager]]" as ClaimMan {
+    agent "Claims" as ClaimMan1
+    agent "Claims" as ClaimMan2
+  }
+}
+BenReq -> BenMan : "[[ITI-YY2.html Query Insurance Plan ITI-YY2]]"
 BenReq -> BenMan : "[[ITI-YY1.html Enroll Beneficiary ITI-YY1]]"
-BenReq -> BenMan : "[[ITI-YY2.html Query Beneficiary ITI-YY2]]"
-BenReq -> BenMan : "[[ITI-YY6.html Check Enrollment Status ITI-YY6]]"
+BenReq -> BenMan : "[[ITI-YY3.html Check Enrollment Status ITI-YY3]]"
 BenReq -[hidden]-> CovReq: ""
 CovReq -[hidden]-> ClaimReq: ""
 BenMan -[hidden]-> ClaimMan1: ""
-ClaimMan1 -[hidden]-> ClaimMan: ""
-CovReq -> ClaimMan1 : "[[ITI-YY3.html Check Coverage Eligibility ITI-YY3]]"
+ClaimMan1 -[hidden]-> ClaimMan2: ""
+CovReq -> ClaimMan1 : "[[ITI-YY4.html Check Coverage Eligibility ITI-YY4]]"
 CovReq -> ClaimMan1 : "[[ITI-YY7.html Check Coverage Eligibility Status ITI-YY7]]"
-ClaimReq -> ClaimMan : "[[ITI-YY4.html Submit Claim ITI-YY4]]"
-ClaimReq -> ClaimMan : "[[ITI-YY8.html Cancel Claim ITI-YY8]]"
-ClaimReq -> ClaimMan : "[[ITI-YY9.html Re-process Claim ITI-YY9]]"
-ClaimReq -> ClaimMan : "[[ITI-YY5.html Track Claim ITI-YY5]]"
-@enduml
+ClaimReq -> ClaimMan2 : "[[ITI-YY5.html Submit Claim ITI-YY5]]"
+ClaimReq -> ClaimMan2 : "[[ITI-YY8.html Cancel Claim ITI-YY8]]"
+ClaimReq -> ClaimMan2 : "[[ITI-YY9.html Re-process Claim ITI-YY9]]"
+ClaimReq -> ClaimMan2 : "[[ITI-YY6.html Track Claim ITI-YY6]]"
+
+
+@endum

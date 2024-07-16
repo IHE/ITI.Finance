@@ -26,5 +26,5 @@ Usage: #definition
   * use = #out
   * min = 1
   * max = "1"
-  * documentation = "An EnrollmentResponse resource or an OperationOutcome if ther ewas an error."
+  * documentation = "An EnrollmentResponse resource or an OperationOutcome if there was an error."
   * type = #Resource

@@ -62,20 +62,32 @@ pages:
   volume-1.md:
     title: 1:XX Finance and Insurance Service
     generation: markdown
+  ITI-YY2.md:
+    title: 2:3.YY2 Query Insurance Plan [ITI-YY2]
+    generation: markdown
   ITI-YY1.md:
     title: 2:3.YY1 Enroll Beneficiary [ITI-YY1]
     generation: markdown
-  ITI-YY2.md:
-    title: 2:3.YY2 Query Beneficiary [ITI-YY2]
-    generation: markdown
   ITI-YY3.md:
-    title: 2:3.YY3 Check Coverage Eligibility [ITI-YY3]
+    title: 2:3.YY3 Check Enrollment Status [ITI-YY3]
     generation: markdown
   ITI-YY4.md:
-    title: 2:3.YY4 Submit Claim [ITI-YY4]
+    title: 2:3.YY4 Check Coverage Eligibility [ITI-YY4]
+    generation: markdown
+  ITI-YY7.md:
+    title: 2:3.YY7 Check Coverage Eligibility Status [ITI-YY7]
     generation: markdown
   ITI-YY5.md:
-    title: 2:3.YY5 Track Claim [ITI-YY5]
+    title: 2:3.YY5 Submit Claim [ITI-YY5]
+    generation: markdown
+  ITI-YY8.md:
+    title: 2:3.YY8 Cancel Claim [ITI-YY8]
+    generation: markdown
+  ITI-YY9.md:
+    title: 2:3.YY9 Re-process Claim [ITI-YY9]
+    generation: markdown
+  ITI-YY6.md:
+    title: 2:3.YY6 Track Claim [ITI-YY6]
     generation: markdown
   testplan.md:
     title: "FAIS Test Plan"
@@ -101,11 +113,15 @@ menu:
     Security Considerations: volume-1.html#security-considerations
     Cross-Profile Considerations: volume-1.html#other-grouping
   Volume 2:
+    "Query Insurance Plan [ITI-YY2]": ITI-YY2.html
     "Enroll Beneficiary [ITI-YY1]": ITI-YY1.html
-    "Query Beneficiary [ITI-YY2]": ITI-YY2.html
-    "Check Coverage Eligibility [ITI-YY3]": ITI-YY3.html
-    "Submit Claim [ITI-YY4]": ITI-YY4.html
-    "Track Claim [ITI-YY5]": ITI-YY5.html
+    "Check Enrollment Status [ITI-YY3]": ITI-YY3.html
+    "Check Coverage Eligibility [ITI-YY4]": ITI-YY4.html
+    "Check Coverage Eligibility Status [ITI-YY7]": ITI-YY7.html
+    "Submit Claim [ITI-YY5]": ITI-YY5.html
+    "Cancel Claim [ITI-YY8]": ITI-YY8.html
+    "Re-process Claim [ITI-YY9]]": ITI-YY9.html
+    "Track Claim [ITI-YY6]": ITI-YY6.html
   Artifacts: artifacts.html
   Other:
     Changes to Other IHE Specifications: other.html

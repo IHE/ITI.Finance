@@ -89,9 +89,9 @@ the `_lastUpdated` parameter: `gt`, `lt`, `ge`, `le`, `sa`, and `eb`.
 
 ##### 2:3.YY3.4.1.3 Expected Actions
 
-The Beneficiary Manager shall process the query to retrieve the enrollment response(s) that match the search parameters given, and return a response as
-per Section 2:3.YY3.4.2 or an error as per
-<{{site.data.fhir.path}}search.html#errors>.
+The Beneficiary Manager SHALL process the query to retrieve the enrollment response(s) that match the search parameters given and return a [Search Enrollment Response Response Message](#query-response) or an error as per <{{site.data.fhir.path}}search.html#errors>.
+
+<a name="query-response"></a>
 
 #### 2:3.YY3.4.2 Search Enrollment Response Response Message
 
@@ -167,10 +167,12 @@ this transaction.
 
 ##### 2:3.YY3.4.3.3 Expected Actions
 
-The Beneficiary Manager shall process the request to retrieve the
+The Beneficiary Manager SHALL process the request to retrieve the
 EnrollmentResponse that matches the given resource id, and return a response as
-defined at <{{site.data.fhir.path}}http.html#read> or an error code as
+defined at <{{site.data.fhir.path}}http.html#read> with the [Read Enrollment Response Response Message](#read-response) or an error code as
 defined at <{{site.data.fhir.path}}http.html#Status-Codes>.
+
+<a name="read-response"></a>
 
 #### 2:3.YY3.4.4 Read Enrollment Response Response Message
 
