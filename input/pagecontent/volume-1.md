@@ -150,7 +150,7 @@ This transaction is used to check the coverage eligibility for a given beneficia
 
 For more details see the detailed [transaction description](ITI-YY3.html)
 
-#### XX.1.2.5 Check Coverage Eligibility Transaction
+#### XX.1.2.5 Check Coverage Eligibility Status Transaction
 
 This transaction is used to check the status of a coverage eligibility request.
 
@@ -442,7 +442,7 @@ A Beneficiary Requestor or Beneficiary Manager could be grouped with a PIXm Pati
 
 ### XX.6.3 Patient Master Identity Registry -- PMIR
 
-A Beneficiary Requestor or Beneficiary Manager could also be grouped with a Patient Demographics Consumer or Patient Identifier Cross-reference Consumer in PMIR to perform the same queries as the previous sections on PDQm and PIXm. The Beneficiary Manager may be grouped with a PMIR Patient Identity Consumer to subscribe to updates from the PMIR Patient Identity Registry.  The Beneficiary Manager could also be grouped with a PMIR Patient Identity Source to update patient details in the Patient Identity Registry using [Mobile Patient Identity Feed [ITI-93]](https://profiles.ihe.net/ITI/PMIR/ITI-93.html).
+A Beneficiary Requestor or Beneficiary Manager could also be grouped with a Patient Demographics Consumer or Patient Identifier Cross-reference Consumer in PMIR to perform the same queries as the previous sections on PDQm and PIXm. The Beneficiary Manager MAY be grouped with a PMIR Patient Identity Consumer to subscribe to updates from the PMIR Patient Identity Registry.  The Beneficiary Manager could also be grouped with a PMIR Patient Identity Source to update patient details in the Patient Identity Registry using [Mobile Patient Identity Feed [ITI-93]](https://profiles.ihe.net/ITI/PMIR/ITI-93.html).
 
 ### XX.6.4 Mobile Care Services Discovery -- mCSD
 

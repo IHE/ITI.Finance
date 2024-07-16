@@ -1,6 +1,6 @@
 Instance: FAISCoverageEligibilityRequestSubmit
 InstanceOf: OperationDefinition
-Title: "FAIS Enrollment Request $submit"
+Title: "FAIS Coverage Eligibility Request $submit"
 Usage: #definition 
 
 * id = "IHE.FAIS.CoverageEligibilityRequest.Submit"

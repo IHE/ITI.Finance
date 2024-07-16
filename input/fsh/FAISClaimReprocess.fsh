@@ -1,6 +1,6 @@
 Instance: FAISClaimReprocess
 InstanceOf: OperationDefinition
-Title: "FAIS Claim $cancel"
+Title: "FAIS Claim $reprocess"
 Usage: #definition 
 
 * id = "IHE.FAIS.Claim.Reprocess"

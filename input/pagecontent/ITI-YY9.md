@@ -70,7 +70,7 @@ How the Claims Requestor processes the response is determined by the implementat
 
 ### 2:3.YY9.5 CapabilityStatement Resource
 
-Server implementing this transaction shall provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
+Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
 * Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
 * Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)

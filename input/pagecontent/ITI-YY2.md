@@ -57,15 +57,15 @@ GET [base]/InsurancePlan?[parameter=value]
 ```
 Where \[base\] is the URL of Beneficiary Manager.
 
-A Beneficiary Manager shall support responding to a request for both
-the JSON and the XML messaging formats as defined in FHIR. A Terminology
-Consumer shall accept either the JSON or the XML messaging formats as
+A Beneficiary Manager SHALL support responding to a request for both
+the JSON and the XML messaging formats as defined in FHIR. A Beneficiary
+Requestor SHALL accept either the JSON or the XML messaging formats as
 defined in FHIR. See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format) for more details.
 
-A Beneficiary Manager shall implement the parameters described below.
-A Beneficiary Manager may choose to support additional query
+A Beneficiary Manager SHALL implement the parameters described below.
+A Beneficiary Manager MAY choose to support additional query
 parameters beyond the subset listed below. Any additional query
-parameters supported shall be supported according to the core FHIR
+parameters supported SHALL be supported according to the core FHIR
 specification.
 
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
@@ -73,11 +73,11 @@ this transaction.
 
 ###### 2:3.YY2.4.1.2.1 Query Parameters
 
-The Beneficiary Manager shall support the :contains and :exact
+The Beneficiary Manager SHALL support the :contains and :exact
 modifiers in all of the string query parameters below defined at
 <{{site.data.fhir.path}}search.html#string>.
 
-The Beneficiary Manager shall support the following search parameters
+The Beneficiary Manager SHALL support the following search parameters
 as defined at <{{site.data.fhir.path}}search.html#all> and
 <http://{{site.data.fhir.path}}InsurancePlan.html#search>.
 
@@ -92,7 +92,7 @@ administered-by
 owned-by
 ```
 
-The Beneficiary Manager shall also support the following prefixes for
+The Beneficiary Manager SHALL also support the following prefixes for
 the `_lastUpdated` parameter: `gt`, `lt`, `ge`, `le`, `sa`, and `eb`.
 
 ##### 2:3.YY2.4.1.3 Expected Actions
@@ -113,7 +113,7 @@ Insurance Plan Request.
 
 ##### 2:3.YY2.4.2.2 Message Semantics
 
-The Beneficiary Manager shall support the search response message as
+The Beneficiary Manager SHALL support the search response message as
 defined at <{{site.data.fhir.path}}http.html#search> on the InsurancePlan, as
 defined at <{{site.data.fhir.path}}insuranceplan.html>
 
@@ -126,7 +126,7 @@ Denied.
 
 ###### 2:3.YY2.4.2.2.1 FHIR InsurancePlan Resource Constraints
 
-A InsurancePlan Resource returned by the Beneficiary Manager shall be further constrained as described in the [FAIS InsurancePlan profile](StructureDefinition-IHE.FAIS.InsurancePlan.html).
+A InsurancePlan Resource returned by the Beneficiary Manager SHALL be further constrained as described in the [FAIS InsurancePlan profile](StructureDefinition-IHE.FAIS.InsurancePlan.html).
 
 ##### 2:3.YY2.4.2.3 Expected Actions
 
@@ -167,9 +167,9 @@ they reference two different resource instances.
 *Note: The use of "http" or "https" in URL does not override requirements
 to use TLS for security purposes.*
 
-A Beneficiary Manager shall support responding to a request for both
-the JSON and the XML messaging formats as defined in FHIR. A Terminology
-Consumer shall accept either the JSON or the XML messaging formats as
+A Beneficiary Manager SHALL support responding to a request for both
+the JSON and the XML messaging formats as defined in FHIR. A Beneficiary
+Requestor SHALL accept either the JSON or the XML messaging formats as
 defined in FHIR. See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.6-populating-the-expected-response-format) for more details.
 
 See [ITI TF-2: Appendix W](https://profiles.ihe.net/ITI/TF/Volume2/ch-W.html) for informative implementation material for
@@ -187,7 +187,7 @@ defined at <{{site.data.fhir.path}}http.html#Status-Codes>.
 #### 2:3.YY2.4.4 Read Insurance Plan Response Message
 
 The Beneficiary Manager’s response to a successful Read Insurance Plan
-message shall be an **HTTP 200** (OK) Status code with a InsurancePlan
+message SHALL be an **HTTP 200** (OK) Status code with a InsurancePlan
 Resource, or an appropriate error status code, optionally with an
 OperationOutcome Resource.
 
@@ -210,10 +210,10 @@ handling. See [ITI TF-2: Appendix Z.7](https://profiles.ihe.net/ITI/TF/Volume2/c
 Denied.
 
 If the Beneficiary Manager is unable to produce a response in the
-requested format, it shall respond with an **HTTP 4xx** error indicating
+requested format, it SHALL respond with an **HTTP 4xx** error indicating
 that it was unable to fulfill the request. The Beneficiary Manager
-may be capable of servicing requests for response formats not listed,
-but shall, at minimum, be capable of producing XML and JSON encodings.
+MAY be capable of servicing requests for response formats not listed,
+but SHALL, at minimum, be capable of producing XML and JSON encodings.
 
 ##### 2:3.YY2.4.4.3 Expected Actions
 
@@ -222,7 +222,7 @@ its workflow.
 
 ### 2:3.YY1.5 CapabilityStatement Resource
 
-Server implementing this transaction shall provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
+Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
 * Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
 * Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)
