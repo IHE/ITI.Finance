@@ -34,7 +34,7 @@ if (eligibility ?) then (covered)
     :continue service;
   endif
   :service complete;
-  :submit claim;
+  :submit claim\nITI-YY5;
   while (check results ?) is (queued)
     if (claim is cancelled ?) then (yes)
       :cancel claim\nITI-YY8;
