@@ -1,6 +1,6 @@
 Instance:   ex-beneficiary-1
 InstanceOf: Patient
-Title: "Example Patient Beneficiary - Use Case 1"
+Title: "Use Case 1 - Example Patient Beneficiary"
 Description:      "Example Beneficiary patient for enrollment for use case 1."
 Usage: #example
 
@@ -20,7 +20,7 @@ Usage: #example
 
 Instance: ex-network-1
 InstanceOf: Organization
-Title: "Example Network: National Health Hospital System - Use Case 1"
+Title: "Use Case 1 - Example Network: National Health Hospital System"
 Description: "Example healthcare organization for use case 1."
 Usage: #example
 
@@ -28,7 +28,7 @@ Usage: #example
 
 Instance:   ex-insuranceplan-1
 InstanceOf: FAISInsurancePlan
-Title:      "Example Insurance Plan - Use Case 1"
+Title:      "Use Case 1 - Example Insurance Plan"
 Description:  "Example Insurance Plan for enrollment for use case 1"
 Usage: #example
 
@@ -46,13 +46,13 @@ Usage: #example
 
 Instance:   ex-coverage-1
 InstanceOf: Coverage
-Title: "Example Coverage - Use Case 1"
+Title: "Use Case 1 - Example Coverage"
 Description: """
 Example Coverage for use case 1
 
-The Beneficiary Manager will create the Coverage resource for the Beneficiary
+The Beneficiary Requestor will create the Coverage resource for the Beneficiary
 based on the InsurancePlan and send it as part of the 
-[enrollment request bundle](Bundle-ex-enreq-bundle-1.html).
+[enrollment request bundle](Bundle-ex-enreq-bundle-1.html) to the Beneficiary Manager.
 """
 Usage: #example
 
@@ -70,11 +70,13 @@ Usage: #example
 
 Instance:   ex-enrollment-req-1
 InstanceOf: FAISEnrollmentRequest
-Title:    "Example Enrollment Request - Use Case 1"
+Title:    "Use Case 1 - Example Enrollment Request"
 Description: """
 Example Enrollment Request for use case 1.
 
-The Benficiary Manager will create the EnrollmentRequest to send to the Beneficiary Manager.
+The Benficiary Requestor will create the EnrollmentRequest to send to the 
+Beneficiary Manager at the
+[EnrollmentRequest $submit operation](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html).
 """
 Usage: #example
 
@@ -86,8 +88,13 @@ Usage: #example
 
 Instance: ex-enreq-bundle-1
 InstanceOf: FAISEnrollmentRequestBundle
-Title: "Example Enrollment Request Bundle - Use Case 1"
-Description: "Example Bundle of enrollment request resources for use case 1."
+Title: "Use Case 1 - Example Enrollment Request Bundle"
+Description: """
+Example Bundle of enrollment request resources for use case 1.
+
+The Beneficiary Requestor can submit this bundle to the
+[EnrollmentRequest $submit operation](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html).
+"""
 Usage: #example
 
 * type = #collection
@@ -106,11 +113,13 @@ Usage: #example
 
 Instance: ex-enrollment-resp-1
 InstanceOf: FAISEnrollmentResponse
-Title:  "Example Enrollment Response - Use Case 1"
+Title:  "Use Case 1 - Example Enrollment Response"
 Description:  """
 Example Enrollment Response for use case 1.
 
-The Beneficiary Manager responds with the EnrollmentResponse.
+The Beneficiary Manager may respond with the EnrollmentResponse from the
+[EnrollmentRequest $submit operation](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html).
+
 """
 Usage: #example
 
@@ -124,34 +133,24 @@ Usage: #example
 * created = "2023-12-15"
 * organization = Reference(ex-insurer-1)
 
-Instance: ex-enrollment-submit-in-1
-InstanceOf: FAISERSubmitIn
-Title: "Example Enrollment Request Submit Input Parameters - Use Case 1"
+Instance: ex-enrollment-resp-bundle-1
+InstanceOf: FAISEnrollmentResponseBundle
+Title: "Use Case 1 - Example Enrollment Response Bundle"
 Description: """
-Example enrollment request submission input parameters for use case 1.
+Example Enrollment Response for use case 1.
 
-This is for submission to the [EnrollmentRequest $submit operation](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html),
-although the operation will accept receiving the EnrollmentRequest Bundle directly instead of as part of a Parameters resource
-since there is only one input parameter of type resource.
+The Beneficiary Manager may respond with the EnrollmentResponse Bundle
+from the [EnrollmentRequest $submit operation](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html).
 """
 Usage: #example
 
-* parameter[resource]
-  * name = "resource"
-  * resource = ex-enreq-bundle-1
-
-Instance: ex-enrollment-submit-out-1
-InstanceOf: FAISERSubmitOut
-Title: "Example Enrollment Request Submit Output Parameters - Use Case 1"
-Description: """
-Example enrollment request submission output parameters for use case 1.
-
-This is for the output from the [EnrollmentRequest $submit operation](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html),
-although the operation will return the EnrollmentResponse directly instead of as part of a Parameters resource
-since there is only one output parameter of type resource.
-"""
-Usage: #example
-
-* parameter[out]
-  * name = "out"
+* type = #collection
+* entry[+]
+  * fullUrl = Canonical(ex-enrollment-resp-1)
   * resource = ex-enrollment-resp-1
+* entry[+]
+  * fullUrl = Canonical(ex-enrollment-req-1)
+  * resource = ex-enrollment-req-1
+* entry[+]
+  * fullUrl = Canonical(ex-insurer-1)
+  * resource = ex-insurer-1

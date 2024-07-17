@@ -18,7 +18,6 @@ Usage: #definition
 * type = false
 * instance = true
 * code = #reprocess
-* outputProfile = Canonical(FAISClaimSubmitOut)
 * parameter[+]
   * name = #return
   * use = #out
@@ -26,3 +25,5 @@ Usage: #definition
   * max = "1"
   * documentation = "A ClaimResponse resource, a Bundle with a ClaimResponse and any referenced resources, or an OperationOutcome if there was an error."
   * type = #Resource
+  * targetProfile[+] = Canonical(FAISClaimResponse)
+  * targetProfile[+] = Canonical(FAISClaimResponseBundle)
