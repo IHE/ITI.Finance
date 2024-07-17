@@ -6,6 +6,9 @@ participant "Beneficiary Requestor" as Req
 participant "Beneficiary Manager" as Man
 activate Req
 activate Man
+Req -> Man : Query Insurance Plan [ITI-YY2]
+Man -> Req : Query Insurance Plan Response [ITI-YY2]
+Req -> Req : Compose Enrollment Request
 Req -> Man : Enroll Beneficiary Request [ITI-YY1]
 Man --> Req : Enroll Beneficiary Response [ITI-YY1]
 deactivate Man

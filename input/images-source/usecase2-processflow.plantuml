@@ -3,18 +3,19 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant "App\nBeneficiary Requestor\nnPatient Demographics Consumer" as App
-participant "FIS\nBeneficiary Manager" as FIS
-participant "Client Registry\nPatient Identity Registry" as CR
+participant "PoS\Coverage Requestor" as App
+participant "FIS\nClaims Manager" as FIS
 
 
-opt
-  App->CR: Request demograhpics data\nITI-78 Mobile Patient Demographics Query request
-  CR->App: Return demographics details\nITI-78 Mobile Patient Demographics Query response
-end
+opt Get code lists for Medical Procedures & Items
+	App -> App: Lookup Medical Procedures & Items codes
+	App -> FIS: Verify codes
+	FIS -> App: Confirm codes
+end opt
 
-App->FIS: Submit Patient/Beneficiary Query (Demographics / ID)\nITI-YY2 Query Beneficiary request
-FIS->FIS: Process query
-FIS->App: Return Beneficiary Details response\nITI-YY2 Query Beneficiary response
+App -> FIS: Submit Coverage Eligibility Query\nITI-YY3 Check Coverage Eligibility request
+FIS -> FIS: Process Insuree Query
+FIS -> FIS: Process Policy Query
+FIS -> App: Return Coverage Eligibility Result\nITI-YY3 Check Coverage Eligibility response
 
 @enduml

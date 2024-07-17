@@ -3,39 +3,27 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant "PoS\nClaims Requestor" as App
-participant "FIS\nClaims Manager" as FIS
-participant "External Payment System" as EXT
+participant PoS
+participant FIS
 
 
-opt Get code lists for Medical Procedures & Items
-	App -> App: Lookup Medical Procedures & Items codes
-	App -> FIS: Verify codes
-	FIS -> App: Confirm codes
+opt Get code lists for medical procedures & items
+	PoS -> FIS: Submit medical procedures & items query
+	FIS -> FIS: Process query
+	FIS -> PoS: Return  medical procedures & items
 end opt
  
-App -> App: Build claim
-App -> FIS: Submit claim\nITI-YY4 Submit Claim request
-FIS -> FIS: Process claim
+
+PoS -> PoS: Build pre-determination
+PoS -> FIS: Submit pre-determination\nITI-YY5 Submit Claim request
+FIS -> FIS: Process pre-determiniation
 
 alt accepted
-	opt Payout
-		FIS->EXT: Send payment request
-   	EXT->EXT: Process payment
-	end opt
-	FIS -> App: Return positive claim result\nITI-YY4 Submit Claim response
+	FIS -> PoS: Return positive pre-determination result\nITI-YY5 Submit Claim response
 else rejected
-	FIS -> App: Return negative claim result\nITI-YY4 Submit Claim response
-	opt Re-process claim
-		App -> FIS: Re-submit claim for re-processing\nITI-YY6 Update Claim request
-		Fis -> App: Return claim re-process response\nITI-YY6 Update Claim response
-	end opt
+	FIS -> PoS: Return negative pre-determination result\nITI-YY5 Submit Claim response
 else queued
-	FIS -> App: Return queued status notification\nITI-YY4 Submit Claim response
-	opt Cancel claim
-		App -> FIS: Cancel claim\nITI-YY6 Update Claim request
-		Fis -> App: Return claim cancellation response\nITI-YY6 Update Claim response
-	end opt
+	FIS -> PoS: Return queued status notification\nITI-YY5 Submit Claim response
 end
 
 @enduml

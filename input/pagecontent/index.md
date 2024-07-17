@@ -1,6 +1,6 @@
 
 The Finance and Insurance Service (FAIS) stores, categorizes, and facilitates the administration of centralized claims and finance
-related data to care provision to patients within the HIE. The service receives claims/financial data from Point of Service
+related data to care provision to patients. The service receives claims/financial data from Point of Service
 applications (including financing applications acting as a point of service interface outside of other PoS systems) and
 curates the management of them.
 

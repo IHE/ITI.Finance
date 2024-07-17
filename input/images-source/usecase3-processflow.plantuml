@@ -3,8 +3,9 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant "PoS\Coverage Requestor" as App
+participant "PoS\nClaims Requestor" as App
 participant "FIS\nClaims Manager" as FIS
+participant "External Payment System" as EXT
 
 
 opt Get code lists for Medical Procedures & Items
@@ -12,10 +13,29 @@ opt Get code lists for Medical Procedures & Items
 	App -> FIS: Verify codes
 	FIS -> App: Confirm codes
 end opt
+ 
+App -> App: Build claim
+App -> FIS: Submit claim\nITI-YY5 Submit Claim request
+FIS -> FIS: Process claim
 
-App -> FIS: Submit Coverage Eligibility Query\nITI-YY3 Check Coverage Eligibility request
-FIS -> FIS: Process Insuree Query
-FIS -> FIS: Process Policy Query
-FIS -> App: Return Coverage Eligibility Result\nITI-YY3 Check Coverage Eligibility response
+alt accepted
+	opt Payout
+		FIS->EXT: Send payment request
+   	EXT->EXT: Process payment
+	end opt
+	FIS -> App: Return positive claim result\nITI-YY5 Submit Claim response
+else rejected
+	FIS -> App: Return negative claim result\nITI-YY5 Submit Claim response
+	opt Re-process claim
+		App -> FIS: Re-submit claim for re-processing\nITI-YY9 Update Claim request
+		Fis -> App: Return claim re-process response\nITI-YY9 Update Claim response
+	end opt
+else queued
+	FIS -> App: Return queued status notification\nITI-YY5 Submit Claim response
+	opt Cancel claim
+		App -> FIS: Cancel claim\nITI-YY8 Update Claim request
+		Fis -> App: Return claim cancellation response\nITI-YY8 Update Claim response
+	end opt
+end
 
 @enduml

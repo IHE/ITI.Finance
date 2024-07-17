@@ -226,9 +226,9 @@ and is registering a household into the scheme.  Amara uses a tablet
 to input the beneficiary information in the Financing and Insurance System.
 
 1. Amara arrives at the home of the beneficiaries who identify themselves with their national ID card(s).
-1. Amara queries the existence of the beneficiaries from the central ID or beneficiary register through the enrollment app on her tablet. The client register returns basic attributes of the beneficiaries (e.g. full names, address, birth date etc)
-1. Amara captures all additional data needed for enrollment into a specific insurance scheme and submits it to the central Finance and Insurance System (FIS).
-1. The eligibility of the beneficiary for this specific scheme is verified by either manual or automatic processes suing the FIS.
+1. Amara queries the central Finance and Insurance System (FIS) for the appropriate Insurance Plan.
+1. Amara captures all additional data needed for enrollment into a specific insurance scheme and submits it to the central FIS.
+1. The eligibility of the beneficiary for this specific scheme is verified by either manual or automatic processes using the FIS.
 1. If the eligibility criteria are fulfilled, the beneficiary / household is being enrolled into the scheme in the FIS by creating a policy.
 1. optionally: The FIS updates the insuree or policy number to the client register.
 1. The FIS return a status notification about the successful enrollment back to the enrollment app.
@@ -238,7 +238,6 @@ to input the beneficiary information in the Financing and Insurance System.
 
 * App - The point of service system is a Beneficiary Requestor that captures an enrollment request.
 * FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
-* Client Registry - Client Registry is a Patient Identity Manager that is a central repository of patient data for the country.
 
 <figure>
 {%include usecase1-processflow.svg%}
@@ -246,39 +245,11 @@ to input the beneficiary information in the Financing and Insurance System.
 </figure>
 <br clear="all">
 
-#### XX.4.2.2 Use Case \#2: Lookup Beneficiary
-
-An insurance agent is looking for information about a beneficiary to respond to a service desk call.
-
-##### XX.4.2.2.1 Lookup Beneficiary Use Case Description
-
-Amara Nwosu is a field agent for the National Health Insurance Scheme (NHIS)
-and needs to lookup a beneficiary to respond to a service desk call.
-
-1. The beneficiary calls Amara in her office, identifies themselves and formulates the service request.
-1. optionally: Amara enters the beneficiary ID into her app (PoS) which verifies the beneficiary data from the Client Registry and pre-fetches the demographic information.
-1. Amara sends an information request to the FIS using the beneficiary ID to the FIS.
-1. The FIS sends a notification with the requested insurance details to the app.
-1. Amara responds to the beneficiary request.
-
-##### XX.4.2.2.2 Lookup Beneficiary Process Flow
-
-* App - The point of service system is a Beneficiary Requestor that can lookup beneficiary information.
-* FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
-* Client Registry - Client Registry is a Patient Identity Manager that is a central repository of patient data for the country.
-
-<figure>
-{%include usecase2-processflow.svg%}
-<figcaption><b>Figure XX.4.2.2.2-1: Lookup Beneficiary Process Flow in Profile FAIS</b></figcaption>
-</figure>
-<br clear="all">
-
-
-#### XX.4.2.3 Use Case \#3: Check Coverage
+#### XX.4.2.2 Use Case \#2: Check Coverage
 
 A patient is diagnosed with cancer and needs chemotherapy. The hospital inquires about coverage for chemotherapy.
 
-##### XX.4.2.3.1 Check Coverage Use Case Description
+##### XX.4.2.2.1 Check Coverage Use Case Description
 
 A patient is diagnosed with cancer in the local hospital. The responsible doctor want to apply a chemotherapy to the patient and needs to know whether the costs are covered by the insurance of the patient.
 
@@ -290,24 +261,24 @@ A patient is diagnosed with cancer in the local hospital. The responsible doctor
 1. An eligibility response is sent from the FIS to the POS.
 1. The doctor and the patient agree on the further treatment based on the eligibility response.
 
-##### XX.4.2.3.2 Check Coverage Process Flow
+##### XX.4.2.2.2 Check Coverage Process Flow
 
-* PoS - The point of service system is a Beneficiary Requestor that captures a patient clinical encounter.
-* FIS - Financing and Insurance System is a Beneficiary Manager that manages data on beneficiaries and their coverage.
+* PoS - The point of service system is a Coverage Requestor that captures a patient clinical encounter.
+* FIS - Financing and Insurance System is a Claims Manager that manages data on beneficiaries and their coverage.
 
 
 <figure>
-{%include usecase3-processflow.svg%}
-<figcaption><b>Figure XX.4.2.3.2-1: Check Coverage Process Flow in Profile FAIS</b></figcaption>
+{%include usecase2-processflow.svg%}
+<figcaption><b>Figure XX.4.2.2.2-1: Check Coverage Process Flow in Profile FAIS</b></figcaption>
 </figure>
 <br clear="all">
 
 
-#### XX.4.2.4 Use Case \#4: File a Claim
+#### XX.4.2.3 Use Case \#3: File a Claim
 
 A patient was treated in the hospital and the hospital requests reimbursement of the incurred costs.
 
-##### XX.4.2.4.1 File a Claim Use Case Description
+##### XX.4.2.3.1 File a Claim Use Case Description
 
 Claiming: a PoS system (e.g. Hospital) sends a request for reimbursement of costs incurred for a certain treatment to the FIS
 
@@ -322,24 +293,24 @@ Claiming: a PoS system (e.g. Hospital) sends a request for reimbursement of cost
 
 In some instances a claim request may need to be cancelled or re-submitted for re-processing.  The PoS system can send a follow up request to cancel a previously submitted claim.  If the claim was rejected and it needs to be re-adjudicated, then the PoS can also re-submit the claim to be re-processed.
 
-##### XX.4.2.4.2 File a Claim Process Flow
+##### XX.4.2.3.2 File a Claim Process Flow
 
 * PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 * EXT - an external payment layer
 
 <figure>
-{%include usecase4-processflow.svg%}
-<figcaption><b>Figure XX.4.2.4.2-1: File a Claim Process Flow in Profile FAIS</b></figcaption>
+{%include usecase3-processflow.svg%}
+<figcaption><b>Figure XX.4.2.3.2-1: File a Claim Process Flow in Profile FAIS</b></figcaption>
 </figure>
 <br clear="all">
 
 
-#### XX.4.2.5 Use Case \#5: Pre Determination
+#### XX.4.2.4 Use Case \#4: Pre Determination
 
 An expensive treatment is needed and the Hospital wants to estimate the inputs they can apply.
 
-##### XX.4.2.5.1 Pre Determination Use Case Description
+##### XX.4.2.4.1 Pre Determination Use Case Description
 
 Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the expected reimbursement for a beneficiary’s specific treatment from the FIS (e.g Insurance).
 
@@ -351,18 +322,18 @@ Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the ex
 1. In a manual or automatic process, the pre-determination is adjudicated in the FIS.
 1. A pre-determination result is sent from the FIS to the POS.
 
-##### XX.4.2.5.2 Pre Determination Process Flow
+##### XX.4.2.4.2 Pre Determination Process Flow
 
 * PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>
-{%include usecase5-processflow.svg%}
-<figcaption><b>Figure XX.4.2.5.2-1: Pre Determination Process Flow in Profile FAIS</b></figcaption>
+{%include usecase4-processflow.svg%}
+<figcaption><b>Figure XX.4.2.4.2-1: Pre Determination Process Flow in Profile FAIS</b></figcaption>
 </figure>
 <br clear="all">
 
-#### XX.4.2.6 Use Case \#6: Pre Authorization
+#### XX.4.2.5 Use Case \#5: Pre Authorization
 
 A costly treatment is needed and has to be pre-approved by the insurance before it can be done.
 
@@ -374,26 +345,26 @@ A costly treatment is needed and has to be pre-approved by the insurance before 
 1. In a manual or automatic process, the pre-authorization is adjudicated in the FIS.
 1. A pre-authorization result is sent from the FIS to the POS.
 
-##### XX.4.2.6.1 Pre Authorization Use Case Description
+##### XX.4.2.5.1 Pre Authorization Use Case Description
 
 Pre-authorization: A PoS system (e.g. Hospital) requests an approval for a specific treatment from the FIS (e.g Insurance). At the FIS a manual intervention is needed to authorize the requested 
 
-##### XX.4.2.6.2 Pre Authorization Process Flow
+##### XX.4.2.5.2 Pre Authorization Process Flow
 
 * PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>
-{%include usecase6-processflow.svg%}
-<figcaption><b>Figure XX.4.2.6.2-1: Pre Authorization Process Flow in Profile FAIS</b></figcaption>
+{%include usecase5-processflow.svg%}
+<figcaption><b>Figure XX.4.2.5.2-1: Pre Authorization Process Flow in Profile FAIS</b></figcaption>
 </figure>
 <br clear="all">
 
-#### XX.4.2.7 Use Case \#7: Claim Tracking
+#### XX.4.2.6 Use Case \#6: Claim Tracking
 
 Request the current processing status of a claim in the FIS
 
-##### XX.4.2.7.1 Claim Tracking Use Case Description
+##### XX.4.2.6.1 Claim Tracking Use Case Description
 
 A hospital has sent an electronic reimbursement claim to the insurance company. After a waiting period the hospital wants to verify if the claim was processed.
 
@@ -405,14 +376,14 @@ A hospital has sent an electronic reimbursement claim to the insurance company. 
 1. a claim response is sent from the FIS to the POS.
 
 
-##### XX.4.2.7.2 Claim Tracking Process Flow
+##### XX.4.2.6.2 Claim Tracking Process Flow
 
 * PoS - The point of service system is a Claims Requestor that has formulated a claim and waits for a response from the FIS.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>
-{%include usecase7-processflow.svg%}
-<figcaption><b>Figure XX.4.2.7.2-1: Claim Tracking Process Flow in Profile FAIS</b></figcaption>
+{%include usecase6-processflow.svg%}
+<figcaption><b>Figure XX.4.2.6.2-1: Claim Tracking Process Flow in Profile FAIS</b></figcaption>
 </figure>
 <br clear="all">
 
