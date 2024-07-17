@@ -2,6 +2,9 @@ Profile: FAISInsurancePlan
 Parent: InsurancePlan
 Id: IHE.FAIS.InsurancePlan
 Title: "FAIS InsurancePlan Profile"
+Description: """
+The FAIS Insurance Plan profile for creating Coverage resources to enroll beneficiaries.
+"""
 
 * modifierExtension 0..0
 * implicitRules 0..0

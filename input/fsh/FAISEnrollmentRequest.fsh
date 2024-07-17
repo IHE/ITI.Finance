@@ -2,6 +2,9 @@ Profile: FAISEnrollmentRequest
 Parent: EnrollmentRequest
 Id: IHE.FAIS.EnrollmentRequest
 Title: "FAIS EnrollmentRequest Profile"
+Description: """
+The FAIS EnrollmentRequest profile for submitting enrollment requests.
+"""
 
 * modifierExtension 0..0
 * implicitRules 0..0
@@ -14,6 +17,11 @@ Profile: FAISEnrollmentRequestBundle
 Parent: Bundle
 Id: IHE.FAIS.EnrollmentRequest.Bundle
 Title: "FAIS EnrollmentRequest Bundle Profile"
+Description: """
+The FAIS EnrollmentRequest Bundle profile for a enrollment request bundle to be POSTed to the 
+[CoverageEligiblityReqEnrollmentRequestest $submit operation](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html) 
+when referenced resources are included with the enrollment submission.
+"""
 
 * implicitRules 0..0
 

@@ -33,7 +33,7 @@ It is sent from a Beneficiary Requestor.
 
 ##### 2:3.YY1.4.1.1 Trigger Events
 
-When a Beneficiary Requestor needs to enroll a Patient with a given Coverage on the Beneficiary Manager, it submits the Enrollment Request Message.
+When a Beneficiary Requestor needs to enroll a Patient with a given Coverage on the Beneficiary Manager, it submits the Enrollment Request Message.  The Coverage resource MAY be created by the Beneficiary Requestor based on the [InsurancePlan](StructureDefinition-IHE.FAIS.InsurancePlan.html) the beneficiary is enrolling in.  The Coverage MAY also be created by any other method that is beyond the scope of this profile.
 
 ##### 2:3.YY1.4.1.2 Message Semantics
 

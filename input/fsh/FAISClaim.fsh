@@ -2,6 +2,9 @@ Profile: FAISClaim
 Parent: Claim
 Id: IHE.FAIS.Claim
 Title: "FAIS Claim Profile"
+Description: """
+The FAIS Claim profile for submitting claims.
+"""
 
 * modifierExtension 0..0
 * implicitRules 0..0
@@ -13,6 +16,10 @@ Profile: FAISClaimBundle
 Parent: Bundle
 Id: IHE.FAIS.Claim.Bundle
 Title: "FAIS Claim Bundle Profile"
+Description: """
+The FAIS Claim Bundle profile for a claim bundle to be POSTed to the [Claim $submit operation](OperationDefinition-IHE.FAIS.Claim.Submit.html) 
+when referenced resources are included with the claim submission.
+"""
 
 * implicitRules 0..0
 

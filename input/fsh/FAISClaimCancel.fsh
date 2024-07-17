@@ -1,6 +1,11 @@
 Instance: FAISClaimCancel
 InstanceOf: OperationDefinition
 Title: "FAIS Claim $cancel"
+Description: """
+The FAIS Claim $cancel operation to be used on a Claim instance when the Claim should be cancelled.
+
+This is called from the Claims Requestor to the Claims Manager.
+"""
 Usage: #definition 
 
 * id = "IHE.FAIS.Claim.Cancel"
@@ -13,6 +18,7 @@ Usage: #definition
 * type = false
 * instance = true
 * code = #cancel
+* outputProfile = Canonical(FAISClaimSubmitOut)
 * parameter[+]
   * name = #return
   * use = #out
