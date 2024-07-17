@@ -33,8 +33,10 @@ when referenced resources are included with the coverage eligibility submission.
   and Practitioner 0..*
   and Patient 0..1
   and Coverage 0..*
+  and Location 0..*
 * entry[FAISCoverageEligibilityRequest].resource only FAISCoverageEligibilityRequest
 * entry[Organization].resource only Organization
 * entry[Practitioner].resource only Practitioner or PractitionerRole
 * entry[Patient].resource only Patient
 * entry[Coverage].resource only Coverage
+* entry[Location].resource only Location

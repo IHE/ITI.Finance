@@ -3,7 +3,7 @@ skinparam svgDimensionStyle false
 hide footbox
 autonumber "<b>[0]"
 
-participant "PoS\Coverage Requestor" as App
+participant "PoS\nCoverage Requestor" as App
 participant "FIS\nClaims Manager" as FIS
 
 

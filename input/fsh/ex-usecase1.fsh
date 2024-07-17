@@ -98,16 +98,16 @@ The Beneficiary Requestor can submit this bundle to the
 Usage: #example
 
 * type = #collection
-* entry[+]
+* entry[FAISEnrollmentRequest]
   * fullUrl = Canonical(ex-enrollment-req-1)
   * resource = ex-enrollment-req-1
-* entry[+]
+* entry[Organization]
   * fullUrl = Canonical(ex-insurer-1)
   * resource = ex-insurer-1
-* entry[+]
+* entry[Candidate]
   * fullUrl = Canonical(ex-beneficiary-1)
   * resource = ex-beneficiary-1
-* entry[+]
+* entry[Coverage]
   * fullUrl = Canonical(ex-coverage-1)
   * resource = ex-coverage-1
 
