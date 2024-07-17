@@ -75,7 +75,7 @@ this transaction.
 
 The Beneficiary Manager SHALL support the following search parameters
 as defined at <{{site.data.fhir.path}}search.html#all> and
-<http://{{site.data.fhir.path}}EnrollmentResponse.html#search>.
+<http://{{site.data.fhir.path}}enrollmentresponse.html#search>.
 
 ```
 _id
@@ -190,7 +190,7 @@ resource identifier specified by the Beneficiary Requestor.
 
 The Read Enrollment Response Response is sent from the Beneficiary Manager to
 the Beneficiary Requestor as a single EnrollmentResponse, as defined at
-<{{site.data.fhir.path}}EnrollmentResponse.html> and constrained by the [FAIS EnrollmentResponse profile](StructureDefinition-IHE.FAIS.EnrollmentResponse.html).
+<{{site.data.fhir.path}}enrollmentresponse.html> and constrained by the [FAIS EnrollmentResponse profile](StructureDefinition-IHE.FAIS.EnrollmentResponse.html).
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Beneficiary Requestor.

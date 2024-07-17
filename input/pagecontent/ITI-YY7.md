@@ -106,7 +106,7 @@ Coverage Eligibility Response Request.
 
 The Claims Manager SHALL support the search response message as
 defined at <{{site.data.fhir.path}}http.html#search> on the CoverageEligibilityResponse, as
-defined at <{{site.data.fhir.path}}CoverageEligibilityResponse.html>
+defined at <{{site.data.fhir.path}}coverageeligibilityresponse.html>
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Coverage Requestor.
@@ -191,7 +191,7 @@ resource identifier specified by the Coverage Requestor.
 
 The Read Coverage Eligibility Response Response is sent from the Claims Manager to
 the Coverage Requestor as a single CoverageEligibilityResponse, as defined at
-<{{site.data.fhir.path}}CoverageEligibilityResponse.html> and constrained by the [FAIS CoverageEligibilityResponse profile](StructureDefinition-IHE.FAIS.CoverageEligibilityResponse.html).
+<{{site.data.fhir.path}}coverageeligibilityresponse.html> and constrained by the [FAIS CoverageEligibilityResponse profile](StructureDefinition-IHE.FAIS.CoverageEligibilityResponse.html).
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Coverage Requestor.

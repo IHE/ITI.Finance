@@ -42,7 +42,7 @@ Id: IHE.FAIS.CER.Submit.Parameters.In
 Title: "FAIS Coverage Eligibility Request Submit Input Parameters Profile"
 Description: """
 The FAIS Coverage Eligibility Request Submit Input parameters for the 
-[FAIS CoverageEligibilityRequest $submit](OperationDefinition.IHE.FAIS.CoverageEligibilityRequest.Submit.html) operation.
+[FAIS CoverageEligibilityRequest $submit](OperationDefinition-IHE.FAIS.CoverageEligibilityRequest.Submit.html) operation.
 """
 
 * implicitRules 0..0
@@ -66,7 +66,7 @@ Id: IHE.FAIS.CER.Submit.Parameters.Out
 Title: "FAIS Coverage Eligiblity Request Submit Output Parameters Profile"
 Description: """
 The FAIS Coverage Eligibility Request Submit Output parameters for the 
-[FAIS CoverageEligibilityRequest $submit](OperationDefinition.IHE.FAIS.CoverageEligibilityRequest.Submit.html) operation.
+[FAIS CoverageEligibilityRequest $submit](OperationDefinition-IHE.FAIS.CoverageEligibilityRequest.Submit.html) operation.
 """
 
 * implicitRules 0..0

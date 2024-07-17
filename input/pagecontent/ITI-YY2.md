@@ -200,7 +200,7 @@ resource identifier specified by the Beneficiary Requestor.
 
 The Read Insurance Plan Response is sent from the Beneficiary Manager to
 the Beneficiary Requestor as a single InsurancePlan, as defined at
-<{{site.data.fhir.path}}InsurancePlan.html> and constrained by the [FAIS InsurancePlan profile](StructureDefinition-IHE.FAIS.InsurancePlan.html).
+<{{site.data.fhir.path}}insuranceplan.html> and constrained by the [FAIS InsurancePlan profile](StructureDefinition-IHE.FAIS.InsurancePlan.html).
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Beneficiary Requestor.

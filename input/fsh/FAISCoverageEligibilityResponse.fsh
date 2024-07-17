@@ -4,7 +4,7 @@ Id: IHE.FAIS.CoverageEligibilityResponse
 Title: "FAIS CoverageEligibilityResponse Profile"
 Description: """
 The FAIS CoverageEligibilityResponse profile to be used as the response to the 
-[FAIS CoverageEligibilityRequest $submit](OperationDefinition.IHE.FAIS.CoverageEligibilityRequest.Submit.html)
+[FAIS CoverageEligibilityRequest $submit](OperationDefinition-IHE.FAIS.CoverageEligibilityRequest.Submit.html)
 """
 
 * modifierExtension 0..0

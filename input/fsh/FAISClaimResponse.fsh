@@ -2,6 +2,10 @@ Profile: FAISClaimResponse
 Parent: ClaimResponse
 Id: IHE.FAIS.ClaimResponse
 Title: "FAIS ClaimResponse Profile"
+Description: """
+The FAIS ClaimResponse profile to be used as the response to the 
+[FAIS Claim $submit](OperationDefinition-IHE.FAIS.Claim.Submit.html)
+"""
 
 
 * modifierExtension 0..0

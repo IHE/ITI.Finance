@@ -189,7 +189,7 @@ resource identifier specified by the Claims Requestor.
 
 The Read Claim Response Response is sent from the Claims Manager to
 the Claims Requestor as a single ClaimResponse, as defined at
-<{{site.data.fhir.path}}ClaimResponse.html> and constrained by the [FAIS ClaimResponse profile](StructureDefinition-IHE.FAIS.ClaimResponse.html).
+<{{site.data.fhir.path}}claimresponse.html> and constrained by the [FAIS ClaimResponse profile](StructureDefinition-IHE.FAIS.ClaimResponse.html).
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Claims Requestor.

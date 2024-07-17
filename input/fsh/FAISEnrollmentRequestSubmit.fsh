@@ -41,7 +41,7 @@ Id: IHE.FAIS.ER.Submit.Parameters.In
 Title: "FAIS Enrollment Request Submit Input Parameters Profile"
 Description: """
 The FAIS Enrollment Request Submit Input parameters for the 
-[FAIS EnrollmentRequest $submit](OperationDefinition.IHE.FAIS.EnrollmentRequest.Submit.html) operation.
+[FAIS EnrollmentRequest $submit](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html) operation.
 """
 
 * implicitRules 0..0
@@ -65,7 +65,7 @@ Id: IHE.FAIS.ER.Submit.Parameters.Out
 Title: "FAIS Enrollment Request Submit Output Parameters Profile"
 Description: """
 The FAIS Enrollment Request Submit Output parameters for the 
-[FAIS EnrollmentRequest $submit](OperationDefinition.IHE.FAIS.EnrollmentRequest.Submit.html) operation.
+[FAIS EnrollmentRequest $submit](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html) operation.
 """
 
 * implicitRules 0..0

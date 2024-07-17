@@ -3,7 +3,7 @@ Parent: CoverageEligibilityRequest
 Id: IHE.FAIS.CoverageEligibilityRequest
 Title: "FAIS CoverageEligibilityRequest Profile"
 Description: """
-The FAIS CoverageEligiblityRequest profile for submitting coverage eligibility requests.
+The FAIS CoverageEligibilityRequest profile for submitting coverage eligibility requests.
 """
 
 * modifierExtension 0..0
@@ -14,8 +14,8 @@ Parent: Bundle
 Id: IHE.FAIS.CoverageEligibilityRequest.Bundle
 Title: "FAIS CoverageEligibilityRequest Bundle Profile"
 Description: """
-The FAIS CoverageEligiblityRequest Bundle profile for a coverage eligiblity request bundle to be POSTed to the 
-[CoverageEligiblityRequest $submit operation](OperationDefinition-IHE.FAIS.CoverageEligiblityRequest.Submit.html) 
+The FAIS CoverageEligibilityRequest Bundle profile for a coverage eligiblity request bundle to be POSTed to the 
+[CoverageEligibilityRequest $submit operation](OperationDefinition-IHE.FAIS.CoverageEligibilityRequest.Submit.html) 
 when referenced resources are included with the coverage eligibility submission.
 """
 

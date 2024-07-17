@@ -47,7 +47,7 @@ The HTTP body SHALL consist of either a FHIR CoverageEligibilityRequest resource
 
 ##### 2:3.YY4.4.1.3 Expected Actions
 
-The Claims Manager SHALL process the CoverageEligibilityRequest and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and a [Check Coverage Eligibility Response Message](#enroll-reponse).
+The Claims Manager SHALL process the CoverageEligibilityRequest and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and a [Check Coverage Eligibility Response Message](#enroll-response).
 
 The Claims Manager SHALL persist the CoverageEligibilityRequest resource and include a reference to it in the CoverageEligibilityResponse resource.
 

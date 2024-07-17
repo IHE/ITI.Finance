@@ -41,7 +41,7 @@ Parent: Parameters
 Id: IHE.FAIS.Claim.Submit.Parameters.In 
 Title: "FAIS Claim Submit Input Parameters Profile"
 Description: """
-The FAIS Claim Submit Input parameters for the [FAIS Claim $submit](OperationDefinition.IHE.FAIS.Claim.Submit.html) operation.
+The FAIS Claim Submit Input parameters for the [FAIS Claim $submit](OperationDefinition-IHE.FAIS.Claim.Submit.html) operation.
 """
 
 * implicitRules 0..0
@@ -65,9 +65,9 @@ Id: IHE.FAIS.Claim.Submit.Parameters.Out
 Title: "FAIS Claim Submit Output Parameters Profile"
 Description: """
 The FAIS Claim Submit Output parameters for the FAIS Claim operations:
-* [FAIS Claim $submit](OperationDefinition.IHE.FAIS.Claim.Submit.html)
-* [FAIS Claim $cancel](OperationDefinition.IHE.FAIS.Claim.Cancel.html)
-* [FAIS Claim $reprocess](OperationDefinition.IHE.FAIS.Claim.Reprocess.html)
+* [FAIS Claim $submit](OperationDefinition-IHE.FAIS.Claim.Submit.html)
+* [FAIS Claim $cancel](OperationDefinition-IHE.FAIS.Claim.Cancel.html)
+* [FAIS Claim $reprocess](OperationDefinition-IHE.FAIS.Claim.Reprocess.html)
 """
 
 * implicitRules 0..0

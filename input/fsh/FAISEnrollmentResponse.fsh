@@ -4,7 +4,7 @@ Id: IHE.FAIS.EnrollmentResponse
 Title: "FAIS EnrollmentResponse Profile"
 Description: """
 The FAIS EnrollmentResponse profile to be used as the response to the 
-[FAIS EnrollmentRequest $submit](OperationDefinition.IHE.FAIS.EnrollmentRequest.Submit.html)
+[FAIS EnrollmentRequest $submit](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html)
 """
 
 * modifierExtension 0..0
