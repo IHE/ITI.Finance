@@ -12,6 +12,9 @@ opt Demographics Lookup
   CR->App: Return Demographics Details\nITI-78 Mobile Patient Demographics Query response
 end
 App->App: Capture additional data
+App->FIS: Search for Insurance Plans\nITI-YY2 Query Insurance Plan request
+FIS->App: Return Insurance Plans\nITI-YY2 Query Insurance Plan response
+App->App: Compile Enrollment Request
 App->FIS: Submit enrollment\nITI-YY1 Enroll Beneficiary request
 FIS->FIS: Verify eligibility
 alt Success

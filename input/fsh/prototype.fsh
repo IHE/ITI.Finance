@@ -38,7 +38,7 @@ Usage: #example
 
 
 Instance:   ex-enrollment-req
-InstanceOf: EnrollmentRequest
+InstanceOf: FAISEnrollmentRequest
 Title:    "Example Enrollment Request"
 Description: "Example Enrollment Request"
 Usage: #example
@@ -51,7 +51,7 @@ Usage: #example
 
 
 Instance: ex-enreq-bundle
-InstanceOf: Bundle
+InstanceOf: FAISEnrollmentRequestBundle
 Title: "Example Enrollment Request Bundle"
 Description: "Example Bundle of enrollment request resources."
 Usage: #example
@@ -71,7 +71,7 @@ Usage: #example
   * resource = ex-coverage
 
 Instance: ex-enrollment-resp 
-InstanceOf: EnrollmentResponse
+InstanceOf: FAISEnrollmentResponse
 Title:  "Example Enrollment Response"
 Description:  "Example Enrollment Response"
 Usage: #example
@@ -84,7 +84,7 @@ Usage: #example
 * organization = Reference(ex-insurer)
 
 Instance: ex-check-coverage
-InstanceOf: CoverageEligibilityRequest
+InstanceOf: FAISCoverageEligibilityRequest
 Title: "Example Coverage Eligibility Request"
 Description: "Example request to check coverage eligibility."
 Usage: #example
@@ -99,7 +99,7 @@ Usage: #example
   * coverage = Reference(ex-coverage)
 
 Instance: ex-covreq-bundle
-InstanceOf: Bundle
+InstanceOf: FAISCoverageEligibilityRequestBundle
 Title: "Example Coverage Eligibility Request Bundle"
 Description: "Example Bundle of coverage eligibility request resources."
 Usage: #example
@@ -119,7 +119,7 @@ Usage: #example
   * resource = ex-coverage
 
 Instance: ex-check-coverage-resp
-InstanceOf: CoverageEligibilityResponse
+InstanceOf: FAISCoverageEligibilityResponse
 Title: "Example Coverage Eligibility Response"
 Description: "Example Coverage Eligibility Response"
 Usage: #example
