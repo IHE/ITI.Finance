@@ -1,12 +1,11 @@
 
-The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance related data to care provision to patients. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
+The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance data for patient care. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
 
 This profile is initially focused on a greenfield implementation in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.
 
 This collection of workflows allows an external system to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems.
 
 1. A point-of-care system can enroll a beneficiary
-1. A point-of-care system can search for a beneficiary in the Finance and Insurance Services system
 1. A point-of-care system can check a beneficiary's eligibility
 1. A point-of-care system can run a pre-determination, pre-authorization and claim
 1. A point-of-care system can track a claim's status
