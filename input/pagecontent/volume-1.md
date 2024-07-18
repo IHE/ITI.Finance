@@ -19,12 +19,6 @@ Further information about actor and transaction definitions can be found
 in the IHE Technical Frameworks General Introduction [Appendix A: Actors](https://profiles.ihe.net/GeneralIntro/ch-A.html)
 and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
 
-Figure 1:XX.1-1 shows the actors directly involved in the FAIS Profile and the relevant
-transactions between them. If needed for context, other actors that may
-be indirectly involved due to their participation in other related profiles are
-shown in dotted lines. Actors which have a mandatory grouping are shown in conjoined boxes.
-
-
 * Actors
   * [Beneficiary Requestor](#beneficiary-requestor)
   * [Beneficiary Manager](#beneficiary-manager)
@@ -41,8 +35,6 @@ shown in dotted lines. Actors which have a mandatory grouping are shown in conjo
   * [Cancel Claim [ITI-YY8]](ITI-YY8.html)
   * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
   * [Track Claim [ITI-YY6]](ITI-YY6.html)
-
-This section defines the actors and transactions in this implementation guide.
 
 Figure XX.1-1 below shows the actors directly
 involved in the Finance and Insurance Service 
