@@ -15,7 +15,7 @@ end opt
  
 
 PoS -> PoS: Build pre-authorization
-PoS -> FIS: Submit pre-authorization\nITI-YY4 Submit Claim request
+PoS -> FIS: Submit pre-authorization\nITI-YY5 Submit Claim request
 FIS -> FIS: Process pre-authorization
 
 alt accepted
