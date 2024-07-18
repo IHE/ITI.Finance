@@ -12,7 +12,7 @@ Usage: #example
 
 Instance: ex-insurer-1
 InstanceOf: Organization
-Title: "Example Insurer: National Health Insurance Scheme - Use Case 1"
+Title: "Use Case 1 - Example Insurer: National Health Insurance Scheme"
 Description: "Example insurer organization for use case 1."
 Usage: #example
 
