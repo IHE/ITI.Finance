@@ -1,6 +1,12 @@
 == Suppressed Messages ==
 # instructions for ignoreWarnings.txt https://confluence.hl7.org/pages/viewpage.action?pageId=66938614#ImplementationGuideParameters-ManagingWarningsandHints
-# IHE valueset that is not yet a real valueset
-Code System URI 'urn:ihe:event-type-code' is unknown so the code cannot be validated
 
+# This isn't defined on tx.fhir.org and it's only for an example.
+A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be found, so the code cannot be validated
 
+# Ok to use draft code system for these examples
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/insurance-plan-type|4.0.1
+
+# These aren't part of the slice definition because any resource is allowed
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.EnrollmentResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.CEResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)

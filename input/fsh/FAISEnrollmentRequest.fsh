@@ -35,10 +35,12 @@ when referenced resources are included with the enrollment submission.
   FAISEnrollmentRequest 1..1
   and Organization 0..*
   and Provider 0..1
+  and ProviderRole 0..1
   and Candidate 0..1
   and Coverage 0..1
 * entry[FAISEnrollmentRequest].resource only FAISEnrollmentRequest
 * entry[Organization].resource only Organization
-* entry[Provider].resource only Practitioner or PractitionerRole
+* entry[Provider].resource only Practitioner
+* entry[ProviderRole].resource only PractitionerRole
 * entry[Candidate].resource only Patient
 * entry[Coverage].resource only Coverage
