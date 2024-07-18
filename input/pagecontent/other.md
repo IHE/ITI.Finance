@@ -10,7 +10,11 @@ This section modifies other IHE profiles or the General Introduction appendices 
 
 | Actor                         | Definition                                                                                |
 | ----------------------------- | ------------------------------------------------------------------------------------------|
-| none |  |
+| Beneficiary Requestor | Enroll beneficiaries and search for insurance plans. |
+| Beneficiary Manager | Process beneficiary enrollment and respond to queries on insurance plans. |
+| Coverage Requestor | Check the coverage eligibility of beneficiaries. |
+| Claims Requestor | Send claims and check for claim response updates. |
+| Claims Manager | Process claims and manage updates to claim responses. | 
 {:.grid .table-striped}
 
 
@@ -24,7 +28,15 @@ This section modifies other IHE profiles or the General Introduction appendices 
 
 | Transaction                    | Definition                                                                              |
 | ------------------------------ | --------------------------------------------------------------------------------------- |
-| none |  |
+| Enroll Beneficiary | Enroll a beneficiary under the requested coverage. |
+| Check Enrollment Status | Check the status of a pending enrollment response. |
+| Query Insurance Plan | Search for insurance plans. |
+| Check Coverage Eligibility | Check a beneficiary for the requested coverage. |
+| Check Coverage Eligibility Status | Check the status of a pending coverage eligiblity request. |
+| Submit Claim | Submit a new claim for a beneficiary. |
+| Cancel Claim | Cancel a previously submitted claim. |
+| Re-process Claim | Re-process a previously denied claim. |
+| Track Claim | Check the status of a pending claim. |
 {:.grid .table-striped}
 
 ## IHE Technical Frameworks General Introduction Appendix D: Glossary
