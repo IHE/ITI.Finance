@@ -28,37 +28,69 @@ The Beneficiary Requestor can enroll beneficiaries and optionally query insuranc
     * documentation = """
 FAIS Query Insurance Plan transaction [[ITI-YY2]](ITI-YY2.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * code = #read
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+    * interaction[+]
+      * code = #search-type
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY      
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "status"
       * type = #token
       * documentation = "The status of the Insurance Plan"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "type"
       * type = #token
       * documentation = "The type of the Insurance Plan"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "name"
       * type = #string
       * documentation = "The name of the Insurance Plan"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "identifier"
       * type = #token
       * documentation = "The business identifiers of the Insurance Plan"     
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "administered-by"
       * type = #reference
       * documentation = "Who administers the Insurance Plan" 
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "owned-by"
       * type = #reference
       * documentation = "Who owns the Insurance Plan"
@@ -69,6 +101,9 @@ FAIS Query Insurance Plan transaction [[ITI-YY2]](ITI-YY2.html)
 FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
 """
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISEnrollmentRequestSubmit)
       * documentation = "Submits an enrollment request to enroll a new beneficiary with the request coverage.  FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)"
@@ -78,25 +113,49 @@ FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
     * documentation = """
 FAIS Check Enrollment Status transaction [[ITI-YY3]](ITI-YY3.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * code = #read
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * code = #search-type
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "status"
       * type = #token
       * documentation = "The status of the response"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "request"
       * type = #reference
       * documentation = "The enrollment request" 
-  * interaction.code = #search-system
+  * interaction
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+    * code = #search-system
 
 Instance: IHE.FAIS.BeneficiaryManager
 InstanceOf: CapabilityStatement
@@ -128,37 +187,69 @@ The Beneficiary Manager processes requests from the Beneficiary Requestor actor.
     * documentation = """
 FAIS Query Insurance Plan transaction [[ITI-YY2]](ITI-YY2.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #read
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #search-type
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "status"
       * type = #token
       * documentation = "The status of the Insurance Plan"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "type"
       * type = #token
       * documentation = "The type of the Insurance Plan"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "name"
       * type = #string
       * documentation = "The name of the Insurance Plan"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "identifier"
       * type = #token
       * documentation = "The business identifiers of the Insurance Plan"     
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "administered-by"
       * type = #reference
       * documentation = "Who administers the Insurance Plan" 
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "owned-by"
       * type = #reference
       * documentation = "Who owns the Insurance Plan"
@@ -169,6 +260,9 @@ FAIS Query Insurance Plan transaction [[ITI-YY2]](ITI-YY2.html)
 FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
 """
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISEnrollmentRequestSubmit)
       * documentation = "Submits an enrollment request to enroll a new beneficiary with the request coverage.  FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)"
@@ -178,25 +272,49 @@ FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
     * documentation = """
 FAIS Check Enrollment Status transaction [[ITI-YY3]](ITI-YY3.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #read
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #search-type
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "status"
       * type = #token
       * documentation = "The status of the response"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "request"
       * type = #reference
       * documentation = "The enrollment request" 
-  * interaction.code = #search-system
+  * interaction
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #search-system
 
 
 Instance: IHE.FAIS.CoverageRequestor
@@ -230,6 +348,9 @@ The Coverage Requestor checks for what coverage a patient has and can query for 
 FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)
 """
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISCoverageEligibilityRequestSubmit)
       * documentation = "Submits a coverage eligibility request to check the coverage of a beneficiary.  FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)."
@@ -239,29 +360,56 @@ FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)
     * documentation = """
 FAIS Check Coverage Eligibility Status transaction [[ITI-YY7]](ITI-YY7.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * code = #read
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * code = #search-type
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "status"
       * type = #token
       * documentation = "The status of the response"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "request"
       * type = #reference
       * documentation = "The coverage eligiblity request"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "patient"
       * type = #reference
       * documentation = "The beneficiary"  
-  * interaction.code = #search-system
+  * interaction
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+    * code = #search-system
 
 
 Instance: IHE.FAIS.ClaimsRequestor
@@ -298,14 +446,23 @@ Supports these transactions:
 * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
 """
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISClaimSubmit)
       * documentation = "Submits a claim.  FAIS Submit Claim transaction [[ITI-YY5]](ITI-YY5.html)."
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "cancel"
       * definition = Canonical(FAISClaimCancel)
       * documentation = "Cancels a claim.  FAIS Cancel Claim transaction [[ITI-YY8]](ITI-YY8.html)."
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "reprocess"
       * definition = Canonical(FAISClaimReprocess)
       * documentation = "Re-processes a claim.  FAIS Re-process Claim transaction [[ITI-YY9]](ITI-YY9.html)."
@@ -315,29 +472,56 @@ Supports these transactions:
     * documentation = """
 FAIS Track Claim transaction [[ITI-YY6]](ITI-YY6.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * code = #read
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * code = #search-type
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "status"
       * type = #token
       * documentation = "The status of the response"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "request"
       * type = #reference
       * documentation = "The coverage eligiblity request"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
       * name = "patient"
       * type = #reference
       * documentation = "The beneficiary"  
-  * interaction.code = #search-system
+  * interaction
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #MAY
+    * code = #search-system
 
 
 Instance: IHE.FAIS.ClaimsManager
@@ -380,25 +564,48 @@ FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)
     * documentation = """
 FAIS Check Coverage Eligibility Status transaction [[ITI-YY7]](ITI-YY7.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #read
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #search-type
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "status"
       * type = #token
       * documentation = "The status of the response"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "request"
       * type = #reference
       * documentation = "The coverage eligiblity request"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "patient"
       * type = #reference
       * documentation = "The beneficiary"
@@ -412,14 +619,23 @@ Supports these transactions:
 * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
 """
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISClaimSubmit)
       * documentation = "Submits a claim.  FAIS Submit Claim transaction [[ITI-YY5]](ITI-YY5.html)."
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "cancel"
       * definition = Canonical(FAISClaimCancel)
       * documentation = "Cancels a claim.  FAIS Cancel Claim transaction [[ITI-YY8]](ITI-YY8.html)."
     * operation[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "reprocess"
       * definition = Canonical(FAISClaimReprocess)
       * documentation = "Re-processes a claim.  FAIS Re-process Claim transaction [[ITI-YY9]](ITI-YY9.html)."
@@ -429,26 +645,53 @@ Supports these transactions:
     * documentation = """
 FAIS Track Claim transaction [[ITI-YY6]](ITI-YY6.html)
 """
-    * interaction[+].code = #read
-    * interaction[+].code = #search-type
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #read
+    * interaction[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * code = #search-type
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_lastUpdated"
       * type = #date
       * documentation = "When the resource version last changed.  The values for this shall support these prefixes: gt, lt, ge, le, sa, and eb."
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "_id"
       * type = #token
       * documentation = "Logical id of this artifact"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "status"
       * type = #token
       * documentation = "The status of the response"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "request"
       * type = #reference
       * documentation = "The coverage eligiblity request"
     * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
       * name = "patient"
       * type = #reference
       * documentation = "The beneficiary"  
-  * interaction.code = #search-system
+  * interaction
+    * extension
+      * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+      * valueCode = #SHALL
+    * code = #search-system
