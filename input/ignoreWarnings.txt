@@ -10,3 +10,9 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/insurance-pl
 # These aren't part of the slice definition because any resource is allowed
 This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.EnrollmentResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.CEResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.Claim.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.ClaimResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+https://profiles.ihe.net/ITI/FAIS/CapabilityStatement/IHE.FAIS.BeneficiaryManager
+https://profiles.ihe.net/IHE/FAIS/CapabilityStatement/IHE.FAIS.BeneficiaryManager

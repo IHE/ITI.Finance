@@ -62,8 +62,6 @@ The Claims Manager has a response or errors to report to the Claims Requestor.  
 
 The Re-process Claim Response conforms to the [FAIS ClaimResponse profile](StructureDefinition-IHE.FAIS.ClaimResponse.html) and is sent from the Claims Manager to the Claims Requestor.  If the disposition of the claim can't be handled synchronously, then the `outcome` element SHALL be set to `queued` and ClaimResponse SHALL include an `id` and persist on the Claims Manager so that the [ITI-YY6 Track Claim](ITI-YY6.html) transaction can be used to get updates on the response.
 
-If an error occurs, the Claims Manager MAY either return an ClaimResponse with the `outcome` set to `error` or return an HTTP error status code and SHOULD include an OperationOutcome for additional details.
-
 ##### 2:3.YY9.4.2.3 Expected Actions
 
 How the Claims Requestor processes the response is determined by the implementation and beyond the scope of this profile. 
@@ -72,8 +70,8 @@ How the Claims Requestor processes the response is determined by the implementat
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
-* Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+* Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
+* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY9.6 Security Considerations
 

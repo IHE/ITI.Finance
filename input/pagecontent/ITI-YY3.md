@@ -199,12 +199,6 @@ See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z
 handling. See [ITI TF-2: Appendix Z.7](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.7-guidance-on-access-denied-results) for handling guidance for Access
 Denied.
 
-If the Beneficiary Manager is unable to produce a response in the
-requested format, it SHALL respond with an **HTTP 4xx** error indicating
-that it was unable to fulfill the request. The Beneficiary Manager
-MAY be capable of servicing requests for response formats not listed,
-but SHALL, at minimum, be capable of producing XML and JSON encodings.
-
 ##### 2:3.YY3.4.4.3 Expected Actions
 
 The Beneficiary Requestor has received the response and continues with

@@ -1,9 +1,9 @@
 
-The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance related data to care provision to patients within the HIE. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
+The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance related data to care provision to patients. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
 
 This profile is initially focused on a greenfield implementation in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.
 
-This collection of workflows allows an external system with access to the HIE to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems that have access to the HIE.
+This collection of workflows allows an external system to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems.
 
 1. A point-of-care system can enroll a beneficiary
 1. A point-of-care system can search for a beneficiary in the Finance and Insurance Services system
@@ -104,7 +104,7 @@ FHIR Capability Statement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS
 
 The Coverage Requestor can check the coverage eligibility of beneficiaries from a Claims Manager.
 
-TODO: FHIR Capability Statement for [Coverage Requestor](CapabilityStatement-IHE.ToDo.client.html)
+FHIR Capability Statement for [Coverage Requestor](CapabilityStatement-IHE.FAIS.CoverageRequestor.html)
 
 <a name="claims-requestor"> </a>
 
@@ -112,7 +112,7 @@ TODO: FHIR Capability Statement for [Coverage Requestor](CapabilityStatement-IHE
 
 The Claims Requestor submits and tracks claims from the Claims Manager.
 
-TODO: FHIR Capability Statement for [Claims Requestor](CapabilityStatement-IHE.ToDo.client.html)
+FHIR Capability Statement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
 
 <a name="claims-manager"> </a>
 
@@ -120,7 +120,7 @@ TODO: FHIR Capability Statement for [Claims Requestor](CapabilityStatement-IHE.T
 
 The Claims Manager processes claims requests from the Claims Requestor.  It follows internal business processes to create the claim that are beyond the scope of this profile.  It also responds to claim tracking requests to return the status of the requested claim.
 
-TODO: FHIR Capability Statement for [Claims Manager](CapabilityStatement-IHE.ToDo.server.html)
+FHIR Capability Statement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### XX.1.2 Transaction Descriptions
 
@@ -295,7 +295,7 @@ In some instances a claim request may need to be cancelled or re-submitted for r
 
 ##### XX.4.2.3.2 File a Claim Process Flow
 
-* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
+* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 * EXT - an external payment layer
 
@@ -324,7 +324,7 @@ Pre-determination: A PoS system (e.g. Hospital) requests an estimation of the ex
 
 ##### XX.4.2.4.2 Pre Determination Process Flow
 
-* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
+* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>
@@ -351,7 +351,7 @@ Pre-authorization: A PoS system (e.g. Hospital) requests an approval for a speci
 
 ##### XX.4.2.5.2 Pre Authorization Process Flow
 
-* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim to the HIE.
+* PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
 * FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>

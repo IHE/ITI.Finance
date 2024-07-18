@@ -63,8 +63,6 @@ The Claims Manager has a response or errors to report to the Coverage Requestor.
 
 The Check Coverage Eligibility Response conforms to the [FAIS CoverageEligibilityResponse profile](StructureDefinition-IHE.FAIS.CoverageEligibilityResponse.html) and is sent from the Claims Manager to the Coverage Requestor.  If the disposition of the coverage eligibility request can't be handled synchronously, then the `outcome` element SHALL be set to `queued` and CoverageEligibilityResponse SHALL include an `id` and persist on the Claims Manager so that the [ITI-YY3 Check Enrollment Status](ITI-YY3.html) transaction can be used to get updates on the response.
 
-If an error occurs, the Claims Manager MAY either return an CoverageEligibilityResponse with the `outcome` set to `error` or return an HTTP error status code and SHOULD include an OperationOutcome for additional details.
-
 ##### 2:3.YY4.4.2.3 Expected Actions
 
 How the Coverage Requestor processes the response is determined by the implementation and beyond the scope of this profile. 
@@ -73,8 +71,8 @@ How the Coverage Requestor processes the response is determined by the implement
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
-* Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+* Requirements CapabilityStatement for [Coverage Requestor](CapabilityStatement-IHE.FAIS.CoverageRequestor.html)
+* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY4.6 Security Considerations
 

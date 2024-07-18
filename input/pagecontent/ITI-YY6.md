@@ -74,13 +74,14 @@ this transaction.
 
 The Claims Manager SHALL support the following search parameters
 as defined at <{{site.data.fhir.path}}search.html#all> and
-<{{site.data.fhir.path}}ClaimResponse.html#search>.
+<{{site.data.fhir.path}}claimresponse.html#search>.
 
 ```
 _id
 _lastUpdated
 status
 request
+patient
 ```
 
 The Claims Manager SHALL also support the following prefixes for
@@ -198,12 +199,6 @@ See [ITI TF-2: Appendix Z.6](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z
 handling. See [ITI TF-2: Appendix Z.7](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.7-guidance-on-access-denied-results) for handling guidance for Access
 Denied.
 
-If the Claims Manager is unable to produce a response in the
-requested format, it SHALL respond with an **HTTP 4xx** error indicating
-that it was unable to fulfill the request. The Claims Manager
-MAY be capable of servicing requests for response formats not listed,
-but SHALL, at minimum, be capable of producing XML and JSON encodings.
-
 ##### 2:3.YY6.4.4.3 Expected Actions
 
 The Claims Requestor has received the response and continues with
@@ -213,8 +208,8 @@ its workflow.
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
-* Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+* Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
+* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY6.6 Security Considerations
 

@@ -75,7 +75,7 @@ this transaction.
 
 The Claims Manager SHALL support the following search parameters
 as defined at <{{site.data.fhir.path}}search.html#all> and
-<{{site.data.fhir.path}}CoverageEligibilityResponse.html#search>.
+<{{site.data.fhir.path}}coverageeligibilityresponse.html#search>.
 
 ```
 _id
@@ -215,8 +215,8 @@ its workflow.
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
-* Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+* Requirements CapabilityStatement for [Coverage Requestor](CapabilityStatement-IHE.FAIS.CoverageRequestor.html)
+* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY7.6 Security Considerations
 

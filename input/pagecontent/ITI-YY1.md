@@ -63,8 +63,6 @@ The Beneficiary Manager has a response or errors to report to the Beneficiary Re
 
 The Enroll Beneficiary Response conforms to the [FAIS EnrollmentResponse profile](StructureDefinition-IHE.FAIS.EnrollmentResponse.html) and is sent from the Beneficiary Manager to the Beneficiary Requestor.  If the disposition of the enrollment can't be handled synchronously, then the `outcome` element SHALL be set to `queued` and EnrollmentResponse SHALL include an `id` and persist on the Beneficiary Manager so that the [ITI-YY3 Check Enrollment Status](ITI-YY3.html) transaction can be used to get updates on the response.
 
-If an error occurs, the Beneficiary Manager MAY either return an EnrollmentResponse with the `outcome` set to `error` or return an HTTP error status code and SHOULD include an OperationOutcome for additional details.
-
 ##### 2:3.YY1.4.2.3 Expected Actions
 
 How the Beneficiary Requestor processes the response is determined by the implementation and beyond the scope of this profile. 
