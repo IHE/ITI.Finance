@@ -6,7 +6,7 @@ participant "Beneficiary Requestor" as Req
 participant "Beneficiary Manager" as Man
 activate Req
 activate Man
-Req -> Man : Search Enrollment Response Request:\nHTTP GET <Base>/EnrollmentResponse [ITI-YY2]
+Req -> Man : Search Enrollment Response Request:\nHTTP GET <Base>/EnrollmentResponse [ITI-YY3]
 Man --> Req : Search Enrollment Response Response:\nBundle
 deactivate Man
 deactivate Req
@@ -14,7 +14,7 @@ deactivate Req
 Req -[hidden]> Man
 activate Req
 activate Man 
-Req -> Man : Read Enrollment Response Request:\nHTTP GET <Base>/EnrollmentResponse/<ResourceId> [ITI-YY2]
+Req -> Man : Read Enrollment Response Request:\nHTTP GET <Base>/EnrollmentResponse/<ResourceId> [ITI-YY3]
 Man --> Req : Read Enrollment Response Response:\nEnrollmentResponse
 deactivate Man
 deactivate Req
