@@ -4,49 +4,47 @@ title Claims Workflow
 
 start
 :patient makes appointment;
-:check coverage eligibility;
-#palegreen:submit coverage eligibility request\nITI-YY4;
+:submit coverage eligibility request\nITI-YY4>
 while (check results ?) is (queued)
-  #palegreen:query response updates\nITI-YY7;
+  :query response updates\nITI-YY7<
 endwhile (completed)
-:process eligibility response;
+:process eligibility response|
 if (eligibility ?) then (covered)
   :patient clinical visit;
 
   if (service needs pre-determination ?) then (yes)
-    :pre-determiniation of service;
-    #palegreen:submit pre-determination claim\nITI-YY5;
+    :submit pre-determination claim\nITI-YY5>
     while (check results ?) is (queued)
-      #palegreen:track claim\nITI-YY6;
+      :track claim\nITI-YY6<
     endwhile (completed)
-    :process pre-determination response;
+    :process pre-determination response|
   else (no)
     :continue service;
   endif 
   if (service needs pre-authorization ?) then (yes)
-  :pre-authorization of service;
-  #palegreen:submit pre-authorization claim\nITI-YY5;
+  :submit pre-authorization claim\nITI-YY5>
   while (check results ?) is (queued)
-    #palegreen:track claim\nITI-YY6;
+    :track claim\nITI-YY6<
   endwhile (completed)
-  :process pre-authorization response;
+  :process pre-authorization response|
   else (no)
     :continue service;
   endif
   :service complete;
-  #palegreen:submit claim\nITI-YY5;
+  :submit claim\nITI-YY5>
   while (check results ?) is (queued)
     if (claim is cancelled ?) then (yes)
-      #palegreen:cancel claim\nITI-YY8;
+      :cancel claim\nITI-YY8>
     endif
-    #palegreen:track claim\nITI-YY6;
+    :track claim\nITI-YY6<
   endwhile (completed)
   if (claim is denied ?) then (yes)
-    #palegreen:re-process claim\nITI-YY9;
+    :re-process claim\nITI-YY9>
     while (check results ?) is (queued)
-      #palegreen:track claim\nITI-YY6;
+      :track claim\nITI-YY6<
     endwhile (completed)
   endif
+  :process claim response|
   stop
 else (not covered)
   :notify patient;

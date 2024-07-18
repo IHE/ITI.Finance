@@ -3,14 +3,14 @@
 title Enroll Beneficiary Workflow
 
 start
-:enroll beneficiary;
-#palegreen:query insurance plans\nITI-YY2;
-:build enrollment request;
-#palegreen:submit enrollment request\nITI-YY1;
+:collect beneficiary data;
+:query insurance plans\nITI-YY2<
+:build enrollment request|
+:submit enrollment request\nITI-YY1>
 while (process results ?) is (queued)
-  #palegreen:query response updates\nITI-YY3;
+  :query response updates\nITI-YY3<
 endwhile (completed)
-:process enrollment response;
+:process enrollment response|
 stop
 
 @enduml
