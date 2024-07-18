@@ -75,7 +75,7 @@ this transaction.
 
 The Claims Manager SHALL support the following search parameters
 as defined at <{{site.data.fhir.path}}search.html#all> and
-<http://{{site.data.fhir.path}}CoverageEligibilityResponse.html#search>.
+<{{site.data.fhir.path}}CoverageEligibilityResponse.html#search>.
 
 ```
 _id

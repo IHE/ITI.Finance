@@ -75,7 +75,7 @@ this transaction.
 
 The Beneficiary Manager SHALL support the following search parameters
 as defined at <{{site.data.fhir.path}}search.html#all> and
-<http://{{site.data.fhir.path}}enrollmentresponse.html#search>.
+<{{site.data.fhir.path}}enrollmentresponse.html#search>.
 
 ```
 _id
@@ -214,8 +214,8 @@ its workflow.
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
-* Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+* Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
+* Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
 
 ### 2:3.YY3.6 Security Considerations
 

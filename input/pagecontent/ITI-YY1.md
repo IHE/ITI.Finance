@@ -73,8 +73,8 @@ How the Beneficiary Requestor processes the response is determined by the implem
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Client](CapabilityStatement-IHE.ToDo.client.html)
-* Requirements CapabilityStatement for [Server](CapabilityStatement-IHE.ToDo.server.html)
+* Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
+* Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
 
 ### 2:3.YY1.6 Security Considerations
 

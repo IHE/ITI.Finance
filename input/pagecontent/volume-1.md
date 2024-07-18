@@ -86,17 +86,17 @@ The actors in this profile are described in more detail in the sections below.
 
 #### XX.1.1.1 Beneficiary Requestor
 
-The Beneficiary Requestor can enroll beneficiaries and optionally query beneficiaries from a Beneficiary Manager.
+The Beneficiary Requestor can enroll beneficiaries and optionally query insurance plans from a Beneficiary Manager.
 
-TODO: FHIR Capability Statement for [Beneficiary Requestor](CapabilityStatement-IHE.ToDo.client.html)
+FHIR Capability Statement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
 
 <a name="beneficiary-manager"> </a>
 
 #### XX.1.1.2 Beneficiary Manager
 
-The Beneficiary Manager processes requests from the Beneficiary Requestor actor.  It follows internal business processes to enroll beneficiaries from the Beneficiary Requestor that are beyond the scope of this profile and will return the result of the enrollment.  It also responds to queries about beneficiaries and coverage eligibility.
+The Beneficiary Manager processes requests from the Beneficiary Requestor actor.  It follows internal business processes to enroll beneficiaries from the Beneficiary Requestor that are beyond the scope of this profile and will return the result of the enrollment.  It also responds to queries about insurance plans.
 
-TODO: FHIR Capability Statement for [Beneficiary Manager](CapabilityStatement-IHE.ToDo.server.html)
+FHIR Capability Statement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
 
 <a name="coverage-requestor"> </a>
 
