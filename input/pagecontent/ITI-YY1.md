@@ -22,7 +22,7 @@ This transaction is used by the Beneficiary Requestor to request that a patient 
 
 <figure>
 {%include ITI-YY1-seq.svg%}
-<p id="f2.3.YY1.4-1" class="figureTitle">Figure 2:3.YY1.4-1: Interaction Diagram</p>
+<figcaption id="f2.3.YY1.4-1"><b>Figure 2:3.YY1.4-1: Interaction Diagram</b></figcaption>
 </figure>
 <br clear="all">
 

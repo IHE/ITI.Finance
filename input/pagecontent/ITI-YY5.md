@@ -22,7 +22,7 @@ This transaction is used by the Claims Requestor to submit a claim for a patient
 
 <figure>
 {%include ITI-YY5-seq.svg%}
-<p id="f2.3.YY5.4-1" class="figureTitle">Figure 2:3.YY5.4-1: Interaction Diagram</p>
+<figcaption id="f2.3.YY5.4-1"><b>Figure 2:3.YY5.4-1: Interaction Diagram</b></figcaption>
 </figure>
 <br clear="all">
 

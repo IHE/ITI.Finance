@@ -27,11 +27,11 @@ request and returns a response of the matching insurance plans.
 
 ### 2:3.YY2.4 Messages
 
-<div>
+<figure>
 {%include ITI-YY2-seq.svg%}
-</div>
-<div style="clear: left;"></div>
-**Figure 2:3.YY2.4-1: Interaction Diagram**
+<figcaption id="f2.3.YY2.4-1"><b>Figure 2:3.YY2.4-1: Interaction Diagram</b></figcaption>
+</figure>
+<br clear="all"/>
 
 #### 2:3.YY2.4.1 Search Insurance Plan Request Message
 

@@ -22,7 +22,7 @@ This transaction is used by the Claims Requestor to re-process a claim for a pat
 
 <figure>
 {%include ITI-YY9-seq.svg%}
-<p id="f2.3.YY9.4-1" class="figureTitle">Figure 2:3.YY9.4-1: Interaction Diagram</p>
+<figcaption id="f2.3.YY9.4-1"><b>Figure 2:3.YY9.4-1: Interaction Diagram</b></figcaption>
 </figure>
 <br clear="all">
 

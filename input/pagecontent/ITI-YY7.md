@@ -27,11 +27,11 @@ request and returns a response of the matching coverage eligibility responses.
 
 ### 2:3.YY7.4 Messages
 
-<div>
+<figure>
 {%include ITI-YY7-seq.svg%}
-</div>
-<div style="clear: left;"></div>
-**Figure 2:3.YY7.4-1: Interaction Diagram**
+<figcaption id="f2.3.YY7.4-1"><b>Figure 2:3.YY7.4-1: Interaction Diagram</b></figcaption>
+</figure>
+<br clear="all"/>
 
 #### 2:3.YY7.4.1 Search Coverage Eligibility Response Request Message
 

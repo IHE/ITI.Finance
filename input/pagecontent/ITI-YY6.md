@@ -26,11 +26,11 @@ request and returns a response of the matching claim responses.
 
 ### 2:3.YY6.4 Messages
 
-<div>
+<figure>
 {%include ITI-YY6-seq.svg%}
-</div>
-<div style="clear: left;"></div>
-**Figure 2:3.YY6.4-1: Interaction Diagram**
+<figcaption id="2.3.YY6.4-1"><b>Figure 2:3.YY6.4-1: Interaction Diagram</b></figcaption>
+</figure>
+<br clear="all"/>
 
 #### 2:3.YY6.4.1 Search Claim Response Request Message
 

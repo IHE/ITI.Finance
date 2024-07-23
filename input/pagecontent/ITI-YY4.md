@@ -22,7 +22,7 @@ This transaction is used by the Coverage Requestor to check if a product or serv
 
 <figure>
 {%include ITI-YY4-seq.svg%}
-<p id="f2.3.YY4.4-1" class="figureTitle">Figure 2:3.YY4.4-1: Interaction Diagram</p>
+<figcaption id="f2.3.YY4.4-1"><b>Figure 2:3.YY4.4-1: Interaction Diagram</b></figcaption>
 </figure>
 <br clear="all">
 

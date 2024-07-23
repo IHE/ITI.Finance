@@ -27,11 +27,11 @@ request and returns a response of the matching enrollment responses.
 
 ### 2:3.YY3.4 Messages
 
-<div>
+<figure>
 {%include ITI-YY3-seq.svg%}
-</div>
-<div style="clear: left;"></div>
-**Figure 2:3.YY3.4-1: Interaction Diagram**
+<figcaption id="f2.3.YY3.4-1"><b>Figure 2:3.YY3.4-1: Interaction Diagram</b></figcaption>
+</figure>
+<br clear="all"/>
 
 #### 2:3.YY3.4.1 Search Enrollment Response Request Message
 
