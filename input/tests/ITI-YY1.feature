@@ -1,8 +1,7 @@
 Feature: Test ITI-YY1 Transaction: Enroll Beneficiary
 
   Background:
-    * def fhirBase 'http://localhost/fhir
-    * url fhirBase
+    * url 'http://localhost/fhir
 
   Rule: Enroll Beneficiary Request
 

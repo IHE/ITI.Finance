@@ -21,7 +21,7 @@ Usage:        #example
 * agent[server].network.address = "2001:0db8:85a3:0000:0000:8a2e:0370:7334"
 * agent[server].network.type = http://hl7.org/fhir/network-type#2 "IP Address"
 * entity[data]
-  * what = Reference(ex-claim-resp-acc-3)
+  * what = Reference(ex-claim-response-acc-3)
 * entity[patient]
   * what = Reference(ex-beneficiary-1)
 

@@ -7,12 +7,22 @@ A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be 
 # Ok to use draft code system for these examples
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/insurance-plan-type|4.0.1
 
+# This audit code system is Ok
+A definition for CodeSystem 'urn:ihe:event-type-code' could not be found, so the code cannot be validated
+
 # These aren't part of the slice definition because any resource is allowed
 This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.EnrollmentResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.CEResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.Claim.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.ClaimResponse.Bundle|0.0.1-current (this may not be a problem, but you should check that it's not intended to match a slice)
 
-
-https://profiles.ihe.net/ITI/FAIS/CapabilityStatement/IHE.FAIS.BeneficiaryManager
-https://profiles.ihe.net/IHE/FAIS/CapabilityStatement/IHE.FAIS.BeneficiaryManager
+# These are the testing feature files
+Unknown file type ITI-YY1.feature
+Unknown file type ITI-YY2.feature
+Unknown file type ITI-YY3.feature
+Unknown file type ITI-YY4.feature
+Unknown file type ITI-YY5.feature
+Unknown file type ITI-YY6.feature
+Unknown file type ITI-YY7.feature
+Unknown file type ITI-YY8.feature
+Unknown file type ITI-YY9.feature

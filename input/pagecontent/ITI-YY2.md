@@ -233,12 +233,8 @@ See [FAIS Security Considerations](volume-1.html#security-considerations)
 
 #### 2:3.YY2.6.1 Security Audit Considerations
 
-''TODO: The security audit criteria ''
+Note that the same audit message is recorded by both the Beneficiary Requestor and Beneficiary Manager.  The difference being the Audit Source element.  Both sides record to show consistency between the message sent by the Beneficiary Requestor and the action taken at the Beneficiary Manager.
 
-##### 2:3.YY2.6.1.1 Client Audit
+The actors performing the Query Insurance Plan message SHALL record audit events according to the [Audit Event for Query Insurance Plan Query Transaction](StructureDefinition-IHE.FAIS.Audit.InsurancePlan.Query.html).  See [Audit Example for Query Insurance Plan search from the Beneficiary Requestor](AuditEvent-ex-AuditFAISInsurancePlanQuery.html).
 
-''TODO: the specifics''
-
-##### 2:3.YY2.6.1.2 Server Audit
-
-''TODO: the specifics''
+The actors performing the Read Insurance Plan message SHALL record audit events according to the [Audit Event for Query Insurance Plan Read Transaction](StructureDefinition-IHE.FAIS.Audit.InsurancePlan.Read.html).  See [Audit Example for Query Insurance Plan read message from the Beneficiary Requestor](AuditEvent-ex-AuditFAISInsurancePlanRead.html).

@@ -80,12 +80,6 @@ See [FAIS Security Considerations](volume-1.html#security-considerations)
 
 #### 2:3.YY1.6.1 Security Audit Considerations
 
-''TODO: The security audit criteria ''
+Note that the same audit message is recorded by both the Beneficiary Requestor and Beneficiary Manager.  The difference being the Audit Source element.  Both sides record to show consistency between the message sent by the Beneficiary Requestor and the action taken at the Beneficiary Manager.
 
-##### 2:3.YY1.6.1.1 Client Audit
-
-''TODO: the specifics''
-
-##### 2:3.YY1.6.1.2 Server Audit
-
-''TODO: the specifics''
+The actors involved SHALL record audit events according to the [Audit Event for Enroll Beneficiary Transaction](StructureDefinition-IHE.FAIS.Audit.EnrollmentRequest.Submit.html).  See [Audit Example for Enroll Beneficiary from the Beneficiary Requestor](AuditEvent-ex-AuditFAISEnrollBeneficiary.html).

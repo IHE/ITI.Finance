@@ -81,12 +81,6 @@ See [FAIS Security Considerations](volume-1.html#security-considerations)
 
 #### 2:3.YY8.6.1 Security Audit Considerations
 
-''TODO: The security audit criteria ''
+Note that the same audit message is recorded by both the Claims Requestor and Claims Manager.  The difference being the Audit Source element.  Both sides record to show consistency between the message sent by the Claims Requestor and the action taken at the Claims Manager.
 
-##### 2:3.YY8.6.1.1 Client Audit
-
-''TODO: the specifics''
-
-##### 2:3.YY8.6.1.2 Server Audit
-
-''TODO: the specifics''
+The actors involved SHALL record audit events according to the [Audit Event for Cancel Claim Transaction](StructureDefinition-IHE.FAIS.Audit.Claim.Cancel.html).  See [Audit Example for Cancel Claim from the Claims Requestor](AuditEvent-ex-AuditFAISCancelClaim.html).

@@ -224,12 +224,8 @@ See [FAIS Security Considerations](volume-1.html#security-considerations)
 
 #### 2:3.YY7.6.1 Security Audit Considerations
 
-''TODO: The security audit criteria ''
+Note that the same audit message is recorded by both the Coverage Requestor and Claims Manager.  The difference being the Audit Source element.  Both sides record to show consistency between the message sent by the Coverage Requestor and the action taken at the Claims Manager.
 
-##### 2:3.YY7.6.1.1 Client Audit
+The actors performing the Check Coverage Eligibility Status Query message SHALL record audit events according to the [Audit Event for Check Coverage Eligibility Status Query Transaction](StructureDefinition-IHE.FAIS.Audit.CoverageEligibilityResponse.Query.html).  See [Audit Example for Check Coverage Eligibility Status search from the Claims Manager](AuditEvent-ex-AuditFAISCoverageEligibilityResponseQuery.html).
 
-''TODO: the specifics''
-
-##### 2:3.YY7.6.1.2 Server Audit
-
-''TODO: the specifics''
+The actors performing the Check Coverage Eligibility Status Read message SHALL record audit events according to the [Audit Event for Check Coverage Eligibility Status Read Transaction](StructureDefinition-IHE.FAIS.Audit.CoverageEligibilityResponse.Read.html).  See [Audit Example for Check Coverage Eligibility Status read message from the Coverage Requestor](AuditEvent-ex-AuditFAISCoverageEligibilityResponseRead.html).
