@@ -1,9 +1,9 @@
 Feature: Test ITI-YY1 Transaction: Enroll Beneficiary
 
   Background:
-    * url 'http://localhost/fhir
+    * url 'http://localhost/fhir'
 
-  Rule: Enroll Beneficiary Request
+  Rule: Enroll Beneficiary Request and Response Messages initiated from a Beneficiary Requestor to a Beneficiary Manager
 
     Scenario: Enroll a Beneficiary without referenced content
 
