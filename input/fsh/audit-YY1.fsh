@@ -3,7 +3,7 @@ Parent:       https://profiles.ihe.net/ITI/BALP/StructureDefinition/IHE.BasicAud
 Id:           IHE.FAIS.Audit.EnrollmentRequest.Submit
 Title:        "Audit Event for Enroll Beneficiary Transaction by the Beneficiary Requestor and Beneficiary Manager for Create"
 Description:  """
-Defines constraints on the AuditEvent Resource to record when a Enroll Beneficiary Transaction happens
+Defines constraints on the AuditEvent Resource to record when an Enroll Beneficiary Transaction happens
 to call the $submit operation on a Beneficiary Manager, as recorded by the Beneficiary Requestor and Beneficiary Manager.
 """
 * subtype 2..*

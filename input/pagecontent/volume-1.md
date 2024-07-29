@@ -127,7 +127,7 @@ For more details see the detailed [transaction description](ITI-YY1.html)
 
 This transaction is used to check the status of an enrollment.
 
-For more details see the detailed [transaction description](ITI-YY6.html)
+For more details see the detailed [transaction description](ITI-YY3.html)
 
 #### XX.1.2.3 Query Insurance Plan Transaction
 
@@ -139,7 +139,7 @@ For more details see the detailed [transaction description](ITI-YY2.html)
 
 This transaction is used to check the coverage eligibility for a given beneficiary.
 
-For more details see the detailed [transaction description](ITI-YY3.html)
+For more details see the detailed [transaction description](ITI-YY4.html)
 
 #### XX.1.2.5 Check Coverage Eligibility Status Transaction
 
@@ -151,7 +151,7 @@ For more details see the detailed [transaction description](ITI-YY7.html)
 
 This transaction is used to submit a claim.  This can be either a pre-determination, pre-authorization, or a final claim ready for payment.
 
-For more details see the detailed [transaction description](ITI-YY4.html)
+For more details see the detailed [transaction description](ITI-YY5.html)
 
 #### XX.1.2.7 Cancel Claim Transaction
 
@@ -169,7 +169,7 @@ For more details see the detailed [transaction description](ITI-YY9.html)
 
 This transaction is used to return the status of a given claim.
 
-For more details see the detailed [transaction description](ITI-YY5.html)
+For more details see the detailed [transaction description](ITI-YY6.html)
 
 
 <a name="actor-options"> </a>

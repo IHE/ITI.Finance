@@ -1,7 +1,7 @@
 Instance:     ex-AuditFAISEnrollmentResponseRead
 InstanceOf:   AuditFAISEnrollmentResponseRead
 Title:        "Audit example for ITI-YY3 for Beneficiary Requestor for read."
-Description:  "Audit example for a Beneficiary Requestor requesting a read on a EnrollmentResponse for ITI-YY3."
+Description:  "Audit example for a Beneficiary Requestor requesting a read on an EnrollmentResponse for ITI-YY3."
 Usage:        #example
 
 * subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
@@ -28,7 +28,7 @@ Usage:        #example
 Instance:     ex-AuditFAISEnrollmentResponseQuery
 InstanceOf:   AuditFAISEnrollmentResponseQuery
 Title:        "Audit example for ITI-YY3 for Beneficiary Manager for query."
-Description:  "Audit example for a Beneficiary Manager requesting a query on a EnrollmentResponse for ITI-YY3."
+Description:  "Audit example for a Beneficiary Manager requesting a query on an EnrollmentResponse for ITI-YY3."
 Usage:        #example
 * subtype[anySearch] = http://hl7.org/fhir/restful-interaction#search "search"
 * subtype[itiYY3] = urn:ihe:event-type-code#ITI-YY3 "Check Enrollment Status"

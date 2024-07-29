@@ -1,7 +1,7 @@
 Instance:     ex-AuditFAISCheckCoverageEligibility
 InstanceOf:   AuditFAISCheckCoverageEligibility
 Title:        "Audit example for ITI-YY4 for Coverage Requestor for submit."
-Description:  "Audit example for a Coverage Requestor requesting a submit on an CoverageEligibilityRequest for ITI-YY4."
+Description:  "Audit example for a Coverage Requestor requesting a submit on a CoverageEligibilityRequest for ITI-YY4."
 Usage:        #example
 
 * subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"

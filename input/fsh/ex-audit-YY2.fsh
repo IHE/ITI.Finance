@@ -1,7 +1,7 @@
 Instance:     ex-AuditFAISInsurancePlanRead
 InstanceOf:   AuditFAISInsurancePlanRead
 Title:        "Audit example for ITI-YY2 for Beneficiary Requestor for read."
-Description:  "Audit example for a Beneficiary Requestor requesting a read on a InsurancePlan for ITI-YY2."
+Description:  "Audit example for a Beneficiary Requestor requesting a read on an InsurancePlan for ITI-YY2."
 Usage:        #example
 
 * subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
@@ -26,7 +26,7 @@ Usage:        #example
 Instance:     ex-AuditFAISInsurancePlanQuery
 InstanceOf:   AuditFAISInsurancePlanQuery
 Title:        "Audit example for ITI-YY2 for Beneficiary Manager for query."
-Description:  "Audit example for a Beneficiary Manager requesting a query on a InsurancePlan for ITI-YY2."
+Description:  "Audit example for a Beneficiary Manager requesting a query on an InsurancePlan for ITI-YY2."
 Usage:        #example
 * subtype[anySearch] = http://hl7.org/fhir/restful-interaction#search "search"
 * subtype[itiYY2] = urn:ihe:event-type-code#ITI-YY2 "Query Insurance Plan"

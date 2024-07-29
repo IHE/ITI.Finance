@@ -43,7 +43,7 @@ The Coverage Requestor invokes the [FAIS CoverageEligibilityRequest $submit oper
 POST [base]/CoverageEligibilityRequest/$submit
 ```
 
-The HTTP body SHALL consist of either a FHIR CoverageEligibilityRequest resource conforming to the [FAIS CoverageEligibilityRequest profile](StructureDefinition-IHE.FAIS.CoverageEligibilityRequest.html) or an CoverageEligibilityRequest Bundle including referenced resources conforming to the [FAIS CoverageEligibilityRequest Bundle profile](StructureDefinition-IHE.FAIS.CoverageEligibilityRequest.Bundle.html).
+The HTTP body SHALL consist of either a FHIR CoverageEligibilityRequest resource conforming to the [FAIS CoverageEligibilityRequest profile](StructureDefinition-IHE.FAIS.CoverageEligibilityRequest.html) or a CoverageEligibilityRequest Bundle including referenced resources conforming to the [FAIS CoverageEligibilityRequest Bundle profile](StructureDefinition-IHE.FAIS.CoverageEligibilityRequest.Bundle.html).
 
 ##### 2:3.YY4.4.1.3 Expected Actions
 

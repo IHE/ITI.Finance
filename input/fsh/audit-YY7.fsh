@@ -4,7 +4,7 @@ Id:           IHE.FAIS.Audit.CoverageEligibilityResponse.Read
 Title:        "Audit Event for Check Coverage Eligibility Status Transaction by the Coverage Requestor and Claims Manager for Read"
 Description:  """
 Defines constraints on the AuditEvent Resource to record when a Check Coverage Eligibility Status Transaction happens
-to read an CoverageEligibilityResponse, as recorded by the Coverage Requestor and Claims Manager.
+to read a CoverageEligibilityResponse, as recorded by the Coverage Requestor and Claims Manager.
 """
 * subtype 2..*
 * subtype contains itiYY7 1..1
@@ -22,7 +22,7 @@ Id:           IHE.FAIS.Audit.CoverageEligibilityResponse.Query
 Title:        "Audit Event for Check Coverage Eligibility Status Transaction by the Coverage Requestor and Claims Manager for Query"
 Description:  """
 Defines constraints on the AuditEvent Resource to record when a Check Coverage Eligibility Status Transaction happens
-to query an CoverageEligibilityResponse, as recorded by the Coverage Requestor and Claims Manager.
+to query a CoverageEligibilityResponse, as recorded by the Coverage Requestor and Claims Manager.
 """
 * subtype 2..*
 * subtype contains itiYY7 1..1
