@@ -1,11 +1,11 @@
 This section corresponds to transaction [ITI-YY7] of the IHE IT
 Infrastructure Technical Framework. Transaction [ITI-YY7] is used by
 the Claims Manager and Coverage Requestor Actors.  The Check
-Coverage Eligibility Status [ITI-YY7] transaction is used to get the status of an coverage eligibility request.
+Coverage Eligibility Status [ITI-YY7] transaction is used to get the status of a coverage eligibility request.
 
 ### 2:3.YY7.1 Scope
 
-This transaction is used by the Coverage Requestor to get the status of an coverage eligibility request
+This transaction is used by the Coverage Requestor to get the status of a coverage eligibility request
 based on criteria it provides in the query parameters of the request
 message, or to retrieve a specific coverage eligibility response. The request is received by
 the Claims Manager. The Claims Manager processes the

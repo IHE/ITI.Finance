@@ -21,7 +21,7 @@ Parent: Bundle
 Id: IHE.FAIS.EnrollmentResponse.Bundle
 Title: "FAIS EnrollmentResponse Bundle Profile"
 Description: """
-The FAIS EnrollmentResponse Bundle profile for a enrollment
+The FAIS EnrollmentResponse Bundle profile for an enrollment
 response bundle to be returned from the 
 [FAIS EnrollmentRequest $submit](OperationDefinition-IHE.FAIS.EnrollmentRequest.Submit.html)
 when referenced resources are included with the enrollment response.

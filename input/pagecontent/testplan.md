@@ -60,7 +60,7 @@ The Coverage Requestor initiates a request to retrieve a coverage eligibility re
 
 ### Submit Claim [[ITI-YY5]](ITI-YY5.html)
 
-The Claims Requestor initiates a request to submit a claim on the Claims Manager.  The Claims Manager responds to an claim submission and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY5.html).
+The Claims Requestor initiates a request to submit a claim on the Claims Manager.  The Claims Manager responds to a claim submission and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY5.html).
 
 <p id="featureYY1" class="caption"><b>ITI-YY5 Submit Claim Test</b></p>
 ```Gherkin
@@ -69,7 +69,7 @@ The Claims Requestor initiates a request to submit a claim on the Claims Manager
 
 ### Cancel Claim [[ITI-YY8]](ITI-YY8.html)
 
-The Claims Requestor initiates a request to cancel a claim on the Claims Manager.  The Claims Manager responds to an claim cancellation and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY8.html).
+The Claims Requestor initiates a request to cancel a claim on the Claims Manager.  The Claims Manager responds to a claim cancellation and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY8.html).
 
 <p id="featureYY1" class="caption"><b>ITI-YY8 Cancel Claim Test</b></p>
 ```Gherkin
@@ -78,7 +78,7 @@ The Claims Requestor initiates a request to cancel a claim on the Claims Manager
 
 ### Re-process Claim [[ITI-YY9]](ITI-YY9.html)
 
-The Claims Requestor initiates a request to re-process a claim on the Claims Manager.  The Claims Manager responds to an claim re-process request and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY9.html).
+The Claims Requestor initiates a request to re-process a claim on the Claims Manager.  The Claims Manager responds to a claim re-process request and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY9.html).
 
 <p id="featureYY1" class="caption"><b>ITI-YY9 Re-process Claim Test</b></p>
 ```Gherkin
