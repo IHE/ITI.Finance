@@ -6,8 +6,8 @@ participant "Claims Requestor" as Req
 participant "Claims Manager" as Man
 activate Req
 activate Man
-Req -> Man : Cancel Claim Request [ITI-YY8]
-Man --> Req : Cancel Claim Response [ITI-YY8]
+Req -> Man : Cancel Claim Request:\nHTTP POST <Base>/Claim/<ResourceId>$cancel
+Man --> Req : Cancel Claim Response:\nClaimResponse or Bundle
 deactivate Man
 deactivate Req
 @enduml

@@ -14,7 +14,7 @@ This section modifies other IHE profiles or the General Introduction appendices 
 | Beneficiary Manager | Process beneficiary enrollment and respond to queries on insurance plans. |
 | Coverage Requestor | Check the coverage eligibility of beneficiaries. |
 | Claims Requestor | Send claims and check for claim response updates. |
-| Claims Manager | Process claims and manage updates to claim responses. | 
+| Claims Manager | Process claims, manage updates to claim responses, and respond to coverage eligibility requests. | 
 {:.grid .table-striped}
 
 

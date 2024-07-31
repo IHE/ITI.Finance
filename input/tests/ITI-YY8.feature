@@ -1,7 +1,7 @@
 Feature: Test ITI-YY8 Transaction: Cancel Claim
   Background:
     * url 'http://localhost/fhir'
-C
+
   Rule: Cancel Claim Request and Response Messages initiated from a Claims Requestor to a Claims Manager
 
     Scenario: Cancel Claim without referenced content

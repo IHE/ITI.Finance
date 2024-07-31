@@ -33,7 +33,7 @@ It is sent from a Beneficiary Requestor.
 
 ##### 2:3.YY1.4.1.1 Trigger Events
 
-When a Beneficiary Requestor needs to enroll a Patient with a given Coverage on the Beneficiary Manager, it submits the Enrollment Request Message.  The Coverage resource MAY be created by the Beneficiary Requestor based on the [InsurancePlan](StructureDefinition-IHE.FAIS.InsurancePlan.html) the beneficiary is enrolling in.  The Coverage MAY also be created by any other method that is beyond the scope of this profile.
+When a Beneficiary Requestor needs to enroll a Patient with a given Coverage on the Beneficiary Manager, it submits the Enrollment Request Message.  The Coverage resource MAY be created by the Beneficiary Requestor based on the [InsurancePlan](StructureDefinition-IHE.FAIS.InsurancePlan.html) the beneficiary is enrolling in.  The Coverage MAY also be created by any other method that is beyond the scope of this profile.  The Insurance Plan MAY be retrieved from the Beneficiary Manager using the [Query Insurance Plan [ITI-YY2] Transaction](ITI-YY2.html).
 
 ##### 2:3.YY1.4.1.2 Message Semantics
 
@@ -47,7 +47,7 @@ The HTTP body SHALL consist of either a FHIR EnrollmentRequest resource conformi
 
 ##### 2:3.YY1.4.1.3 Expected Actions
 
-The Beneficiary Manager SHALL process the EnrollmentRequest and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and an [Enroll Beneficiary Response Message](#enroll-response).
+The Beneficiary Manager SHALL process the EnrollmentRequest and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 201` (CREATED) and an [Enroll Beneficiary Response Message](#enroll-response).
 
 The Beneficiary Manager SHALL persist the EnrollmentRequest resource and include a reference to it in the EnrollmentResponse resource.
 

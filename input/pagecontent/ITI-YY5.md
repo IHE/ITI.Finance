@@ -58,7 +58,7 @@ The Claim resource will set the `use` code according to table 2:3.YY5.4.1.2-1.
 
 ##### 2:3.YY5.4.1.3 Expected Actions
 
-The Claims Manager SHALL process the Claim and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and an [Submit Claim Response Message](#enroll-response).
+The Claims Manager SHALL process the Claim and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 201` (CREATED) and a [Submit Claim Response Message](#enroll-response).
 
 The Claims Manager SHALL persist the Claim resource and include a reference to it in the ClaimResponse resource.
 

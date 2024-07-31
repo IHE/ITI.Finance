@@ -50,12 +50,12 @@ Profile and the relevant transactions between them.
 
 | Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
 |---------|---------------|------------------------|-----------------|-----------------------------------|
-| Beneficiary Requestor | Enroll Beneficiary | Initiator | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
-|         | Query Insurance Plan | Initiator  | O               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+| Beneficiary Requestor | Query Insurance Plan | Initiator  | O               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+|         | Enroll Beneficiary | Initiator | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
 |         | Check Enrollment Status | Initiator  | O               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
-| Beneficiary Manager | Enroll Beneficiary | Responder | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
+| Beneficiary Manager | Query Insurance Plan | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
+|         | Enroll Beneficiary | Responder | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
 |         | Check Enrollment Status | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
-|         | Query Insurance Plan | Responder  | R               | [FAIS TF-2: 3.YY2](ITI-YY2.html) |
 | Coverage Requestor | Check Coverage Eligibility | Initiator  | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
 |         | Check Coverage Eligibility Status | Initiator  | O               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
 | Claims Requestor | Submit Claim | Initiator | R               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
@@ -109,7 +109,7 @@ FHIR Capability Statement for [Claims Requestor](CapabilityStatement-IHE.FAIS.Cl
 
 #### XX.1.1.5 Claims Manager
 
-The Claims Manager processes claims requests from the Claims Requestor.  It follows internal business processes to create the claim that are beyond the scope of this profile.  It also responds to claim tracking requests to return the status of the requested claim.
+The Claims Manager processes claims requests from the Claims Requestor and coverage requests from the Coverage Requestor.  It follows internal business processes to create the claim that are beyond the scope of this profile.  It also responds to claim tracking requests to return the status of the requested claim.
 
 FHIR Capability Statement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
@@ -117,23 +117,23 @@ FHIR Capability Statement for [Claims Manager](CapabilityStatement-IHE.FAIS.Clai
 
 The transactions in this profile are summarized in the sections below.
 
-#### XX.1.2.1 Enroll Beneficiary Transaction
+#### XX.1.2.1 Query Insurance Plan Transaction
+
+This transaction is used to search for available insurance plans.
+
+For more details see the detailed [transaction description](ITI-YY2.html)
+
+#### XX.1.2.2 Enroll Beneficiary Transaction
 
 This transaction is used to enroll or update a beneficiary.
 
 For more details see the detailed [transaction description](ITI-YY1.html)
 
-#### XX.1.2.2 Check Enrollment Status Transaction
+#### XX.1.2.3 Check Enrollment Status Transaction
 
 This transaction is used to check the status of an enrollment.
 
 For more details see the detailed [transaction description](ITI-YY3.html)
-
-#### XX.1.2.3 Query Insurance Plan Transaction
-
-This transaction is used to search for available insurance plans.
-
-For more details see the detailed [transaction description](ITI-YY2.html)
 
 #### XX.1.2.4 Check Coverage Eligibility Transaction
 

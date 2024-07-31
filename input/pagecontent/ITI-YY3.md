@@ -89,7 +89,7 @@ the `_lastUpdated` parameter: `gt`, `lt`, `ge`, `le`, `sa`, and `eb`.
 
 ##### 2:3.YY3.4.1.3 Expected Actions
 
-The Beneficiary Manager SHALL process the query to retrieve the enrollment response(s) that match the search parameters given and return a [Search Enrollment Response Response Message](#query-response) or an error as per <{{site.data.fhir.path}}search.html#errors>.
+The Beneficiary Manager SHALL process the query to retrieve the enrollment response(s) that match the search parameters given,  and if successful, with an `HTTP 200` (OK) and a [Search Enrollment Response Response Message](#query-response) or an error as per <{{site.data.fhir.path}}search.html#errors>.
 
 <a name="query-response"></a>
 
@@ -168,18 +168,13 @@ this transaction.
 ##### 2:3.YY3.4.3.3 Expected Actions
 
 The Beneficiary Manager SHALL process the request to retrieve the
-EnrollmentResponse that matches the given resource id, and return a response as
+EnrollmentResponse that matches the given resource id,  and if successful, with an `HTTP 200` (OK) and a response as
 defined at <{{site.data.fhir.path}}http.html#read> with the [Read Enrollment Response Response Message](#read-response) or an error code as
 defined at <{{site.data.fhir.path}}http.html#Status-Codes>.
 
 <a name="read-response"></a>
 
 #### 2:3.YY3.4.4 Read Enrollment Response Response Message
-
-The Beneficiary Manager’s response to a successful Read Enrollment Response
-message SHALL be an **HTTP 200** (OK) Status code with a EnrollmentResponse
-Resource, or an appropriate error status code, optionally with an
-OperationOutcome Resource.
 
 ##### 2:3.YY3.4.4.1 Trigger Events
 

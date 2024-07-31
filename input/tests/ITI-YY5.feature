@@ -1,7 +1,7 @@
 Feature: Test ITI-YY5 Transaction: Submit Claim
   Background:
     * url 'http://localhost/fhir'
-C
+
   Rule: Submit Claim Request and Response Messages initiated from a Claims Requestor to a Claims Manager
 
     Scenario: Submit Claim without referenced content

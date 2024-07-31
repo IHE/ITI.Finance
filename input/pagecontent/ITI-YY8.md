@@ -48,9 +48,9 @@ Where <resourceId> is the resource id of the claim being cancelled.
 
 ##### 2:3.YY8.4.1.3 Expected Actions
 
-The Claims Manager SHALL process the cancellation and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and an [Cancel Claim Response Message](#enroll-response).
+The Claims Manager SHALL process the cancellation and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and a [Cancel Claim Response Message](#enroll-response).
 
-The Claims Manager SHALL update the requested Claims resource and set the `status` to `cancelled`.
+The Claims Manager SHALL update the requested Claims resource as defined by internal business rules.
 
 <a name="enroll-response"></a>
 

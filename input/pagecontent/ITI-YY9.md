@@ -48,7 +48,9 @@ Where <resourceId> is the resource id of the claim to be re-processed.
 
 ##### 2:3.YY9.4.1.3 Expected Actions
 
-The Claims Manager SHALL re-process the claim and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and an [Re-process Claim Response Message](#enroll-response).
+The Claims Manager SHALL re-process the claim and respond as per <{{site.data.fhir.path}}operations.html#response>, and if successful, with an `HTTP 200` (OK) and a [Re-process Claim Response Message](#enroll-response).
+
+The Claims Manager SHALL update the requested Claims resource as defined by internal business rules.
 
 <a name="enroll-response"></a>
 

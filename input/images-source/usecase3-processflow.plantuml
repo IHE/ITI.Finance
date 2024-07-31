@@ -27,14 +27,14 @@ alt accepted
 else rejected
 	FIS -> App: Return negative claim result\nITI-YY5 Submit Claim response
 	opt Re-process claim
-		App -> FIS: Re-submit claim for re-processing\nITI-YY9 Update Claim request
-		Fis -> App: Return claim re-process response\nITI-YY9 Update Claim response
+		App -> FIS: Re-submit claim for re-processing\nITI-YY9 Re-process Claim request
+		Fis -> App: Return claim re-process response\nITI-YY9 Re-processUpdate Claim response
 	end opt
 else queued
 	FIS -> App: Return queued status notification\nITI-YY5 Submit Claim response
 	opt Cancel claim
-		App -> FIS: Cancel claim\nITI-YY8 Update Claim request
-		Fis -> App: Return claim cancellation response\nITI-YY8 Update Claim response
+		App -> FIS: Cancel claim\nITI-YY8 Cancel Claim request
+		Fis -> App: Return claim cancellation response\nITI-YY8 Cancel Claim response
 	end opt
 end
 
