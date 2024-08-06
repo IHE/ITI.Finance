@@ -13,7 +13,7 @@ request and returns a response of the matching coverage eligibility responses.
 
 ### 2:3.YY7.2 Actors Roles
 
-**Table2:3.YY7.2-1: Actor Roles**
+**Table 2:3.YY7.2-1: Actor Roles**
 
 |Actor | Role |
 |-------------------+--------------------------|
@@ -106,7 +106,7 @@ Coverage Eligibility Response Request.
 
 The Claims Manager SHALL support the search response message as
 defined at <{{site.data.fhir.path}}http.html#search> on the CoverageEligibilityResponse, as
-defined at <{{site.data.fhir.path}}coverageeligibilityresponse.html>
+defined at <{{site.data.fhir.path}}coverageeligibilityresponse.html>.
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Coverage Requestor.
@@ -210,8 +210,8 @@ its workflow.
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Coverage Requestor](CapabilityStatement-IHE.FAIS.CoverageRequestor.html)
-* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
+- Requirements CapabilityStatement for [Coverage Requestor](CapabilityStatement-IHE.FAIS.CoverageRequestor.html)
+- Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY7.6 Security Considerations
 
