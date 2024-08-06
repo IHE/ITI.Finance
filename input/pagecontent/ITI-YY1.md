@@ -1,4 +1,4 @@
-This section corresponds to transaction [ITI-YY1] of the IHE Technical Framework. Transaction [ITI-YY1] is used by the Beneficiary Requestor and Beneficiary Manager Actors. The Enroll Beneficiary [ITI-YY1] transaction is used to enroll a patient in a particular coverage offered by the insurance plan.
+This section corresponds to transaction [ITI-YY1] of the IHE ITI Technical Framework. Transaction [ITI-YY1] is used by the Beneficiary Requestor and Beneficiary Manager Actors. The Enroll Beneficiary [ITI-YY1] transaction is used to enroll a patient in a particular coverage offered by the insurance plan.
 
 ### 2:3.YY1.1 Scope
 
@@ -71,8 +71,8 @@ How the Beneficiary Requestor processes the response is determined by the implem
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
-* Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
+- Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
+- Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
 
 ### 2:3.YY1.6 Security Considerations
 
