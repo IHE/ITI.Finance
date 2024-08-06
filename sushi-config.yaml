@@ -62,10 +62,10 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
 pages:
 # itemize here each narrative page. Include assigned section numbers when appropriate. The order they appear here is the order they will appear in the TOC and on the next/prev navigation.
   index.md:
-    title: Finance and Insurance Service
+    title: Finance and Insurance (FAIS) Service Home
     generation: markdown
   volume-1.md:
-    title: 1:XX Finance and Insurance Service
+    title: 1:XX Finance and Insurance Service (FAIS)
     generation: markdown
   ITI-YY2.md:
     title: 2:3.YY2 Query Insurance Plan [ITI-YY2]
@@ -95,7 +95,7 @@ pages:
     title: 2:3.YY6 Track Claim [ITI-YY6]
     generation: markdown
   testplan.md:
-    title: "FAIS Test Plan"
+    title: "Test Plan"
     generation: markdown
   other.md:
     title: Changes to Other IHE Specifications
@@ -108,12 +108,12 @@ pages:
     generation: markdown
 
 menu:
-  Home: index.html
+  FAIS Home: index.html
   Volume 1:
     Introduction: volume-1.html
     Actors and Transactions: volume-1.html#actors-and-transactions
     Actor Options: volume-1.html#actor-options
-    Required Groupings: volume-1.html#required-groupings
+    Required Actor Groupings: volume-1.html#required-groupings
     Overview: volume-1.html#overview
     Security Considerations: volume-1.html#security-considerations
     Cross-Profile Considerations: volume-1.html#other-grouping
