@@ -1,4 +1,4 @@
-This section corresponds to transaction [ITI-YY5] of the IHE Technical Framework. Transaction [ITI-YY5] is used by the Claims Requestor and Claims Manager Actors. The Submit Claim [ITI-YY5] transaction is used to submit a claim for a patient.
+This section corresponds to transaction [ITI-YY5] of the IHE IT Infrastructure Technical Framework. Transaction [ITI-YY5] is used by the Claims Requestor and Claims Manager Actors. The Submit Claim [ITI-YY5] transaction is used to submit a claim for a patient.
 
 ### 2:3.YY5.1 Scope
 
@@ -47,7 +47,7 @@ The HTTP body SHALL consist of either a FHIR Claim resource conforming to the [F
 
 The Claim resource will set the `use` code according to table 2:3.YY5.4.1.2-1.
 
-**Table2:3.YY5.4.1.2-1: Claim Use Codes**
+**Table 2:3.YY5.4.1.2-1: Claim Use Codes**
 
 | Use | Description |
 |-------------------+--------------------------|
@@ -82,8 +82,8 @@ How the Claims Requestor processes the response is determined by the implementat
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
-* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
+- Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
+- Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY5.6 Security Considerations
 
