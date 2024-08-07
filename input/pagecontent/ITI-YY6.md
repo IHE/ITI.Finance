@@ -12,7 +12,7 @@ request and returns a response of the matching claim responses.
 
 ### 2:3.YY6.2 Actors Roles
 
-**Table2:3.YY6.2-1: Actor Roles**
+**Table 2:3.YY6.2-1: Actor Roles**
 
 |Actor | Role |
 |-------------------+--------------------------|
@@ -105,7 +105,7 @@ Claim Response Request.
 
 The Claims Manager SHALL support the search response message as
 defined at <{{site.data.fhir.path}}http.html#search> on the ClaimResponse, as
-defined at <{{site.data.fhir.path}}claimresponse.html>
+defined at <{{site.data.fhir.path}}claimresponse.html>.
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Claims Requestor.
@@ -203,8 +203,8 @@ its workflow.
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
-* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
+- Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
+- Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY6.6 Security Considerations
 

@@ -13,7 +13,7 @@ request and returns a response of the matching insurance plans.
 
 ### 2:3.YY2.2 Actors Roles
 
-**Table2:3.YY2.2-1: Actor Roles**
+**Table 2:3.YY2.2-1: Actor Roles**
 
 |Actor | Role |
 |-------------------+--------------------------|
@@ -100,7 +100,6 @@ the `_lastUpdated` parameter: `gt`, `lt`, `ge`, `le`, `sa`, and `eb`.
 The Beneficiary Manager SHALL process the query to discover the insurance
 plan(s) that match the search parameters given, and if successful, with an `HTTP 200` (OK) and a [Search Insurance Plan Response Message](#query-response) 
 or an error as per <{{site.data.fhir.path}}search.html#errors>.
-
 
 
 <a name="query-response"></a>
@@ -221,8 +220,8 @@ its workflow.
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
-* Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
+- Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
+- Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
 
 ### 2:3.YY2.6 Security Considerations
 

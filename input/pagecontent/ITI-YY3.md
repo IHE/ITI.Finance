@@ -13,7 +13,7 @@ request and returns a response of the matching enrollment responses.
 
 ### 2:3.YY3.2 Actors Roles
 
-**Table2:3.YY3.2-1: Actor Roles**
+**Table 2:3.YY3.2-1: Actor Roles**
 
 |Actor | Role |
 |-------------------+--------------------------|
@@ -105,7 +105,7 @@ Enrollment Response Request.
 
 The Beneficiary Manager SHALL support the search response message as
 defined at <{{site.data.fhir.path}}http.html#search> on the EnrollmentResponse, as
-defined at <{{site.data.fhir.path}}enrollmentresponse.html>
+defined at <{{site.data.fhir.path}}enrollmentresponse.html>.
 
 The “content-type” of the response will depend upon the requested
 response format indicated by the Beneficiary Requestor.
@@ -203,8 +203,8 @@ its workflow.
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
-* Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
+- Requirements CapabilityStatement for [Beneficiary Requestor](CapabilityStatement-IHE.FAIS.BeneficiaryRequestor.html)
+- Requirements CapabilityStatement for [Beneficiary Manager](CapabilityStatement-IHE.FAIS.BeneficiaryManager.html)
 
 ### 2:3.YY3.6 Security Considerations
 

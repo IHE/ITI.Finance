@@ -1,4 +1,4 @@
-This section corresponds to transaction [ITI-YY4] of the IHE Technical Framework. Transaction [ITI-YY4] is used by the Coverage Requestor and Claims Manager Actors. The Check Coverage Eligibility [ITI-YY4] transaction is used to check the coverage for a patient.
+This section corresponds to transaction [ITI-YY4] of the IHE IT Infrastructure Technical Framework. Transaction [ITI-YY4] is used by the Coverage Requestor and Claims Manager Actors. The Check Coverage Eligibility [ITI-YY4] transaction is used to check the coverage for a patient.
 
 ### 2:3.YY4.1 Scope
 
@@ -6,7 +6,7 @@ This transaction is used by the Coverage Requestor to check if a product or serv
 
 ### 2:3.YY4.2 Actors Roles
 
-**Table2:3.YY4.2-1: Actor Roles**
+**Table 2:3.YY4.2-1: Actor Roles**
 
 |Actor | Role |
 |-------------------+--------------------------|
@@ -71,8 +71,8 @@ How the Coverage Requestor processes the response is determined by the implement
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Coverage Requestor](CapabilityStatement-IHE.FAIS.CoverageRequestor.html)
-* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
+- Requirements CapabilityStatement for [Coverage Requestor](CapabilityStatement-IHE.FAIS.CoverageRequestor.html)
+- Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY4.6 Security Considerations
 

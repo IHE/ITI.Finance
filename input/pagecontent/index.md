@@ -19,7 +19,7 @@ This guide is organized into the following sections:
    1. [Introduction](volume-1.html)
    1. [Actors, Transactions, and Content](volume-1.html#actors-and-transactions)
    1. [Actor Options](volume-1.html#actor-options)
-   1. [Actor Required Groupings](volume-1.html#required-groupings)
+   1. [Required Actor Groupings](volume-1.html#required-groupings)
    1. [Overview](volume-1.html#overview)
    1. [Security Considerations](volume-1.html#security-considerations)
    1. [Cross Profile Considerations](volume-1.html#other-grouping)
@@ -34,9 +34,9 @@ This guide is organized into the following sections:
    1. [3.YY9 Re-process Claim [ITI-YY9]](ITI-YY9.html)
    1. [3.YY6 Track Claim [ITI-YY6]](ITI-YY6.html)
 1. Other
-   1. [Test Plan](testplan.html)
    1. [Changes to Other IHE Specifications](other.html)
    1. [Download and Analysis](download.html)
+   1. [Test Plan](testplan.html)
 
 See also the [Table of Contents](toc.html) and the index of [Artifacts](artifacts.html) defined as part of this implementation guide.
 

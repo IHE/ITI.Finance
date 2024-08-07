@@ -1,4 +1,4 @@
-This section corresponds to transaction [ITI-YY8] of the IHE Technical Framework. Transaction [ITI-YY8] is used by the Claims Requestor and Claims Manager Actors. The Cancel Claim [ITI-YY8] transaction is used to cancel a claim for a patient.
+This section corresponds to transaction [ITI-YY8] of the IHE IT Infrastructure Technical Framework. Transaction [ITI-YY8] is used by the Claims Requestor and Claims Manager Actors. The Cancel Claim [ITI-YY8] transaction is used to cancel a claim for a patient.
 
 ### 2:3.YY8.1 Scope
 
@@ -6,7 +6,7 @@ This transaction is used by the Claims Requestor to cancel a claim for a patient
 
 ### 2:3.YY8.2 Actors Roles
 
-**Table2:3.YY8.2-1: Actor Roles**
+**Table 2:3.YY8.2-1: Actor Roles**
 
 |Actor | Role |
 |-------------------+--------------------------|
@@ -72,8 +72,8 @@ How the Claims Requestor processes the response is determined by the implementat
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 
-* Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
-* Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
+- Requirements CapabilityStatement for [Claims Requestor](CapabilityStatement-IHE.FAIS.ClaimsRequestor.html)
+- Requirements CapabilityStatement for [Claims Manager](CapabilityStatement-IHE.FAIS.ClaimsManager.html)
 
 ### 2:3.YY8.6 Security Considerations
 
