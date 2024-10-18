@@ -4,44 +4,44 @@ title Claims Workflow
 
 start
 :patient makes appointment;
-:submit coverage eligibility request\nITI-YY4>
+:submit coverage eligibility request\nCheck Coverage Eligibility &#91;ITI-YY4&#93;>
 while (check results ?) is (queued)
-  :query response updates\nITI-YY7<
+  :query response updates\nCheck Coverage Eligiblity Status &#91;ITI-YY7&#93;<
 endwhile (completed)
 :process eligibility response|
 if (eligibility ?) then (covered)
   :patient clinical visit;
 
   if (service needs pre-determination ?) then (yes)
-    :submit pre-determination claim\nITI-YY5>
+    :submit pre-determination claim\nSubmit Claim &#91;ITI-YY5&#93;>
     while (check results ?) is (queued)
-      :track claim\nITI-YY6<
+      :track claim\nTrack Claim &#91;ITI-YY6&#93;<
     endwhile (completed)
     :process pre-determination response|
   else (no)
     :continue service;
   endif 
   if (service needs pre-authorization ?) then (yes)
-  :submit pre-authorization claim\nITI-YY5>
+  :submit pre-authorization claim\nSubmit Claim &#91;ITI-YY5&#93;>
   while (check results ?) is (queued)
-    :track claim\nITI-YY6<
+    :track claim\nTrack Claim &#91;ITI-YY6&#93;<
   endwhile (completed)
   :process pre-authorization response|
   else (no)
     :continue service;
   endif
   :service complete;
-  :submit claim\nITI-YY5>
+  :submit claim\nSubmit Claim &#91;ITI-YY5&#93;>
   while (check results ?) is (queued)
     if (claim is cancelled ?) then (yes)
-      :cancel claim\nITI-YY8>
+      :cancel claim\nCancel Claim &#91;ITI-YY8&#93;>
     endif
-    :track claim\nITI-YY6<
+    :track claim\nTrack Claim &#91;ITI-YY6&#93;<
   endwhile (completed)
   if (claim is denied ?) then (yes)
-    :re-process claim\nITI-YY9>
+    :re-process claim\nRe-process Claim &#91;ITI-YY9&#93;>
     while (check results ?) is (queued)
-      :track claim\nITI-YY6<
+      :track claim\nTrack Claim &#91;ITI-YY6&#93;<
     endwhile (completed)
   endif
   :process claim response|
