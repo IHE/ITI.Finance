@@ -13,9 +13,9 @@ opt Get code lists for Medical Procedures & Items
 	FIS -> App: Confirm codes
 end opt
 
-App -> FIS: Submit Coverage Eligibility Query\nITI-YY4 Check Coverage Eligibility request
+App -> FIS: Submit Coverage Eligibility Query\n&#91;ITI-YY4&#93; Check Coverage Eligibility request
 FIS -> FIS: Process Insuree Query
 FIS -> FIS: Process Policy Query
-FIS -> App: Return Coverage Eligibility Result\nITI-YY4 Check Coverage Eligibility response
+FIS -> App: Return Coverage Eligibility Result\n&#91;ITI-YY4&#93; Check Coverage Eligibility response
 
 @enduml

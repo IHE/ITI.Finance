@@ -41,19 +41,19 @@ package " "  {
     agent "Claims" as ClaimMan2
   }
 }
-BenReq -> BenMan : "[[ITI-YY2.html Query Insurance Plan ITI-YY2]]"
-BenReq -> BenMan : "[[ITI-YY1.html Enroll Beneficiary ITI-YY1]]"
-BenReq -> BenMan : "[[ITI-YY3.html Check Enrollment Status ITI-YY3]]"
+BenReq -> BenMan : "[[ITI-YY2.html Query Insurance Plan &#91;ITI-YY2&#93;]]"
+BenReq -> BenMan : "[[ITI-YY1.html Enroll Beneficiary &#91;ITI-YY1&#93;]]"
+BenReq -> BenMan : "[[ITI-YY3.html Check Enrollment Status &#91;ITI-YY3&#93;]]"
 BenReq -[hidden]-> CovReq: ""
 CovReq -[hidden]-> ClaimReq: ""
 BenMan -[hidden]-> ClaimMan1: ""
 ClaimMan1 -[hidden]-> ClaimMan2: ""
-CovReq -> ClaimMan1 : "[[ITI-YY4.html Check Coverage Eligibility ITI-YY4]]"
-CovReq -> ClaimMan1 : "[[ITI-YY7.html Check Coverage Eligibility Status ITI-YY7]]"
-ClaimReq -> ClaimMan2 : "[[ITI-YY5.html Submit Claim ITI-YY5]]"
-ClaimReq -> ClaimMan2 : "[[ITI-YY8.html Cancel Claim ITI-YY8]]"
-ClaimReq -> ClaimMan2 : "[[ITI-YY9.html Re-process Claim ITI-YY9]]"
-ClaimReq -> ClaimMan2 : "[[ITI-YY6.html Track Claim ITI-YY6]]"
+CovReq -> ClaimMan1 : "[[ITI-YY4.html Check Coverage Eligibility &#91;ITI-YY4&#93;]]"
+CovReq -> ClaimMan1 : "[[ITI-YY7.html Check Coverage Eligibility Status &#91;ITI-YY7&#93;]]"
+ClaimReq -> ClaimMan2 : "[[ITI-YY5.html Submit Claim &#91;ITI-YY5&#93;]]"
+ClaimReq -> ClaimMan2 : "[[ITI-YY8.html Cancel Claim &#91;ITI-YY8&#93;]]"
+ClaimReq -> ClaimMan2 : "[[ITI-YY9.html Re-process Claim &#91;ITI-YY9&#93;]]"
+ClaimReq -> ClaimMan2 : "[[ITI-YY6.html Track Claim &#91;ITI-YY6&#93;]]"
 
 
 @endum
