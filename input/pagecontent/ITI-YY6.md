@@ -84,6 +84,7 @@ _lastUpdated
 status
 request
 patient
+requestor
 ```
 
 The Claims Manager SHALL also support the following prefixes for

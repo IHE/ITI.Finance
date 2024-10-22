@@ -523,7 +523,14 @@ FAIS Track Claim transaction [[ITI-YY6]](ITI-YY6.html)
         * valueCode = #MAY
       * name = "patient"
       * type = #reference
-      * documentation = "The beneficiary"  
+      * documentation = "The beneficiary"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * name = "requestor"
+      * type = #reference
+      * documentation = "The provider making the request"
   * interaction
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -703,7 +710,14 @@ FAIS Track Claim transaction [[ITI-YY6]](ITI-YY6.html)
         * valueCode = #SHALL
       * name = "patient"
       * type = #reference
-      * documentation = "The beneficiary"  
+      * documentation = "The beneficiary"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * name = "requestor"
+      * type = #reference
+      * documentation = "The provider making the request"
   * interaction
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
