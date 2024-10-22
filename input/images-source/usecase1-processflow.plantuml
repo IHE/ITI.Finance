@@ -1,7 +1,6 @@
 @startuml
 skinparam svgDimensionStyle false
 hide footbox
-autonumber "<b>[0]"
 
 participant "App\nBeneficiary Requestor\nPatient Demographics Consumer\nPatient Identity Source" as App
 participant "FIS\nBeneficiary Manager" as FIS
