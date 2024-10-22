@@ -1,15 +1,17 @@
 This section corresponds to transaction [ITI-YY7] of the IHE IT
 Infrastructure Technical Framework. Transaction [ITI-YY7] is used by
 the Claims Manager and Coverage Requestor Actors.  The Check
-Coverage Eligibility Status [ITI-YY7] transaction is used to get the status of a coverage eligibility request.
+Coverage Eligibility Status [ITI-YY7] transaction is used to get the status of a coverage eligibility request by
+searching for `CoverageEligibilityResponse` resources.
 
 ### 2:3.YY7.1 Scope
 
 This transaction is used by the Coverage Requestor to get the status of a coverage eligibility request
+from a `CoverageEligibilityResponse` resource
 based on criteria it provides in the query parameters of the request
-message, or to retrieve a specific coverage eligibility response. The request is received by
+message, or to retrieve a specific `CoverageEligibilityResponse`. The request is received by
 the Claims Manager. The Claims Manager processes the
-request and returns a response of the matching coverage eligibility responses.
+request and returns a response of the matching response resources.
 
 ### 2:3.YY7.2 Actors Roles
 
@@ -17,8 +19,8 @@ request and returns a response of the matching coverage eligibility responses.
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Coverage Requestor](volume-1.html#beneficiary-requestor)    | Requests coverage eligibility response(s) matching the supplied set of criteria from the Claims Manager. |
-| [Claims Manager](volume-1.html#beneficiary-manager) | Returns information for coverage eligibility response(s) matching the criteria provided by the Coverage Requestor |
+| [Coverage Requestor](volume-1.html#coverage-requestor)    | Requests `CoverageEligibilityResponse`(s) matching the supplied set of criteria from the Claims Manager. |
+| [Claims Manager](volume-1.html#claims-manager) | Returns information for `CoverageEligibilityResponse`(s) matching the criteria provided by the Coverage Requestor. |
 {:.grid .table-striped}
 
 ### 2:3.YY7.3 Referenced Standards
@@ -83,6 +85,7 @@ _lastUpdated
 status
 request
 patient
+requestor
 ```
 
 The Claims Manager SHALL also support the following prefixes for

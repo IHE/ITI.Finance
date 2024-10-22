@@ -404,7 +404,14 @@ FAIS Check Coverage Eligibility Status transaction [[ITI-YY7]](ITI-YY7.html)
         * valueCode = #MAY
       * name = "patient"
       * type = #reference
-      * documentation = "The beneficiary"  
+      * documentation = "The beneficiary"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * name = "requestor"
+      * type = #reference
+      * documentation = "The provider making the request"
   * interaction
     * extension
       * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -609,6 +616,13 @@ FAIS Check Coverage Eligibility Status transaction [[ITI-YY7]](ITI-YY7.html)
       * name = "patient"
       * type = #reference
       * documentation = "The beneficiary"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHALL
+      * name = "requestor"
+      * type = #reference
+      * documentation = "The provider making the request"
   * resource[+]
     * type = #Claim
     * supportedProfile[+] = Canonical(FAISClaim)

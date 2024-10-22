@@ -1,15 +1,17 @@
 This section corresponds to transaction [ITI-YY3] of the IHE IT
 Infrastructure Technical Framework. Transaction [ITI-YY3] is used by
 the Beneficiary Manager and Beneficiary Requestor Actors.  The Check
-Enrollment Status [ITI-YY3] transaction is used to get the status of an enrollment request.
+Enrollment Status [ITI-YY3] transaction is used to get the status of an enrollment request
+by searching for `EnrollmentResponse` resources.
 
 ### 2:3.YY3.1 Scope
 
 This transaction is used by the Beneficiary Requestor to get the status of an enrollment request
+from an `EnrollmentResponse` resource
 based on criteria it provides in the query parameters of the request
-message, or to retrieve a specific enrollment response. The request is received by
+message, or to retrieve a specific `EnrollmentResponse`. The request is received by
 the Beneficiary Manager. The Beneficiary Manager processes the
-request and returns a response of the matching enrollment responses.
+request and returns a response of the matching response resources.
 
 ### 2:3.YY3.2 Actors Roles
 
@@ -17,8 +19,8 @@ request and returns a response of the matching enrollment responses.
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Beneficiary Requestor](volume-1.html#beneficiary-requestor)    | Requests enrollment response(s) matching the supplied set of criteria from the Beneficiary Manager. |
-| [Beneficiary Manager](volume-1.html#beneficiary-manager) | Returns information for enrollment response(s) matching the criteria provided by the Beneficiary Requestor |
+| [Beneficiary Requestor](volume-1.html#beneficiary-requestor)    | Requests `EnrollmentResponse`(s) matching the supplied set of criteria from the Beneficiary Manager. |
+| [Beneficiary Manager](volume-1.html#beneficiary-manager) | Returns information for `EnrollmentResponse`(s) matching the criteria provided by the Beneficiary Requestor |
 {:.grid .table-striped}
 
 ### 2:3.YY3.3 Referenced Standards

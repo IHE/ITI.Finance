@@ -1,14 +1,16 @@
 This section corresponds to transaction [ITI-YY6] of the IHE IT
 Infrastructure Technical Framework. Transaction [ITI-YY6] is used by
-the Claims Manager and Claims Requestor Actors.  The Track Claim [ITI-YY6] transaction is used to get the status of a claim.
+the Claims Manager and Claims Requestor Actors.  The Track Claim [ITI-YY6] transaction is used to get the status of a claim
+by search for `ClaimResponse` resources.
 
 ### 2:3.YY6.1 Scope
 
-This transaction is used by the Claims Requestor to get the status of a claim 
+This transaction is used by the Claims Requestor to get the status of a claim
+from a `ClaimResponse` resource
 based on criteria it provides in the query parameters of the request
-message, or to retrieve a specific claim response. The request is received by
+message, or to retrieve a specific `ClaimResponse`. The request is received by
 the Claims Manager. The Claims Manager processes the
-request and returns a response of the matching claim responses.
+request and returns a response of the matching response resources.
 
 ### 2:3.YY6.2 Actors Roles
 
@@ -16,8 +18,8 @@ request and returns a response of the matching claim responses.
 
 |Actor | Role |
 |-------------------+--------------------------|
-| [Claims Requestor](volume-1.html#claims-requestor)    | Requests claim response(s) matching the supplied set of criteria from the Claims Manager. |
-| [Claims Manager](volume-1.html#claims-manager) | Returns information for claim response(s) matching the criteria provided by the Claims Requestor |
+| [Claims Requestor](volume-1.html#claims-requestor)    | Requests `ClaimResponse`(s) matching the supplied set of criteria from the Claims Manager. |
+| [Claims Manager](volume-1.html#claims-manager) | Returns information for `ClaimResponse`(s) matching the criteria provided by the Claims Requestor |
 {:.grid .table-striped}
 
 ### 2:3.YY6.3 Referenced Standards
