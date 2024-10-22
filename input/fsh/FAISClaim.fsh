@@ -11,6 +11,7 @@ The FAIS Claim profile for submitting claims.
 
 * use 1..1
 * related.claim only Reference(FAISClaim)
+* extension contains StatusReason named statusReason 0..1
 
 Profile: FAISClaimBundle
 Parent: Bundle

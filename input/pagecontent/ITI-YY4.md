@@ -61,7 +61,7 @@ The Claims Manager has a response or errors to report to the Coverage Requestor.
 
 ##### 2:3.YY4.4.2.2 Message Semantics
 
-The Check Coverage Eligibility Response conforms to the [FAIS CoverageEligibilityResponse profile](StructureDefinition-IHE.FAIS.CoverageEligibilityResponse.html) and is sent from the Claims Manager to the Coverage Requestor.  If the disposition of the coverage eligibility request can't be handled synchronously, then the `outcome` element SHALL be set to `queued` and CoverageEligibilityResponse SHALL include an `id` and persist on the Claims Manager so that the [ITI-YY3 Check Enrollment Status](ITI-YY3.html) transaction can be used to get updates on the response.
+The Check Coverage Eligibility Response conforms to the [FAIS CoverageEligibilityResponse profile](StructureDefinition-IHE.FAIS.CoverageEligibilityResponse.html) and is sent from the Claims Manager to the Coverage Requestor.  If the disposition of the coverage eligibility request can't be handled synchronously, then the `outcome` element SHALL be set to `queued` and CoverageEligibilityResponse SHALL include an `id` and persist on the Claims Manager so that the [ITI-YY7 Check Coverage Eligibility Status](ITI-YYy.html) transaction can be used to get updates on the response.
 
 ##### 2:3.YY4.4.2.3 Expected Actions
 

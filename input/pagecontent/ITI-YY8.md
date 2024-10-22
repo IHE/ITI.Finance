@@ -37,13 +37,15 @@ When a Claims Requestor needs to cancel a claim for a Patient to the Claims Mana
 
 ##### 2:3.YY8.4.1.2 Message Semantics
 
-The Claims Requestor invokes the [FAIS Claim $cancel operation](OperationDefinition-IHE.FAIS.Claim.Cancel.html) on the Claims Manager.  The operation is invoked by submitting an HTTP GET request to the Claims Manager at the path:
+The Claims Requestor invokes the [FAIS Claim $cancel operation](OperationDefinition-IHE.FAIS.Claim.Cancel.html) on the Claims Manager.  The operation is invoked by submitting an HTTP POST request to the Claims Manager at the path:
 
 ```
-GET [base]/Claim/<resourceId>/$cancel
+POST [base]/Claim/<resourceId>/$cancel
 ```
 
 Where <resourceId> is the resource id of the claim being cancelled.
+
+The HTTP body MAY include a FHIR Parameters resource with the reason set to the reason for the cancellation.
 
 
 ##### 2:3.YY8.4.1.3 Expected Actions

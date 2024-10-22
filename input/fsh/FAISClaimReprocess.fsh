@@ -19,6 +19,15 @@ Usage: #definition
 * instance = true
 * code = #reprocess
 * parameter[+]
+  * name = #resource
+  * use = #in 
+  * min = 1
+  * max = "1"
+  * documentation = "A Claim resource or a Bundle with a Claim and any referenced resources."
+  * type = #Resource
+  * targetProfile[+] = Canonical(FAISClaim)
+  * targetProfile[+] = Canonical(FAISClaimBundle)
+* parameter[+]
   * name = #return
   * use = #out
   * min = 1

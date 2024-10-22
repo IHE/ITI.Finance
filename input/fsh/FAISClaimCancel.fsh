@@ -19,6 +19,13 @@ Usage: #definition
 * instance = true
 * code = #cancel
 * parameter[+]
+  * name = #reason
+  * use = #in
+  * min = 0
+  * max = "1"
+  * documentation = "The reason for the cancellation."
+  * type = #CodeableConcept
+* parameter[+]
   * name = #return
   * use = #out
   * min = 1

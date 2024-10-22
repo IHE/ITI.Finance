@@ -9,6 +9,8 @@ The FAIS EnrollmentRequest profile for submitting enrollment requests.
 * modifierExtension 0..0
 * implicitRules 0..0
 
+* extension contains StatusReason named statusReason 0..1
+
 * insurer 1..1
 * candidate 1..1
 * coverage 1..1

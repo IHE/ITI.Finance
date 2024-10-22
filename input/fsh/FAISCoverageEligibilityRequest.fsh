@@ -9,6 +9,9 @@ The FAIS CoverageEligibilityRequest profile for submitting coverage eligibility 
 * modifierExtension 0..0
 * implicitRules 0..0
 
+* extension contains StatusReason named statusReason 0..1
+
+
 Profile: FAISCoverageEligibilityRequestBundle
 Parent: Bundle
 Id: IHE.FAIS.CoverageEligibilityRequest.Bundle
