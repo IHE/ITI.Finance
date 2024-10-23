@@ -1,7 +1,7 @@
 
 The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance data for patient care. The service receives claims/financial data from Point of Service (POS) applications (including financing applications acting as a point of service interface outside of other POS systems) and curates the management of them.
 
-This profile is initially focused on a greenfield implementation, a new system without relying on existing infrastructure or code, in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.  Implementations with existing infrastructure may want to review [X12N - Insurance](https://x12.org/products/transaction-sets), [DaVinci Payer Data Exchange (PDex)](https://hl7.org/fhir/us/davinci-pdex/), and/or [DaVinci Prior Authorization Support (PAS)](https://hl7.org/fhir/us/davinci-pas/).
+This profile is initially focused on a greenfield implementation, a new system without relying on existing infrastructure or code, in low resource settings.  This isn't to say it can't be applied in other areas, but this is the initial scope.  Implementations with existing infrastructure or more available resources may want to review [X12N - Insurance](https://x12.org/products/transaction-sets), [DaVinci Payer Data Exchange (PDex)](https://hl7.org/fhir/us/davinci-pdex/), and/or [DaVinci Prior Authorization Support (PAS)](https://hl7.org/fhir/us/davinci-pas/).
 
 This collection of workflows allows an external system to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems.
 
@@ -9,7 +9,7 @@ This collection of workflows allows an external system to save and retrieve Fina
 1. A point-of-care system can enroll a beneficiary.
 1. A point-of-care system can check a beneficiary's eligibility for a given healthcare service.
 1. A point-of-care system can run a pre-determination, pre-authorization and claim.
-  1. A pre-determination is determine what services may be covered and to what amount.
+  1. A pre-determination is to determine what services may be covered and to what amount.
   1. A pre-authorization is to receive approval for a service before it happens.
   1. A claim is to request payment for services that have been rendered.
 1. A point-of-care system can track a claim's status.
