@@ -13,13 +13,13 @@ The tests below are described using [Gherkin](https://cucumber.io/docs/gherkin/)
 
 ## High-level Test Scope
 
-### Query Insurance Plan [[ITI-YY2]](ITI-YY2.html)
+### Query Insurance Plan [[ITI-121]](ITI-121.html)
 
-The Beneficiary Requestor initiates a request to search for or read an insurance on the Beneficiary Manager.  The Beneficiary Manager responds to the request and returns an insurance plan to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITIYY2.html).
+The Beneficiary Requestor initiates a request to search for or read an insurance on the Beneficiary Manager.  The Beneficiary Manager responds to the request and returns an insurance plan to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITI121.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY2 Query Insurance Plan Test</b></p>
+<p id="featureYY1" class="caption"><b>ITI-121 Query Insurance Plan Test</b></p>
 ```Gherkin
-{%include_relative ITI-YY2.feature%}
+{%include_relative ITI-121.feature%}
 ```
 
 ### Enroll Beneficiary [[ITI-YY1]](ITI-YY1.html)

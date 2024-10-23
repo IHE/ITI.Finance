@@ -24,7 +24,7 @@ This guide is organized into the following sections:
    1. [Security Considerations](volume-1.html#security-considerations)
    1. [Cross Profile Considerations](volume-1.html#other-grouping)
 1. Volume 2: Transaction Detail
-   1. [3.YY2 Query Insurance Plan [ITI-YY2]](ITI-YY2.html)
+   1. [3.121 Query Insurance Plan [ITI-121]](ITI-121.html)
    1. [3.YY1 Enroll Beneficiary [ITI-YY1]](ITI-YY1.html)
    1. [3.YY3 Check Enrollment Status [ITI-YY3]](ITI-YY3.html)
    1. [3.YY4 Check Coverage Eligibility [ITI-YY4]](ITI-YY4.html)

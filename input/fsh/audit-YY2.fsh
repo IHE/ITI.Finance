@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when a Query Insurance 
 to read an InsurancePlan, as recorded by the Beneficiary Requestor and Beneficiary Manager.
 """
 * subtype 2..*
-* subtype contains itiYY2 1..1
-* subtype[itiYY2] = urn:ihe:event-type-code#ITI-YY2 "Query Insurance Plan"
+* subtype contains iti121 1..1
+* subtype[iti121] = urn:ihe:event-type-code#ITI-121 "Query Insurance Plan"
 * agent[client] ^short = "Beneficiary Requestor"
 * agent[server] ^short = "Beneficiary Manager"
 * entity[data]
@@ -25,7 +25,7 @@ Defines constraints on the AuditEvent Resource to record when a Query Insurance 
 to query an InsurancePlan, as recorded by the Beneficiary Requestor and Beneficiary Manager.
 """
 * subtype 2..*
-* subtype contains itiYY2 1..1
-* subtype[itiYY2] = urn:ihe:event-type-code#ITI-YY2 "Query Insurance Plan"
+* subtype contains iti121 1..1
+* subtype[iti121] = urn:ihe:event-type-code#ITI-121 "Query Insurance Plan"
 * agent[client] ^short = "Beneficiary Requestor"
 * agent[server] ^short = "Beneficiary Manager"

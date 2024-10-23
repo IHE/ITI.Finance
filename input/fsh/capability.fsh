@@ -26,7 +26,7 @@ The Beneficiary Requestor can enroll beneficiaries and optionally query insuranc
     * type = #InsurancePlan
     * supportedProfile[+] = Canonical(FAISInsurancePlan)
     * documentation = """
-FAIS Query Insurance Plan transaction [[ITI-YY2]](ITI-YY2.html)
+FAIS Query Insurance Plan transaction [[ITI-121]](ITI-121.html)
 """
     * interaction[+]
       * code = #read
@@ -185,7 +185,7 @@ The Beneficiary Manager processes requests from the Beneficiary Requestor actor.
     * type = #InsurancePlan
     * supportedProfile[+] = Canonical(FAISInsurancePlan)
     * documentation = """
-FAIS Query Insurance Plan transaction [[ITI-YY2]](ITI-YY2.html)
+FAIS Query Insurance Plan transaction [[ITI-121]](ITI-121.html)
 """
     * interaction[+]
       * extension

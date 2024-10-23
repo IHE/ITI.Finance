@@ -15,8 +15,8 @@ participant "Claims Manager" as CM
 group Enroll Beneficiary
   activate BR
   activate BM
-  BR->BM: Query Insurance Plans (InsurancePlan)\nITI-YY2
-  BM->BR: Return Matching Insurance Plans\nITI-YY2
+  BR->BM: Query Insurance Plans (InsurancePlan)\nITI-121
+  BM->BR: Return Matching Insurance Plans\nITI-121
   BR->BM: Enroll Beneficiary (EnrollmentRequest/$submit)\nITI-YY1
   alt Success
     BM->BR: Return Enrolled Response (EnrollmentResponse)\nITI-YY1

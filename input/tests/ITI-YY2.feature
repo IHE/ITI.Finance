@@ -1,4 +1,4 @@
-Feature: Test ITI-YY2 Transaction: Query Insurance Plan
+Feature: Test ITI-121 Transaction: Query Insurance Plan
 
   Background:
     * url 'http://localhost/fhir'

@@ -4,7 +4,7 @@ title Enroll Beneficiary Workflow
 
 start
 :collect beneficiary data;
-:query insurance plans\nQuery Insurance Plan &#91;ITI-YY2&#93;<
+:query insurance plans\nQuery Insurance Plan &#91;ITI-121&#93;<
 :build enrollment request|
 :submit enrollment request\nEnroll Beneficiary &#91;ITI-YY1&#93;>
 while (process results ?) is (queued)

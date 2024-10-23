@@ -18,7 +18,7 @@ This element does not match any known slice defined in the profile https://profi
 
 # These are the testing feature files
 Unknown file type ITI-YY1.feature
-Unknown file type ITI-YY2.feature
+Unknown file type ITI-121.feature
 Unknown file type ITI-YY3.feature
 Unknown file type ITI-YY4.feature
 Unknown file type ITI-YY5.feature
