@@ -2,7 +2,7 @@
 skinparam svgDimensionStyle false
 hide footbox
 
-participant "PoS\nClaims Requestor" as App
+participant "POS\nClaims Requestor" as App
 participant "FIS\nClaims Manager" as FIS
 participant "External Payment System" as EXT
 

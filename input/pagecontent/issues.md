@@ -19,6 +19,9 @@ It is important to note that as soon as a Change Proposal is approved, it carrie
 - FAIS-002: Should the operation transactions allow accepting a Bundle of multiple requests or only allow a single request (which may be a bundle of associated resources)?
 - FAIS-003: Should the cancel claim and re-process claim transactions use a Task resource?
 - FAIS-004: Should the Beneficiary Manager and Claims Manager be combined into one actor?
+- FAIS-005: Should there be a transaction to update a claim that is in progress?  Currently the way to do this would be to cancel the claim and submit a new one.  Should the re-process transaction be used for updates instead of only when the claim has been denied?
+- FAIS-006: Are there any experiences with these workflows that may require any changes to these transactions similar to open issue FAIS-005?
+- FAIS-007: Some countries required sensitive data to be sent in separate transactions to minimize risk, for example, personal data with health care or financial data.  Does this need to be specifically addressed in this profile?
 
 ### Closed Issues
 None

@@ -2,7 +2,7 @@
 skinparam svgDimensionStyle false
 hide footbox
 
-participant "PoS\nCoverage Requestor" as App
+participant "POS\nCoverage Requestor" as App
 participant "FIS\nClaims Manager" as FIS
 
 

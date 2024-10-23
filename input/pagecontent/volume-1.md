@@ -1,14 +1,18 @@
 
-The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance data for patient care. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
+The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance data for patient care. The service receives claims/financial data from Point of Service (POS) applications (including financing applications acting as a point of service interface outside of other POS systems) and curates the management of them.
 
-This profile is initially focused on a greenfield implementation in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.
+This profile is initially focused on a greenfield implementation, a new system without relying on existing infrastructure or code, in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.  Implementation with existing infrastructure may want to review [X12N - Insurance](https://x12.org/), [DaVinci Payer Data Exchange (PDex)](https://hl7.org/fhir/us/davinci-pdex/), and/or [DaVinci Prior Authorization Support (PAS)](https://hl7.org/fhir/us/davinci-pas/).
 
 This collection of workflows allows an external system to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems.
 
-1. A point-of-care system can enroll a beneficiary
-1. A point-of-care system can check a beneficiary's eligibility
-1. A point-of-care system can run a pre-determination, pre-authorization and claim
-1. A point-of-care system can track a claim's status
+1. A point-of-care system can search for insurance plans to be used for enrolling a beneficiary, the patient whose health care expenses are being covered by the policy.
+1. A point-of-care system can enroll a beneficiary.
+1. A point-of-care system can check a beneficiary's eligibility for a given healthcare service.
+1. A point-of-care system can run a pre-determination, pre-authorization and claim.
+  1. A pre-determination is determine what services may be covered and to what amount.
+  1. A pre-authorization is to receive approval for a service before it happens.
+  1. A claim is to request payment for services that have been rendered.
+1. A point-of-care system can track a claim's status.
 
 <a name="actors-and-transactions"> </a>
 
@@ -119,13 +123,13 @@ The transactions in this profile are summarized in the sections below.
 
 #### 1:XX.1.2.1 Query Insurance Plan Transaction [ITI-121]
 
-This transaction is used to search for available insurance plans.
+This transaction is used to search for available insurance plans.  The InsurancePlan resource describes a health insurance offering with a list of covered benefits, costs associated with those benefits, and any additional information about the offering.
 
 For more details see the detailed [transaction description](ITI-121.html)
 
 #### 1:XX.1.2.2 Enroll Beneficiary Transaction [ITI-122]
 
-This transaction is used to enroll or update a beneficiary.
+This transaction is used to enroll a beneficiary.  It is to request linking the beneficiary with a given Coverage that is associated with an InsurancePlan.  Once successfully enrolled, the beneficiary can receive covered health care services.
 
 For more details see the detailed [transaction description](ITI-122.html)
 
@@ -137,7 +141,7 @@ For more details see the detailed [transaction description](ITI-123.html)
 
 #### 1:XX.1.2.4 Check Coverage Eligibility Transaction [ITI-124]
 
-This transaction is used to check the coverage eligibility for a given beneficiary.
+This transaction is used to check the coverage eligibility for a given beneficiary.  This can be used to query if a given service is covered by the insurance plan the beneficiary is enrolled in.
 
 For more details see the detailed [transaction description](ITI-124.html)
 
@@ -150,6 +154,9 @@ For more details see the detailed [transaction description](ITI-125.html)
 #### 1:XX.1.2.6 Submit Claim Transaction [ITI-126]
 
 This transaction is used to submit a claim.  This can be either a pre-determination, pre-authorization, or a final claim ready for payment.
+- A pre-determination is determine what services may be covered and to what amount.
+- A pre-authorization is to receive approval for a service before it happens.
+- A claim is to request payment for services that have been rendered.
 
 For more details see the detailed [transaction description](ITI-126.html)
 
@@ -161,7 +168,8 @@ For more details see the detailed [transaction description](ITI-127.html)
 
 #### 1:XX.1.2.8 Re-process Claim Transaction [ITI-128]
 
-This transaction is used to re-process a previously submitted claim that was denied.
+This transaction is used to re-process a previously submitted claim that was denied.  It may include additional details or
+updates for the claim.
 
 For more details see the detailed [transaction description](ITI-128.html)
 
@@ -211,7 +219,7 @@ Figure 1:XX.4.1-2 shows the claims workflow.
 
 #### 1:XX.4.2.1 Use Case \#1: Enroll Household or Beneficiary
 
-A field agent of the national insurance provider registers a household into a specific insurance scheme.
+A field agent of the national insurance provider registers the members of a household into a specific insurance scheme.
 
 ##### 1:XX.4.2.1.1 Enroll Household or Beneficiary Use Case Description
 
@@ -248,7 +256,7 @@ A patient is diagnosed with cancer and needs chemotherapy. The hospital inquires
 A patient is diagnosed with cancer in the local hospital. The responsible doctor want to apply a chemotherapy to the patient and needs to know whether the costs are covered by the insurance of the patient.
 
 1. The patient arrives at the hospital and is diagnosed.
-1. Optionally: the doctor queries the needed procedures and medical items from a product catalog in the Hospital Information System (POS).
+1. Optionally: the doctor queries the needed procedures and medical items from a product catalog in the Hospital Information System.
 1. Optionally: the hospital information system verifies the product codifications from the FIS.
 1. The doctor selects the needed procedures and items in the POS and sends a coverage eligibility request to the FIS.
 1. In a manual or automatic process, the eligibility for the requested procedures and items is verified in the FIS.
@@ -257,7 +265,7 @@ A patient is diagnosed with cancer in the local hospital. The responsible doctor
 
 ##### 1:XX.4.2.2.2 Check Coverage Process Flow
 
-- PoS - The point of service system is a Coverage Requestor that captures a patient clinical encounter.
+- POS - The point of service system is a Coverage Requestor that captures a patient clinical encounter.
 - FIS - Financing and Insurance System is a Claims Manager that manages data on beneficiaries and their coverage.
 
 
@@ -274,7 +282,7 @@ A patient was treated in the hospital and the hospital requests reimbursement of
 
 ##### 1:XX.4.2.3.1 File a Claim Use Case Description
 
-Claiming: a PoS system (e.g., Hospital) sends a request for reimbursement of costs incurred for a certain treatment to the FIS
+Claiming: a POS system (e.g., Hospital) sends a request for reimbursement of costs incurred for a certain treatment to the FIS
 
 1. A patient was treated with chemotherapy in their local hospital and cured.
 1. The hospital wants to prepare a hospital bill to reclaim the incurred costs.
@@ -285,11 +293,11 @@ Claiming: a PoS system (e.g., Hospital) sends a request for reimbursement of cos
 1. Optionally: a payment request is sent from the FIS to the payment system.
 1. A claim response is sent from the FIS to the POS.
 
-In some instances a claim request may need to be canceled or re-submitted for re-processing.  The PoS system can send a follow up request to cancel a previously submitted claim.  If the claim was rejected and it needs to be re-adjudicated, then the PoS can also re-submit the claim to be re-processed.
+In some instances a claim request may need to be canceled or re-submitted for re-processing.  The POS system can send a follow up request to cancel a previously submitted claim.  If the claim was rejected and it needs to be re-adjudicated, then the POS can also re-submit the claim to be re-processed.
 
 ##### 1:XX.4.2.3.2 File a Claim Process Flow
 
-- PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
+- POS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
 - FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 - EXT - An external payment layer
 
@@ -306,7 +314,7 @@ An expensive treatment is needed and the Hospital wants to estimate the inputs t
 
 ##### 1:XX.4.2.4.1 Pre Determination Use Case Description
 
-Pre-determination: A PoS system (e.g., Hospital) requests an estimation of the expected reimbursement for a beneficiary’s specific treatment from the FIS (e.g., Insurance).
+Pre-determination: A POS system (e.g., Hospital) requests an estimation of the expected reimbursement for a beneficiary’s specific treatment from the FIS (e.g., Insurance).
 
 1. A patient needs to be treated with chemotherapy in their local hospital.
 1. The hospital wants to inquire whether the expected reimbursement will cover the expected costs.
@@ -318,7 +326,7 @@ Pre-determination: A PoS system (e.g., Hospital) requests an estimation of the e
 
 ##### 1:XX.4.2.4.2 Pre Determination Process Flow
 
-- PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
+- POS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
 - FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>
@@ -341,11 +349,11 @@ A costly treatment is needed and has to be pre-approved by the insurance before 
 
 ##### 1:XX.4.2.5.1 Pre Authorization Use Case Description
 
-Pre-authorization: A PoS system (e.g., Hospital) requests an approval for a specific treatment from the FIS (e.g., Insurance). At the FIS a manual intervention is needed to authorize the requested 
+Pre-authorization: A POS system (e.g., Hospital) requests an approval for a specific treatment from the FIS (e.g., Insurance). At the FIS a manual intervention is needed to authorize the requested 
 
 ##### 1:XX.4.2.5.2 Pre Authorization Process Flow
 
-- PoS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
+- POS - The point of service system is a Claims Requestor that captures a patient clinical encounter and sends the formatted claim.
 - FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>
@@ -371,7 +379,7 @@ A hospital has sent an electronic reimbursement claim to the insurance company. 
 
 ##### 1:XX.4.2.6.2 Claim Tracking Process Flow
 
-- PoS - The point of service system is a Claims Requestor that has formulated a claim and waits for a response from the FIS.
+- POS - The point of service system is a Claims Requestor that has formulated a claim and waits for a response from the FIS.
 - FIS - Financing and Insurance System is a Claims Manager that manages the claims processing and scrutinization.
 
 <figure>

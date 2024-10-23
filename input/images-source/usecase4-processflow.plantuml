@@ -2,27 +2,27 @@
 skinparam svgDimensionStyle false
 hide footbox
 
-participant PoS
+participant POS
 participant FIS
 
 
 opt Get code lists for medical procedures & items
-	PoS -> FIS: Submit medical procedures & items query
+	POS -> FIS: Submit medical procedures & items query
 	FIS -> FIS: Process query
-	FIS -> PoS: Return  medical procedures & items
+	FIS -> POS: Return  medical procedures & items
 end opt
  
 
-PoS -> PoS: Build pre-determination
-PoS -> FIS: Submit pre-determination\n&#91;ITI-126&#93; Submit Claim request
+POS -> POS: Build pre-determination
+POS -> FIS: Submit pre-determination\n&#91;ITI-126&#93; Submit Claim request
 FIS -> FIS: Process pre-determiniation
 
 alt accepted
-	FIS -> PoS: Return positive pre-determination result\n&#91;ITI-126&#93; Submit Claim response
+	FIS -> POS: Return positive pre-determination result\n&#91;ITI-126&#93; Submit Claim response
 else rejected
-	FIS -> PoS: Return negative pre-determination result\n&#91;ITI-126&#93; Submit Claim response
+	FIS -> POS: Return negative pre-determination result\n&#91;ITI-126&#93; Submit Claim response
 else queued
-	FIS -> PoS: Return queued status notification\n&#91;ITI-126&#93; Submit Claim response
+	FIS -> POS: Return queued status notification\n&#91;ITI-126&#93; Submit Claim response
 end
 
 @enduml

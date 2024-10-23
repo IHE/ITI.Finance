@@ -2,27 +2,27 @@
 skinparam svgDimensionStyle false
 hide footbox
 
-participant PoS
+participant POS
 participant FIS
 
 
 opt Get code lists for medical procedures & items
-	PoS -> FIS: Submit medical procedures & items query
+	POS -> FIS: Submit medical procedures & items query
 	FIS -> FIS: Process query
-	FIS -> PoS: Return  medical procedures & items
+	FIS -> POS: Return  medical procedures & items
 end opt
  
 
-PoS -> PoS: Build pre-authorization
-PoS -> FIS: Submit pre-authorization\n&#91;ITI-126&#93; Submit Claim request
+POS -> POS: Build pre-authorization
+POS -> FIS: Submit pre-authorization\n&#91;ITI-126&#93; Submit Claim request
 FIS -> FIS: Process pre-authorization
 
-alt accepted
-	FIS -> PoS: Return positive pre-authorization result\n&#91;ITI-126&#93; Submit Claim response
-else rejected
-	FIS -> PoS: Return negative pre-authorization result\n&#91;ITI-126&#93; Submit Claim response
+alt approved
+	FIS -> POS: Return approved pre-authorization response\n&#91;ITI-126&#93; Submit Claim response
+else denited
+	FIS -> POS: Return denited pre-authorization response\n&#91;ITI-126&#93; Submit Claim response
 else queued
-	FIS -> PoS: Return queued status notification\n&#91;ITI-126&#93; Submit Claim response
+	FIS -> POS: Return queued pre-authorization response\n&#91;ITI-126&#93; Submit Claim response
 end
 
 @enduml
