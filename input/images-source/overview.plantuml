@@ -43,8 +43,8 @@ group Patient Visit
   else Queued 
     CM->CV: Return Queued Response (CoverageEligibilityResponse)\nITI-124
     loop Check Eligibility Status
-      CV->CM: Check Eligibility Status (CoverageEligibilityResponse)\nITI-YY7
-      CM->CV: Return Eligibility Response (CoverageEligibilityResponse)\nITI-YY7
+      CV->CM: Check Eligibility Status (CoverageEligibilityResponse)\nITI-125
+      CM->CV: Return Eligibility Response (CoverageEligibilityResponse)\nITI-125
       note right: Continue with workflow if completed or continue loop.
     end
   else Error

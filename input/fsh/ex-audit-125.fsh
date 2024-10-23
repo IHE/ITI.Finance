@@ -1,11 +1,11 @@
 Instance:     ex-AuditFAISCoverageEligibilityResponseRead
 InstanceOf:   AuditFAISCoverageEligibilityResponseRead
-Title:        "Audit example for ITI-YY7 for Claims Manager for read."
-Description:  "Audit example for a Claims Manager requesting a read on a CoverageEligibilityResponse for ITI-YY7."
+Title:        "Audit example for ITI-125 for Claims Manager for read."
+Description:  "Audit example for a Claims Manager requesting a read on a CoverageEligibilityResponse for ITI-125."
 Usage:        #example
 
 * subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
-* subtype[itiYY7] = urn:ihe:event-type-code#ITI-YY7 "Check Coverage Eligibility Status"
+* subtype[iti125] = urn:ihe:event-type-code#ITI-125 "Check Coverage Eligibility Status"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-coverage-requestor)
@@ -27,11 +27,11 @@ Usage:        #example
 
 Instance:     ex-AuditFAISCoverageEligibilityResponseQuery
 InstanceOf:   AuditFAISCoverageEligibilityResponseQuery
-Title:        "Audit example for ITI-YY7 for Beneficiary Manager for query."
-Description:  "Audit example for a Beneficiary Manager requesting a query on a CoverageEligibilityResponse for ITI-YY7."
+Title:        "Audit example for ITI-125 for Beneficiary Manager for query."
+Description:  "Audit example for a Beneficiary Manager requesting a query on a CoverageEligibilityResponse for ITI-125."
 Usage:        #example
 * subtype[anySearch] = http://hl7.org/fhir/restful-interaction#search "search"
-* subtype[itiYY7] = urn:ihe:event-type-code#ITI-YY7 "Check Coverage Eligibility Status"
+* subtype[iti125] = urn:ihe:event-type-code#ITI-125 "Check Coverage Eligibility Status"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-claims-manager)

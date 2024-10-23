@@ -358,7 +358,7 @@ FAIS Check Coverage Eligibility transaction [[ITI-124]](ITI-124.html)
     * type = #CoverageEligibilityResponse
     * supportedProfile[+] = Canonical(FAISCoverageEligibilityResponse)
     * documentation = """
-FAIS Check Coverage Eligibility Status transaction [[ITI-YY7]](ITI-YY7.html)
+FAIS Check Coverage Eligibility Status transaction [[ITI-125]](ITI-125.html)
 """
     * interaction[+]
       * extension
@@ -576,7 +576,7 @@ FAIS Check Coverage Eligibility transaction [[ITI-124]](ITI-124.html)
     * type = #CoverageEligibilityResponse
     * supportedProfile[+] = Canonical(FAISCoverageEligibilityResponse)
     * documentation = """
-FAIS Check Coverage Eligibility Status transaction [[ITI-YY7]](ITI-YY7.html)
+FAIS Check Coverage Eligibility Status transaction [[ITI-125]](ITI-125.html)
 """
     * interaction[+]
       * extension

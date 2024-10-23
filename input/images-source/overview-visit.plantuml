@@ -6,7 +6,7 @@ start
 :patient makes appointment;
 :submit coverage eligibility request\nCheck Coverage Eligibility &#91;ITI-124&#93;>
 while (check results ?) is (queued)
-  :query response updates\nCheck Coverage Eligiblity Status &#91;ITI-YY7&#93;<
+  :query response updates\nCheck Coverage Eligiblity Status &#91;ITI-125&#93;<
 endwhile (completed)
 :process eligibility response|
 if (eligibility ?) then (covered)

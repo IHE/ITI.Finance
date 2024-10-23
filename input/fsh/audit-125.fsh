@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when a Check Coverage E
 to read a CoverageEligibilityResponse, as recorded by the Coverage Requestor and Claims Manager.
 """
 * subtype 2..*
-* subtype contains itiYY7 1..1
-* subtype[itiYY7] = urn:ihe:event-type-code#ITI-YY7 "Check Coverage Eligibility Status"
+* subtype contains iti125 1..1
+* subtype[iti125] = urn:ihe:event-type-code#ITI-125 "Check Coverage Eligibility Status"
 * agent[client] ^short = "Coverage Requestor"
 * agent[server] ^short = "Claims Manager"
 * entity[data]
@@ -25,7 +25,7 @@ Defines constraints on the AuditEvent Resource to record when a Check Coverage E
 to query a CoverageEligibilityResponse, as recorded by the Coverage Requestor and Claims Manager.
 """
 * subtype 2..*
-* subtype contains itiYY7 1..1
-* subtype[itiYY7] = urn:ihe:event-type-code#ITI-YY7 "Check Coverage Eligibility Status"
+* subtype contains iti125 1..1
+* subtype[iti125] = urn:ihe:event-type-code#ITI-125 "Check Coverage Eligibility Status"
 * agent[client] ^short = "Coverage Requestor"
 * agent[server] ^short = "Claims Manager"

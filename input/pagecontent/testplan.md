@@ -49,13 +49,13 @@ The Coverage Requestor initiates a request to check coverage eligibility on the 
 {%include_relative ITI-124.feature%}
 ```
 
-### Check Coverage Eligibility Status [[ITI-YY7]](ITI-YY7.html)
+### Check Coverage Eligibility Status [[ITI-125]](ITI-125.html)
 
-The Coverage Requestor initiates a request to retrieve a coverage eligibility response on the Claims Manager.  The Claims Manager returns a coverage eligibility response to the Coverage Requestor.  See [Test Definition](Binary-FeatureITIYY7.html).
+The Coverage Requestor initiates a request to retrieve a coverage eligibility response on the Claims Manager.  The Claims Manager returns a coverage eligibility response to the Coverage Requestor.  See [Test Definition](Binary-FeatureITI125.html).
 
-<p id="feature122" class="caption"><b>ITI-YY7 Check Coverage Eligibility Status Test</b></p>
+<p id="feature122" class="caption"><b>ITI-125 Check Coverage Eligibility Status Test</b></p>
 ```Gherkin
-{%include_relative ITI-YY7.feature%}
+{%include_relative ITI-125.feature%}
 ```
 
 ### Submit Claim [[ITI-YY5]](ITI-YY5.html)
