@@ -9,9 +9,9 @@ This collection of workflows allows an external system to save and retrieve Fina
 1. A point-of-care system can enroll a beneficiary.
 1. A point-of-care system can check a beneficiary's eligibility for a given healthcare service.
 1. A point-of-care system can run a pre-determination, pre-authorization and claim.
-  1. A pre-determination is to determine what services may be covered and to what amount.
-  1. A pre-authorization is to receive approval for a service before it happens.
-  1. A claim is to request payment for services that have been rendered.
+    1. A pre-determination is to determine what services may be covered and to what amount.
+    1. A pre-authorization is to receive approval for a service before it happens.
+    1. A claim is to request payment for services that have been rendered.
 1. A point-of-care system can track a claim's status.
 
 <a name="actors-and-transactions"> </a>
