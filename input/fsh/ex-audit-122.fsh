@@ -1,11 +1,11 @@
 Instance:     ex-AuditFAISEnrollBeneficiary
 InstanceOf:   AuditFAISEnrollBeneficiary
-Title:        "Audit example for ITI-YY1 for Beneficiary Requestor for submit."
-Description:  "Audit example for a Beneficiary Requestor requesting a submit on an EnrollmentRequest for ITI-YY1."
+Title:        "Audit example for ITI-122 for Beneficiary Requestor for submit."
+Description:  "Audit example for a Beneficiary Requestor requesting a submit on an EnrollmentRequest for ITI-122."
 Usage:        #example
 
 * subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"
-* subtype[itiYY1] = urn:ihe:event-type-code#ITI-YY1 "Enroll Beneficiary"
+* subtype[iti122] = urn:ihe:event-type-code#ITI-122 "Enroll Beneficiary"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-beneficiary-requestor)

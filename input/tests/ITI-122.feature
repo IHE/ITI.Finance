@@ -1,4 +1,4 @@
-Feature: Test ITI-YY1 Transaction: Enroll Beneficiary
+Feature: Test ITI-122 Transaction: Enroll Beneficiary
 
   Background:
     * url 'http://localhost/fhir'

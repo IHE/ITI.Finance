@@ -17,25 +17,25 @@ The tests below are described using [Gherkin](https://cucumber.io/docs/gherkin/)
 
 The Beneficiary Requestor initiates a request to search for or read an insurance on the Beneficiary Manager.  The Beneficiary Manager responds to the request and returns an insurance plan to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITI121.html).
 
-<p id="featureYY1" class="caption"><b>ITI-121 Query Insurance Plan Test</b></p>
+<p id="feature122" class="caption"><b>ITI-121 Query Insurance Plan Test</b></p>
 ```Gherkin
 {%include_relative ITI-121.feature%}
 ```
 
-### Enroll Beneficiary [[ITI-YY1]](ITI-YY1.html)
+### Enroll Beneficiary [[ITI-122]](ITI-122.html)
 
-The Beneficiary Requestor initiates a request to enroll a beneficiary on the Beneficiary Manager.  The Beneficiary Manager responds to an enrollment request and returns an enrollment response to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITIYY1.html).
+The Beneficiary Requestor initiates a request to enroll a beneficiary on the Beneficiary Manager.  The Beneficiary Manager responds to an enrollment request and returns an enrollment response to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITI122.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY1 Enroll Beneficiary Test</b></p>
+<p id="feature122" class="caption"><b>ITI-122 Enroll Beneficiary Test</b></p>
 ```Gherkin
-{%include_relative ITI-YY1.feature%}
+{%include_relative ITI-122.feature%}
 ```
 
 ### Check Enrollment Status [[ITI-YY3]](ITI-YY3.html)
 
 The Beneficiary Requestor initiates a query on an enrollment response on the Beneficiary Manager.  The Beneficiary Manager responds to the enrollment response request and returns an enrollment response to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITIYY3.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY3 Check Enrollment Status Test</b></p>
+<p id="feature122" class="caption"><b>ITI-YY3 Check Enrollment Status Test</b></p>
 ```Gherkin
 {%include_relative ITI-YY3.feature%}
 ```
@@ -44,7 +44,7 @@ The Beneficiary Requestor initiates a query on an enrollment response on the Ben
 
 The Coverage Requestor initiates a request to check coverage eligibility on the Claims Manager.  The Claims Manager responds to an eligibility request and returns a coverage eligibility response to the Coverage Requestor.  See [Test Definition](Binary-FeatureITIYY4.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY4 Check Coverage Eligibility Test</b></p>
+<p id="feature122" class="caption"><b>ITI-YY4 Check Coverage Eligibility Test</b></p>
 ```Gherkin
 {%include_relative ITI-YY4.feature%}
 ```
@@ -53,7 +53,7 @@ The Coverage Requestor initiates a request to check coverage eligibility on the 
 
 The Coverage Requestor initiates a request to retrieve a coverage eligibility response on the Claims Manager.  The Claims Manager returns a coverage eligibility response to the Coverage Requestor.  See [Test Definition](Binary-FeatureITIYY7.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY7 Check Coverage Eligibility Status Test</b></p>
+<p id="feature122" class="caption"><b>ITI-YY7 Check Coverage Eligibility Status Test</b></p>
 ```Gherkin
 {%include_relative ITI-YY7.feature%}
 ```
@@ -62,7 +62,7 @@ The Coverage Requestor initiates a request to retrieve a coverage eligibility re
 
 The Claims Requestor initiates a request to submit a claim on the Claims Manager.  The Claims Manager responds to a claim submission and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY5.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY5 Submit Claim Test</b></p>
+<p id="feature122" class="caption"><b>ITI-YY5 Submit Claim Test</b></p>
 ```Gherkin
 {%include_relative ITI-YY5.feature%}
 ```
@@ -71,7 +71,7 @@ The Claims Requestor initiates a request to submit a claim on the Claims Manager
 
 The Claims Requestor initiates a request to cancel a claim on the Claims Manager.  The Claims Manager responds to a claim cancellation and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY8.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY8 Cancel Claim Test</b></p>
+<p id="feature122" class="caption"><b>ITI-YY8 Cancel Claim Test</b></p>
 ```Gherkin
 {%include_relative ITI-YY8.feature%}
 ```
@@ -80,7 +80,7 @@ The Claims Requestor initiates a request to cancel a claim on the Claims Manager
 
 The Claims Requestor initiates a request to re-process a claim on the Claims Manager.  The Claims Manager responds to a claim re-process request and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY9.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY9 Re-process Claim Test</b></p>
+<p id="feature122" class="caption"><b>ITI-YY9 Re-process Claim Test</b></p>
 ```Gherkin
 {%include_relative ITI-YY9.feature%}
 ```
@@ -89,7 +89,7 @@ The Claims Requestor initiates a request to re-process a claim on the Claims Man
 
 The Claims Requestor initiates a request to retrieve a claim response on the Claims Manager.  The Claims Manager returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY6.html).
 
-<p id="featureYY1" class="caption"><b>ITI-YY6 Track Claim Test</b></p>
+<p id="feature122" class="caption"><b>ITI-YY6 Track Claim Test</b></p>
 ```Gherkin
 {%include_relative ITI-YY6.feature%}
 ```

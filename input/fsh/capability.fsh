@@ -98,7 +98,7 @@ FAIS Query Insurance Plan transaction [[ITI-121]](ITI-121.html)
     * type = #EnrollmentRequest
     * supportedProfile[+] = Canonical(FAISEnrollmentRequest)
     * documentation = """
-FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
+FAIS Enroll Beneficiary transaction [[ITI-122]](ITI-122.html)
 """
     * operation[+]
       * extension
@@ -106,7 +106,7 @@ FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
         * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISEnrollmentRequestSubmit)
-      * documentation = "Submits an enrollment request to enroll a new beneficiary with the request coverage.  FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)"
+      * documentation = "Submits an enrollment request to enroll a new beneficiary with the request coverage.  FAIS Enroll Beneficiary transaction [[ITI-122]](ITI-122.html)"
   * resource[+]
     * type = #EnrollmentResponse
     * supportedProfile[+] = Canonical(FAISEnrollmentResponse)
@@ -257,7 +257,7 @@ FAIS Query Insurance Plan transaction [[ITI-121]](ITI-121.html)
     * type = #EnrollmentRequest
     * supportedProfile[+] = Canonical(FAISEnrollmentRequest)
     * documentation = """
-FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
+FAIS Enroll Beneficiary transaction [[ITI-122]](ITI-122.html)
 """
     * operation[+]
       * extension
@@ -265,7 +265,7 @@ FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)
         * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISEnrollmentRequestSubmit)
-      * documentation = "Submits an enrollment request to enroll a new beneficiary with the request coverage.  FAIS Enroll Beneficiary transaction [[ITI-YY1]](ITI-YY1.html)"
+      * documentation = "Submits an enrollment request to enroll a new beneficiary with the request coverage.  FAIS Enroll Beneficiary transaction [[ITI-122]](ITI-122.html)"
   * resource[+]
     * type = #EnrollmentResponse
     * supportedProfile[+] = Canonical(FAISEnrollmentResponse)

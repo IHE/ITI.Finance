@@ -17,7 +17,7 @@ This element does not match any known slice defined in the profile https://profi
 This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.ClaimResponse.Bundle|1.0.0-comment (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # These are the testing feature files
-Unknown file type ITI-YY1.feature
+Unknown file type ITI-122.feature
 Unknown file type ITI-121.feature
 Unknown file type ITI-YY3.feature
 Unknown file type ITI-YY4.feature

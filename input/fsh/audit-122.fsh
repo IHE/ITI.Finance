@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when an Enroll Benefici
 to call the $submit operation on a Beneficiary Manager, as recorded by the Beneficiary Requestor and Beneficiary Manager.
 """
 * subtype 2..*
-* subtype contains itiYY1 1..1
-* subtype[itiYY1] = urn:ihe:event-type-code#ITI-YY1 "Enroll Beneficiary"
+* subtype contains iti122 1..1
+* subtype[iti122] = urn:ihe:event-type-code#ITI-122 "Enroll Beneficiary"
 * agent[client] ^short = "Beneficiary Requestor"
 * agent[server] ^short = "Beneficiary Manager"
 * entity[data]

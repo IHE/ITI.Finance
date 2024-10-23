@@ -1,13 +1,13 @@
-Instance:   FeatureITIYY1
+Instance:   FeatureITI122
 InstanceOf: Binary
-Title: "Testing Feature File for ITI YY1"
+Title: "Testing Feature File for ITI 122"
 Description: """
-Gherkin Feature file for testing the Enroll Beneficiary [[ITI-YY1]](ITI-YY1.html) transaction.
+Gherkin Feature file for testing the Enroll Beneficiary [[ITI-122]](ITI-122.html) transaction.
 """
 Usage: #definition
 
 * contentType = #text/plain
-* data = "ig-loader-ITI-YY1.feature"
+* data = "ig-loader-ITI-122.feature"
 
 Instance:   FeatureITI121
 InstanceOf: Binary

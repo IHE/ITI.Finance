@@ -201,7 +201,7 @@ Denied.
 The Beneficiary Requestor has received the response and continues with
 its workflow.
 
-### 2:3.YY1.5 CapabilityStatement Resource
+### 2:3.122.5 CapabilityStatement Resource
 
 Server implementing this transaction SHALL provide a CapabilityStatement Resource as described in ITI TF-2x: Appendix Z.3 indicating the transaction has been implemented.
 

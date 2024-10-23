@@ -17,18 +17,18 @@ group Enroll Beneficiary
   activate BM
   BR->BM: Query Insurance Plans (InsurancePlan)\nITI-121
   BM->BR: Return Matching Insurance Plans\nITI-121
-  BR->BM: Enroll Beneficiary (EnrollmentRequest/$submit)\nITI-YY1
+  BR->BM: Enroll Beneficiary (EnrollmentRequest/$submit)\nITI-122
   alt Success
-    BM->BR: Return Enrolled Response (EnrollmentResponse)\nITI-YY1
+    BM->BR: Return Enrolled Response (EnrollmentResponse)\nITI-122
   else Queued
-    BM->BR: Return Queued Response (EnrollmentResponse)\nITI-YY1
+    BM->BR: Return Queued Response (EnrollmentResponse)\nITI-122
     loop Check Enrollment Status 
       BR->BM: Check Enrollment Status (EnrollmentResponse/ID)\nITI-YY3
       BM->BR: Return Enrolled Response (EnrollmentResponse)\nITI-YY3
       note right: Continue with workflow if completed or continue loop
     end
   else Error
-    BM->BR: Return Error (OperationOutcome)\nITI-YY1
+    BM->BR: Return Error (OperationOutcome)\nITI-122
   end
   deactivate BM
   deactivate BR

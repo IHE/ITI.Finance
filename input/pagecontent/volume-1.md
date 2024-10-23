@@ -27,7 +27,7 @@ and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
   - [Claims Manager](#claims-manager)
 - Transactions
   - [Query Insurance Plan [ITI-121]](ITI-121.html)
-  - [Enroll Beneficiary [ITI-YY1]](ITI-YY1.html)
+  - [Enroll Beneficiary [ITI-122]](ITI-122.html)
   - [Check Enrollment Status [ITI-YY3]](ITI-YY3.html)
   - [Check Coverage Eligibility [ITI-YY4]](ITI-YY4.html)
   - [Check Coverage Eligibility Status [ITI-YY7]](ITI-YY7.html)
@@ -51,10 +51,10 @@ Profile and the relevant transactions between them.
 | Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
 |---------|---------------|------------------------|-----------------|-----------------------------------|
 | Beneficiary Requestor | Query Insurance Plan [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.121](ITI-121.html) |
-|         | Enroll Beneficiary [ITI-YY1] | Initiator | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
+|         | Enroll Beneficiary [ITI-122] | Initiator | R               | [FAIS TF-2: 3.122](ITI-122.html) |
 |         | Check Enrollment Status [ITI-YY3] | Initiator  | O               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
 | Beneficiary Manager | Query Insurance Plan [ITI-121] | Responder  | R               | [FAIS TF-2: 3.121](ITI-121.html) |
-|         | Enroll Beneficiary [ITI-YY1] | Responder | R               | [FAIS TF-2: 3.YY1](ITI-YY1.html) |
+|         | Enroll Beneficiary [ITI-122] | Responder | R               | [FAIS TF-2: 3.122](ITI-122.html) |
 |         | Check Enrollment Status [ITI-YY3] | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
 | Coverage Requestor | Check Coverage Eligibility [ITI-YY4] | Initiator  | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
 |         | Check Coverage Eligibility Status [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
@@ -123,11 +123,11 @@ This transaction is used to search for available insurance plans.
 
 For more details see the detailed [transaction description](ITI-121.html)
 
-#### 1:XX.1.2.2 Enroll Beneficiary Transaction [ITI-YY1] 122
+#### 1:XX.1.2.2 Enroll Beneficiary Transaction [ITI-122] 122
 
 This transaction is used to enroll or update a beneficiary.
 
-For more details see the detailed [transaction description](ITI-YY1.html)
+For more details see the detailed [transaction description](ITI-122.html)
 
 #### 1:XX.1.2.3 Check Enrollment Status Transaction [ITI-YY3] 123
 

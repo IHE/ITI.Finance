@@ -14,17 +14,17 @@ App->App: Capture additional data
 App->FIS: Search for Insurance Plans\n&#91;ITI-121&#93; Query Insurance Plan request
 FIS->App: Return Insurance Plans\n&#91;ITI-121&#93; Query Insurance Plan response
 App->App: Compile Enrollment Request
-App->FIS: Submit enrollment\n&#91;ITI-YY1&#93; Enroll Beneficiary request
+App->FIS: Submit enrollment\n&#91;ITI-122&#93; Enroll Beneficiary request
 FIS->FIS: Verify eligibility
 alt Success
   FIS->FIS: Process enrollment
-  FIS->App: Return positive enrollment response\n&#91;ITI-YY1&#93; Enroll Beneficiary response
+  FIS->App: Return positive enrollment response\n&#91;ITI-122&#93; Enroll Beneficiary response
   App->App: Add details to patient record
   opt
     App->CR: Add beneficiary ID to registry\n&#91;ITI-93&#93; Mobile Patient Identity Feed
   end
 else Validation Error
-  FIS->App: Return negative enrollment response\n&#91;ITI-YY1&#93; Enroll Beneficiary response
+  FIS->App: Return negative enrollment response\n&#91;ITI-122&#93; Enroll Beneficiary response
 end
 
 @enduml
