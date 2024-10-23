@@ -37,18 +37,18 @@ end
 group Patient Visit
   activate CM
   activate CV
-  CV->CM: Check Patient's Coverage (CoverageEligibilityRequest/$submit)\nITI-YY4
+  CV->CM: Check Patient's Coverage (CoverageEligibilityRequest/$submit)\nITI-124
   alt Success (covered or not)
-    CM->CV: Return Eligibility (CoverageEligibilityResponse)\nITI-YY4
+    CM->CV: Return Eligibility (CoverageEligibilityResponse)\nITI-124
   else Queued 
-    CM->CV: Return Queued Response (CoverageEligibilityResponse)\nITI-YY4
+    CM->CV: Return Queued Response (CoverageEligibilityResponse)\nITI-124
     loop Check Eligibility Status
       CV->CM: Check Eligibility Status (CoverageEligibilityResponse)\nITI-YY7
       CM->CV: Return Eligibility Response (CoverageEligibilityResponse)\nITI-YY7
       note right: Continue with workflow if completed or continue loop.
     end
   else Error
-    BM->BR: Return Error (OperationOutcome)\nITI-YY4
+    BM->BR: Return Error (OperationOutcome)\nITI-124
   end
   deactivate CV
 

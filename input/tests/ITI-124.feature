@@ -1,4 +1,4 @@
-Feature: Test ITI-YY4 Transaction: Check Coverage Eligibility
+Feature: Test ITI-124 Transaction: Check Coverage Eligibility
 
   Background:
     * url 'http://localhost/fhir'

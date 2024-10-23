@@ -345,7 +345,7 @@ The Coverage Requestor checks for what coverage a patient has and can query for 
     * type = #CoverageEligibilityRequest
     * supportedProfile[+] = Canonical(FAISCoverageEligibilityRequest)
     * documentation = """
-FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)
+FAIS Check Coverage Eligibility transaction [[ITI-124]](ITI-124.html)
 """
     * operation[+]
       * extension
@@ -353,7 +353,7 @@ FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)
         * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISCoverageEligibilityRequestSubmit)
-      * documentation = "Submits a coverage eligibility request to check the coverage of a beneficiary.  FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)."
+      * documentation = "Submits a coverage eligibility request to check the coverage of a beneficiary.  FAIS Check Coverage Eligibility transaction [[ITI-124]](ITI-124.html)."
   * resource[+]
     * type = #CoverageEligibilityResponse
     * supportedProfile[+] = Canonical(FAISCoverageEligibilityResponse)
@@ -566,12 +566,12 @@ The Claims Manager processes claims requests from the Claims Requestor.  It foll
     * type = #CoverageEligibilityRequest
     * supportedProfile[+] = Canonical(FAISCoverageEligibilityRequest)
     * documentation = """
-FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)
+FAIS Check Coverage Eligibility transaction [[ITI-124]](ITI-124.html)
 """
     * operation[+]
       * name = "submit"
       * definition = Canonical(FAISCoverageEligibilityRequestSubmit)
-      * documentation = "Submits a coverage eligibility request to check the coverage of a beneficiary.  FAIS Check Coverage Eligibility transaction [[ITI-YY4]](ITI-YY4.html)."
+      * documentation = "Submits a coverage eligibility request to check the coverage of a beneficiary.  FAIS Check Coverage Eligibility transaction [[ITI-124]](ITI-124.html)."
   * resource[+]
     * type = #CoverageEligibilityResponse
     * supportedProfile[+] = Canonical(FAISCoverageEligibilityResponse)

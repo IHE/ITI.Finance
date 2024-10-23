@@ -27,7 +27,7 @@ This guide is organized into the following sections:
    1. [3.121 Query Insurance Plan [ITI-121]](ITI-121.html)
    1. [3.122 Enroll Beneficiary [ITI-122]](ITI-122.html)
    1. [3.123 Check Enrollment Status [ITI-123]](ITI-123.html)
-   1. [3.YY4 Check Coverage Eligibility [ITI-YY4]](ITI-YY4.html)
+   1. [3.124 Check Coverage Eligibility [ITI-124]](ITI-124.html)
    1. [3.YY7 Check Coverage Eligibility Status [ITI-YY7]](ITI-YY7.html)
    1. [3.YY5 Submit Claim [ITI-YY5]](ITI-YY5.html)
    1. [3.YY8 Cancel Claim [ITI-YY8]](ITI-YY8.html)

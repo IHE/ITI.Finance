@@ -1,11 +1,11 @@
 Instance:     ex-AuditFAISCheckCoverageEligibility
 InstanceOf:   AuditFAISCheckCoverageEligibility
-Title:        "Audit example for ITI-YY4 for Coverage Requestor for submit."
-Description:  "Audit example for a Coverage Requestor requesting a submit on a CoverageEligibilityRequest for ITI-YY4."
+Title:        "Audit example for ITI-124 for Coverage Requestor for submit."
+Description:  "Audit example for a Coverage Requestor requesting a submit on a CoverageEligibilityRequest for ITI-124."
 Usage:        #example
 
 * subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"
-* subtype[itiYY4] = urn:ihe:event-type-code#ITI-YY4 "Check Coverage Eligibility"
+* subtype[iti124] = urn:ihe:event-type-code#ITI-124 "Check Coverage Eligibility"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-coverage-requestor)

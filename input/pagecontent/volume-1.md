@@ -29,7 +29,7 @@ and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
   - [Query Insurance Plan [ITI-121]](ITI-121.html)
   - [Enroll Beneficiary [ITI-122]](ITI-122.html)
   - [Check Enrollment Status [ITI-123]](ITI-123.html)
-  - [Check Coverage Eligibility [ITI-YY4]](ITI-YY4.html)
+  - [Check Coverage Eligibility [ITI-124]](ITI-124.html)
   - [Check Coverage Eligibility Status [ITI-YY7]](ITI-YY7.html)
   - [Submit Claim [ITI-YY5]](ITI-YY5.html)
   - [Cancel Claim [ITI-YY8]](ITI-YY8.html)
@@ -56,13 +56,13 @@ Profile and the relevant transactions between them.
 | Beneficiary Manager | Query Insurance Plan [ITI-121] | Responder  | R               | [FAIS TF-2: 3.121](ITI-121.html) |
 |         | Enroll Beneficiary [ITI-122] | Responder | R               | [FAIS TF-2: 3.122](ITI-122.html) |
 |         | Check Enrollment Status [ITI-123] | Responder  | R               | [FAIS TF-2: 3.123](ITI-123.html) |
-| Coverage Requestor | Check Coverage Eligibility [ITI-YY4] | Initiator  | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+| Coverage Requestor | Check Coverage Eligibility [ITI-124] | Initiator  | R               | [FAIS TF-2: 3.124](ITI-124.html) |
 |         | Check Coverage Eligibility Status [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
 | Claims Requestor | Submit Claim [ITI-YY5] | Initiator | R               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
 |         | Cancel Claim [ITI-YY8] | Initiator  | R               | [FAIS TF-2: 3.YY8](ITI-YY8.html) |
 |         | Re-process Claim [ITI-YY9] | Initiator  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
 |         | Track Claim [ITI-YY6] | Initiator  | O               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
-| Claims Manager | Check Coverage Eligibility [ITI-YY4] | Responder  | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
+| Claims Manager | Check Coverage Eligibility [ITI-124] | Responder  | R               | [FAIS TF-2: 3.124](ITI-124.html) |
 |         | Check Coverage Eligibility Status [ITI-YY7] | Responder  | R               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
 |         | Submit Claim [ITI-YY5] | Responder | R               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
 |         | Cancel Claim [ITI-YY8] | Responder  | R               | [FAIS TF-2: 3.YY8](ITI-YY8.html) |
@@ -135,11 +135,11 @@ This transaction is used to check the status of an enrollment.
 
 For more details see the detailed [transaction description](ITI-123.html)
 
-#### 1:XX.1.2.4 Check Coverage Eligibility Transaction [ITI-YY4] 124
+#### 1:XX.1.2.4 Check Coverage Eligibility Transaction [ITI-124] 124
 
 This transaction is used to check the coverage eligibility for a given beneficiary.
 
-For more details see the detailed [transaction description](ITI-YY4.html)
+For more details see the detailed [transaction description](ITI-124.html)
 
 #### 1:XX.1.2.5 Check Coverage Eligibility Status Transaction [ITI-YY7] 125
 

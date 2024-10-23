@@ -40,13 +40,13 @@ The Beneficiary Requestor initiates a query on an enrollment response on the Ben
 {%include_relative ITI-123.feature%}
 ```
 
-### Check Coverage Eligibility [[ITI-YY4]](ITI-YY4.html)
+### Check Coverage Eligibility [[ITI-124]](ITI-124.html)
 
-The Coverage Requestor initiates a request to check coverage eligibility on the Claims Manager.  The Claims Manager responds to an eligibility request and returns a coverage eligibility response to the Coverage Requestor.  See [Test Definition](Binary-FeatureITIYY4.html).
+The Coverage Requestor initiates a request to check coverage eligibility on the Claims Manager.  The Claims Manager responds to an eligibility request and returns a coverage eligibility response to the Coverage Requestor.  See [Test Definition](Binary-FeatureITI124.html).
 
-<p id="feature122" class="caption"><b>ITI-YY4 Check Coverage Eligibility Test</b></p>
+<p id="feature122" class="caption"><b>ITI-124 Check Coverage Eligibility Test</b></p>
 ```Gherkin
-{%include_relative ITI-YY4.feature%}
+{%include_relative ITI-124.feature%}
 ```
 
 ### Check Coverage Eligibility Status [[ITI-YY7]](ITI-YY7.html)
