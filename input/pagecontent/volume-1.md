@@ -1,7 +1,7 @@
 
 The Finance and Insurance Service (FAIS) Profile stores, categorizes, and facilitates the administration of centralized claims and finance data for patient care. The service receives claims/financial data from Point of Service (POS) applications (including financing applications acting as a point of service interface outside of other POS systems) and curates the management of them.
 
-This profile is initially focused on a greenfield implementation, a new system without relying on existing infrastructure or code, in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.  Implementation with existing infrastructure may want to review [X12N - Insurance](https://x12.org/), [DaVinci Payer Data Exchange (PDex)](https://hl7.org/fhir/us/davinci-pdex/), and/or [DaVinci Prior Authorization Support (PAS)](https://hl7.org/fhir/us/davinci-pas/).
+This profile is initially focused on a greenfield implementation, a new system without relying on existing infrastructure or code, in emerging markets.  This isn't to say it can't be applied in other areas, but this is the initial scope.  Implementations with existing infrastructure may want to review [X12N - Insurance](https://x12.org/products/transaction-sets), [DaVinci Payer Data Exchange (PDex)](https://hl7.org/fhir/us/davinci-pdex/), and/or [DaVinci Prior Authorization Support (PAS)](https://hl7.org/fhir/us/davinci-pas/).
 
 This collection of workflows allows an external system to save and retrieve Finance and Insurance Information.  The workflows are designed to support the following types of data exchanges with systems.
 
