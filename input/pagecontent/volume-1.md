@@ -117,55 +117,55 @@ FHIR Capability Statement for [Claims Manager](CapabilityStatement-IHE.FAIS.Clai
 
 The transactions in this profile are summarized in the sections below.
 
-#### 1:XX.1.2.1 Query Insurance Plan Transaction [ITI-121] 121
+#### 1:XX.1.2.1 Query Insurance Plan Transaction [ITI-121]
 
 This transaction is used to search for available insurance plans.
 
 For more details see the detailed [transaction description](ITI-121.html)
 
-#### 1:XX.1.2.2 Enroll Beneficiary Transaction [ITI-122] 122
+#### 1:XX.1.2.2 Enroll Beneficiary Transaction [ITI-122]
 
 This transaction is used to enroll or update a beneficiary.
 
 For more details see the detailed [transaction description](ITI-122.html)
 
-#### 1:XX.1.2.3 Check Enrollment Status Transaction [ITI-123] 123
+#### 1:XX.1.2.3 Check Enrollment Status Transaction [ITI-123]
 
 This transaction is used to check the status of an enrollment.
 
 For more details see the detailed [transaction description](ITI-123.html)
 
-#### 1:XX.1.2.4 Check Coverage Eligibility Transaction [ITI-124] 124
+#### 1:XX.1.2.4 Check Coverage Eligibility Transaction [ITI-124]
 
 This transaction is used to check the coverage eligibility for a given beneficiary.
 
 For more details see the detailed [transaction description](ITI-124.html)
 
-#### 1:XX.1.2.5 Check Coverage Eligibility Status Transaction [ITI-125] 125
+#### 1:XX.1.2.5 Check Coverage Eligibility Status Transaction [ITI-125]
 
 This transaction is used to check the status of a coverage eligibility request.
 
 For more details see the detailed [transaction description](ITI-125.html)
 
-#### 1:XX.1.2.6 Submit Claim Transaction [ITI-126] 126
+#### 1:XX.1.2.6 Submit Claim Transaction [ITI-126]
 
 This transaction is used to submit a claim.  This can be either a pre-determination, pre-authorization, or a final claim ready for payment.
 
 For more details see the detailed [transaction description](ITI-126.html)
 
-#### 1:XX.1.2.7 Cancel Claim Transaction [ITI-127] 127
+#### 1:XX.1.2.7 Cancel Claim Transaction [ITI-127]
 
 This transaction is used to cancel a previously submitted claim.
 
 For more details see the detailed [transaction description](ITI-127.html)
 
-#### 1:XX.1.2.8 Re-process Claim Transaction [ITI-128] 128
+#### 1:XX.1.2.8 Re-process Claim Transaction [ITI-128]
 
 This transaction is used to re-process a previously submitted claim that was denied.
 
 For more details see the detailed [transaction description](ITI-128.html)
 
-#### 1:XX.1.2.9 Track Claim Transaction [ITI-129] 129
+#### 1:XX.1.2.9 Track Claim Transaction [ITI-129]
 
 This transaction is used to return the status of a given claim.
 
