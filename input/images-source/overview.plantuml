@@ -61,8 +61,8 @@ group Patient Visit
       CM->CR: Return Queued Response (ClaimResponse)\nITI-126
       alt Check Pre-determination Status
         loop Check Pre-determination Status
-          CR->CM: Check Pre-determination Status (ClaimResponse)\nITI-YY6
-          CM->CR: Return Pre-determination Response (ClaimResponse)\nITI-YY6
+          CR->CM: Check Pre-determination Status (ClaimResponse)\nITI-129
+          CM->CR: Return Pre-determination Response (ClaimResponse)\nITI-129
           note right: Continue with workflow if completed or continue loop.
         end
       else Cancel Claim
@@ -81,8 +81,8 @@ group Patient Visit
       CM->CR: Return Queued Response (ClaimResponse)\nITI-126
       alt Check Pre-authorization Status
         loop Check Pre-authorization Status
-          CR->CM: Check Pre-authorization Status (ClaimResponse)\nITI-YY6
-          CM->CR: Return Pre-authorization Response (ClaimResponse)\nITI-YY6
+          CR->CM: Check Pre-authorization Status (ClaimResponse)\nITI-129
+          CM->CR: Return Pre-authorization Response (ClaimResponse)\nITI-129
           note right: Continue with workflow if completed or continue loop.
         end
       else Cancel Claim
@@ -106,8 +106,8 @@ group Patient Visit
           CM->CR: Return Queued Response (ClaimResponse)\nITI-128
           alt Check Claim Status
             loop Check Claim Status
-              CR->CM: Check Claim Status (ClaimResponse)\nITI-YY6
-              CM->CR: Return Claim Response (ClaimResponse)\nITI-YY6
+              CR->CM: Check Claim Status (ClaimResponse)\nITI-129
+              CM->CR: Return Claim Response (ClaimResponse)\nITI-129
               note right: Continue with workflow if completed or continue loop.
             end
           else Cancel Claim
@@ -120,8 +120,8 @@ group Patient Visit
     else Queued 
       CM->CR: Return Queued Response (ClaimResponse)\nITI-126
       loop Check Claim Status
-        CR->CM: Check Claim Status (ClaimResponse)\nITI-YY6
-        CM->CR: Return Claim Response (ClaimResponse)\nITI-YY6
+        CR->CM: Check Claim Status (ClaimResponse)\nITI-129
+        CM->CR: Return Claim Response (ClaimResponse)\nITI-129
         note right: Continue with workflow if completed or continue loop.
       end
     else Error
@@ -137,8 +137,8 @@ group Patient Visit
     else Queued 
       CM->CR: Return Queued Response (ClaimResponse)\nITI-127
       loop Check Claim Status
-        CR->CM: Check Claim Status (ClaimResponse)\nITI-YY6
-        CM->CR: Return Claim Response (ClaimResponse)\nITI-YY6
+        CR->CM: Check Claim Status (ClaimResponse)\nITI-129
+        CM->CR: Return Claim Response (ClaimResponse)\nITI-129
         note right: Continue with workflow if completed or continue loop.
       end
     else Error

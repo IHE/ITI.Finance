@@ -1,11 +1,11 @@
 Instance:     ex-AuditFAISClaimResponseRead
 InstanceOf:   AuditFAISClaimResponseRead
-Title:        "Audit example for ITI-YY6 for Claims Requestor for read."
-Description:  "Audit example for a Claims Requestor requesting a read on a ClaimResponse for ITI-YY6."
+Title:        "Audit example for ITI-129 for Claims Requestor for read."
+Description:  "Audit example for a Claims Requestor requesting a read on a ClaimResponse for ITI-129."
 Usage:        #example
 
 * subtype[anyRead] = http://hl7.org/fhir/restful-interaction#read "read"
-* subtype[itiYY6] = urn:ihe:event-type-code#ITI-YY6 "Track Claim"
+* subtype[iti129] = urn:ihe:event-type-code#ITI-129 "Track Claim"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-claims-requestor)
@@ -27,11 +27,11 @@ Usage:        #example
 
 Instance:     ex-AuditFAISClaimResponseQuery
 InstanceOf:   AuditFAISClaimResponseQuery
-Title:        "Audit example for ITI-YY6 for Claims Manager for query."
-Description:  "Audit example for a Claims Manager requesting a query on a ClaimResponse for ITI-YY6."
+Title:        "Audit example for ITI-129 for Claims Manager for query."
+Description:  "Audit example for a Claims Manager requesting a query on a ClaimResponse for ITI-129."
 Usage:        #example
 * subtype[anySearch] = http://hl7.org/fhir/restful-interaction#search "search"
-* subtype[itiYY6] = urn:ihe:event-type-code#ITI-YY6 "Track Claim"
+* subtype[iti129] = urn:ihe:event-type-code#ITI-129 "Track Claim"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-claims-manager)

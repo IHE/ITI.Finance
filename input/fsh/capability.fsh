@@ -477,7 +477,7 @@ Supports these transactions:
     * type = #ClaimResponse
     * supportedProfile[+] = Canonical(FAISClaimResponse)
     * documentation = """
-FAIS Track Claim transaction [[ITI-YY6]](ITI-YY6.html)
+FAIS Track Claim transaction [[ITI-129]](ITI-129.html)
 """
     * interaction[+]
       * extension
@@ -664,7 +664,7 @@ Supports these transactions:
     * type = #ClaimResponse
     * supportedProfile[+] = Canonical(FAISClaimResponse)
     * documentation = """
-FAIS Track Claim transaction [[ITI-YY6]](ITI-YY6.html)
+FAIS Track Claim transaction [[ITI-129]](ITI-129.html)
 """
     * interaction[+]
       * extension

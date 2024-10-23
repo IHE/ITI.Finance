@@ -15,7 +15,7 @@ if (eligibility ?) then (covered)
   if (service needs pre-determination ?) then (yes)
     :submit pre-determination claim\nSubmit Claim &#91;ITI-126&#93;>
     while (check results ?) is (queued)
-      :track claim\nTrack Claim &#91;ITI-YY6&#93;<
+      :track claim\nTrack Claim &#91;ITI-129&#93;<
     endwhile (completed)
     :process pre-determination response|
   else (no)
@@ -24,7 +24,7 @@ if (eligibility ?) then (covered)
   if (service needs pre-authorization ?) then (yes)
   :submit pre-authorization claim\nSubmit Claim &#91;ITI-126&#93;>
   while (check results ?) is (queued)
-    :track claim\nTrack Claim &#91;ITI-YY6&#93;<
+    :track claim\nTrack Claim &#91;ITI-129&#93;<
   endwhile (completed)
   :process pre-authorization response|
   else (no)
@@ -36,12 +36,12 @@ if (eligibility ?) then (covered)
     if (claim is cancelled ?) then (yes)
       :cancel claim\nCancel Claim &#91;ITI-127&#93;>
     endif
-    :track claim\nTrack Claim &#91;ITI-YY6&#93;<
+    :track claim\nTrack Claim &#91;ITI-129&#93;<
   endwhile (completed)
   if (claim is denied ?) then (yes)
     :re-process claim\nRe-process Claim &#91;ITI-128&#93;>
     while (check results ?) is (queued)
-      :track claim\nTrack Claim &#91;ITI-YY6&#93;<
+      :track claim\nTrack Claim &#91;ITI-129&#93;<
     endwhile (completed)
   endif
   :process claim response|

@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when a Track Claim Tran
 to read a ClaimResponse, as recorded by the Coverage Requestor and Claims Manager.
 """
 * subtype 2..*
-* subtype contains itiYY6 1..1
-* subtype[itiYY6] = urn:ihe:event-type-code#ITI-YY6 "Track Claim"
+* subtype contains iti129 1..1
+* subtype[iti129] = urn:ihe:event-type-code#ITI-129 "Track Claim"
 * entity[data]
   * role = http://terminology.hl7.org/CodeSystem/object-role#4 "Domain Resource"
   * what 1..1
@@ -25,7 +25,7 @@ Defines constraints on the AuditEvent Resource to record when a Track Claim Tran
 to query a ClaimResponse, as recorded by the Coverage Requestor and Claims Manager.
 """
 * subtype 2..*
-* subtype contains itiYY6 1..1
-* subtype[itiYY6] = urn:ihe:event-type-code#ITI-YY6 "Track Claim"
+* subtype contains iti129 1..1
+* subtype[iti129] = urn:ihe:event-type-code#ITI-129 "Track Claim"
 * agent[client] ^short = "Claims Requestor"
 * agent[server] ^short = "Claims Manager"

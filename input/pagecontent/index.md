@@ -32,7 +32,7 @@ This guide is organized into the following sections:
    1. [3.126 Submit Claim [ITI-126]](ITI-126.html)
    1. [3.127 Cancel Claim [ITI-127]](ITI-127.html)
    1. [3.128 Re-process Claim [ITI-128]](ITI-128.html)
-   1. [3.YY6 Track Claim [ITI-YY6]](ITI-YY6.html)
+   1. [3.129 Track Claim [ITI-129]](ITI-129.html)
 1. Other
    1. [Changes to Other IHE Specifications](other.html)
    1. [Download and Analysis](download.html)

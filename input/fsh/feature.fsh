@@ -53,16 +53,16 @@ Usage: #definition
 * contentType = #text/plain
 * data = "ig-loader-ITI-126.feature"
 
-Instance:   FeatureITIYY6
+Instance:   FeatureITI129
 InstanceOf: Binary
-Title: "Testing Feature File for ITI YY6"
+Title: "Testing Feature File for ITI 129"
 Description: """
-Gherkin Feature file for testing the Track Claim [[ITI-YY6]](ITI-YY6.html) transaction.
+Gherkin Feature file for testing the Track Claim [[ITI-129]](ITI-129.html) transaction.
 """
 Usage: #definition
 
 * contentType = #text/plain
-* data = "ig-loader-ITI-YY6.feature"
+* data = "ig-loader-ITI-129.feature"
 
 Instance:   FeatureITI125
 InstanceOf: Binary

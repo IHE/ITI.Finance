@@ -34,7 +34,7 @@ and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
   - [Submit Claim [ITI-126]](ITI-126.html)
   - [Cancel Claim [ITI-127]](ITI-127.html)
   - [Re-process Claim [ITI-128]](ITI-128.html)
-  - [Track Claim [ITI-YY6]](ITI-YY6.html)
+  - [Track Claim [ITI-129]](ITI-129.html)
 
 Figure 1:XX.1-1 below shows the actors directly
 involved in the Finance and Insurance Service 
@@ -61,13 +61,13 @@ Profile and the relevant transactions between them.
 | Claims Requestor | Submit Claim [ITI-126] | Initiator | R               | [FAIS TF-2: 3.126](ITI-126.html) |
 |         | Cancel Claim [ITI-127] | Initiator  | R               | [FAIS TF-2: 3.127](ITI-127.html) |
 |         | Re-process Claim [ITI-128] | Initiator  | R               | [FAIS TF-2: 3.128](ITI-128.html) |
-|         | Track Claim [ITI-YY6] | Initiator  | O               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
+|         | Track Claim [ITI-129] | Initiator  | O               | [FAIS TF-2: 3.129](ITI-129.html) |
 | Claims Manager | Check Coverage Eligibility [ITI-124] | Responder  | R               | [FAIS TF-2: 3.124](ITI-124.html) |
 |         | Check Coverage Eligibility Status [ITI-125] | Responder  | R               | [FAIS TF-2: 3.125](ITI-125.html) |
 |         | Submit Claim [ITI-126] | Responder | R               | [FAIS TF-2: 3.126](ITI-126.html) |
 |         | Cancel Claim [ITI-127] | Responder  | R               | [FAIS TF-2: 3.127](ITI-127.html) |
 |         | Re-process Claim [ITI-128] | Responder  | R               | [FAIS TF-2: 3.128](ITI-128.html) |
-|         | Track Claim [ITI-YY6] | Responder  | R               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
+|         | Track Claim [ITI-129] | Responder  | R               | [FAIS TF-2: 3.129](ITI-129.html) |
 {: .grid}
 
 ### 1:XX.1.1 Actors
@@ -165,11 +165,11 @@ This transaction is used to re-process a previously submitted claim that was den
 
 For more details see the detailed [transaction description](ITI-128.html)
 
-#### 1:XX.1.2.9 Track Claim Transaction [ITI-YY6] 129
+#### 1:XX.1.2.9 Track Claim Transaction [ITI-129] 129
 
 This transaction is used to return the status of a given claim.
 
-For more details see the detailed [transaction description](ITI-YY6.html)
+For more details see the detailed [transaction description](ITI-129.html)
 
 
 <a name="actor-options"> </a>
