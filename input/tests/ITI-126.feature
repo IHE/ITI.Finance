@@ -1,4 +1,4 @@
-Feature: Test ITI-YY5 Transaction: Submit Claim
+Feature: Test ITI-126 Transaction: Submit Claim
   Background:
     * url 'http://localhost/fhir'
 

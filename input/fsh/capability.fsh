@@ -448,7 +448,7 @@ The Claims Requestor files a pre-determination, pre-authorization, or claim for 
     * supportedProfile[+] = Canonical(FAISClaim)
     * documentation = """
 Supports these transactions:
-* [Submit Claim [ITI-YY5]](ITI-YY5.html)
+* [Submit Claim [ITI-126]](ITI-126.html)
 * [Cancel Claim [ITI-YY8]](ITI-YY8.html)
 * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
 """
@@ -458,7 +458,7 @@ Supports these transactions:
         * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISClaimSubmit)
-      * documentation = "Submits a claim.  FAIS Submit Claim transaction [[ITI-YY5]](ITI-YY5.html)."
+      * documentation = "Submits a claim.  FAIS Submit Claim transaction [[ITI-126]](ITI-126.html)."
     * operation[+]
       * extension
         * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -635,7 +635,7 @@ FAIS Check Coverage Eligibility Status transaction [[ITI-125]](ITI-125.html)
     * supportedProfile[+] = Canonical(FAISClaim)
     * documentation = """
 Supports these transactions:
-* [Submit Claim [ITI-YY5]](ITI-YY5.html)
+* [Submit Claim [ITI-126]](ITI-126.html)
 * [Cancel Claim [ITI-YY8]](ITI-YY8.html)
 * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
 """
@@ -645,7 +645,7 @@ Supports these transactions:
         * valueCode = #SHALL
       * name = "submit"
       * definition = Canonical(FAISClaimSubmit)
-      * documentation = "Submits a claim.  FAIS Submit Claim transaction [[ITI-YY5]](ITI-YY5.html)."
+      * documentation = "Submits a claim.  FAIS Submit Claim transaction [[ITI-126]](ITI-126.html)."
     * operation[+]
       * extension
         * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

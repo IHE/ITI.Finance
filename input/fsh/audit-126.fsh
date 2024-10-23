@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when a Submit Claim Tra
 to call the $submit operation on a Claims Manager, as recorded by the Claims Requestor and Claims Manager.
 """
 * subtype 2..*
-* subtype contains itiYY5 1..1
-* subtype[itiYY5] = urn:ihe:event-type-code#ITI-YY5 "Submit Claim"
+* subtype contains iti126 1..1
+* subtype[iti126] = urn:ihe:event-type-code#ITI-126 "Submit Claim"
 * agent[client] ^short = "Claims Requestor"
 * agent[server] ^short = "Claims Manager"
 * entity[data]

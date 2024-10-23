@@ -54,11 +54,11 @@ group Patient Visit
 
   activate CR
   opt Pre-Determination 
-    CR->CM: Submit pre-determination (Claim/$submit use=predetermination)\nITI-YY5
+    CR->CM: Submit pre-determination (Claim/$submit use=predetermination)\nITI-126
     alt Success (accept or denied)
-      CM->CR: Return Pre-determination Response (ClaimResponse)\nITI-YY5
+      CM->CR: Return Pre-determination Response (ClaimResponse)\nITI-126
     else Queued 
-      CM->CR: Return Queued Response (ClaimResponse)\nITI-YY5
+      CM->CR: Return Queued Response (ClaimResponse)\nITI-126
       alt Check Pre-determination Status
         loop Check Pre-determination Status
           CR->CM: Check Pre-determination Status (ClaimResponse)\nITI-YY6
@@ -69,16 +69,16 @@ group Patient Visit
         CR->CR: Process cancel claim option
       end
     else Error
-      CM->CR: Return Error (OperationOutcome)\nITI-YY5
+      CM->CR: Return Error (OperationOutcome)\nITI-126
     end
   end
 
   opt Pre-Authorization
-    CR->CM: Submit pre-authorization (Claim/$submit use=preauthorization)\nITI-YY5
+    CR->CM: Submit pre-authorization (Claim/$submit use=preauthorization)\nITI-126
     alt Success (accept or denied)
-      CM->CR: Return Pre-authorization Response (ClaimResponse)\nITI-YY5
+      CM->CR: Return Pre-authorization Response (ClaimResponse)\nITI-126
     else Queued 
-      CM->CR: Return Queued Response (ClaimResponse)\nITI-YY5
+      CM->CR: Return Queued Response (ClaimResponse)\nITI-126
       alt Check Pre-authorization Status
         loop Check Pre-authorization Status
           CR->CM: Check Pre-authorization Status (ClaimResponse)\nITI-YY6
@@ -89,14 +89,14 @@ group Patient Visit
         CR->CR: Process cancel claim option
       end
     else Error
-      CM->CR: Return Error (OperationOutcome)\nITI-YY5
+      CM->CR: Return Error (OperationOutcome)\nITI-126
     end
   end
 
   opt File Claim
-    CR->CM: Submit Claim (Claim/$submit use=claim)\nITI-YY5
+    CR->CM: Submit Claim (Claim/$submit use=claim)\nITI-126
     alt Covered
-      CM->CR: Return Claim Response (ClaimResponse)\nITI-YY5
+      CM->CR: Return Claim Response (ClaimResponse)\nITI-126
     else Denied
       opt Re-process Claim
         CR->CM: Re-process Claim (Claim/ID/$reprocess)\nITI-YY9
@@ -118,14 +118,14 @@ group Patient Visit
         end
       end
     else Queued 
-      CM->CR: Return Queued Response (ClaimResponse)\nITI-YY5
+      CM->CR: Return Queued Response (ClaimResponse)\nITI-126
       loop Check Claim Status
         CR->CM: Check Claim Status (ClaimResponse)\nITI-YY6
         CM->CR: Return Claim Response (ClaimResponse)\nITI-YY6
         note right: Continue with workflow if completed or continue loop.
       end
     else Error
-      CM->CR: Return Error (OperationOutcome)\nITI-YY5
+      CM->CR: Return Error (OperationOutcome)\nITI-126
     end
 
   end

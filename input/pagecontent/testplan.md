@@ -58,13 +58,13 @@ The Coverage Requestor initiates a request to retrieve a coverage eligibility re
 {%include_relative ITI-125.feature%}
 ```
 
-### Submit Claim [[ITI-YY5]](ITI-YY5.html)
+### Submit Claim [[ITI-126]](ITI-126.html)
 
-The Claims Requestor initiates a request to submit a claim on the Claims Manager.  The Claims Manager responds to a claim submission and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY5.html).
+The Claims Requestor initiates a request to submit a claim on the Claims Manager.  The Claims Manager responds to a claim submission and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITI126.html).
 
-<p id="feature122" class="caption"><b>ITI-YY5 Submit Claim Test</b></p>
+<p id="feature122" class="caption"><b>ITI-126 Submit Claim Test</b></p>
 ```Gherkin
-{%include_relative ITI-YY5.feature%}
+{%include_relative ITI-126.feature%}
 ```
 
 ### Cancel Claim [[ITI-YY8]](ITI-YY8.html)

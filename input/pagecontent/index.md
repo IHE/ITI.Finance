@@ -29,7 +29,7 @@ This guide is organized into the following sections:
    1. [3.123 Check Enrollment Status [ITI-123]](ITI-123.html)
    1. [3.124 Check Coverage Eligibility [ITI-124]](ITI-124.html)
    1. [3.125 Check Coverage Eligibility Status [ITI-125]](ITI-125.html)
-   1. [3.YY5 Submit Claim [ITI-YY5]](ITI-YY5.html)
+   1. [3.126 Submit Claim [ITI-126]](ITI-126.html)
    1. [3.YY8 Cancel Claim [ITI-YY8]](ITI-YY8.html)
    1. [3.YY9 Re-process Claim [ITI-YY9]](ITI-YY9.html)
    1. [3.YY6 Track Claim [ITI-YY6]](ITI-YY6.html)

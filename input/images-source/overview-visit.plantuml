@@ -13,7 +13,7 @@ if (eligibility ?) then (covered)
   :patient clinical visit;
 
   if (service needs pre-determination ?) then (yes)
-    :submit pre-determination claim\nSubmit Claim &#91;ITI-YY5&#93;>
+    :submit pre-determination claim\nSubmit Claim &#91;ITI-126&#93;>
     while (check results ?) is (queued)
       :track claim\nTrack Claim &#91;ITI-YY6&#93;<
     endwhile (completed)
@@ -22,7 +22,7 @@ if (eligibility ?) then (covered)
     :continue service;
   endif 
   if (service needs pre-authorization ?) then (yes)
-  :submit pre-authorization claim\nSubmit Claim &#91;ITI-YY5&#93;>
+  :submit pre-authorization claim\nSubmit Claim &#91;ITI-126&#93;>
   while (check results ?) is (queued)
     :track claim\nTrack Claim &#91;ITI-YY6&#93;<
   endwhile (completed)
@@ -31,7 +31,7 @@ if (eligibility ?) then (covered)
     :continue service;
   endif
   :service complete;
-  :submit claim\nSubmit Claim &#91;ITI-YY5&#93;>
+  :submit claim\nSubmit Claim &#91;ITI-126&#93;>
   while (check results ?) is (queued)
     if (claim is cancelled ?) then (yes)
       :cancel claim\nCancel Claim &#91;ITI-YY8&#93;>

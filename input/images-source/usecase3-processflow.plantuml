@@ -14,7 +14,7 @@ opt Get code lists for Medical Procedures & Items
 end opt
  
 App -> App: Build claim
-App -> FIS: Submit claim\n&#91;ITI-YY5&#93; Submit Claim request
+App -> FIS: Submit claim\n&#91;ITI-126&#93; Submit Claim request
 FIS -> FIS: Process claim
 
 alt accepted
@@ -22,15 +22,15 @@ alt accepted
 		FIS->EXT: Send payment request
    	EXT->EXT: Process payment
 	end opt
-	FIS -> App: Return positive claim result\n&#91;ITI-YY5&#93; Submit Claim response
+	FIS -> App: Return positive claim result\n&#91;ITI-126&#93; Submit Claim response
 else rejected
-	FIS -> App: Return negative claim result\n&#91;ITI-YY5&#93; Submit Claim response
+	FIS -> App: Return negative claim result\n&#91;ITI-126&#93; Submit Claim response
 	opt Re-process claim
 		App -> FIS: Re-submit claim for re-processing\n&#91;ITI-YY9&#93; Re-process Claim request
 		Fis -> App: Return claim re-process response\n&#91;ITI-YY9&#93; Re-processUpdate Claim response
 	end opt
 else queued
-	FIS -> App: Return queued status notification\n&#91;ITI-YY5&#93; Submit Claim response
+	FIS -> App: Return queued status notification\n&#91;ITI-126&#93; Submit Claim response
 	opt Cancel claim
 		App -> FIS: Cancel claim\n&#91;ITI-YY8&#93; Cancel Claim request
 		Fis -> App: Return claim cancellation response\n&#91;ITI-YY8&#93; Cancel Claim response

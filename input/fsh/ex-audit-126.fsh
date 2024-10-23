@@ -1,11 +1,11 @@
 Instance:     ex-AuditFAISSubmitClaim
 InstanceOf:   AuditFAISSubmitClaim
-Title:        "Audit example for ITI-YY5 for Claims Requestor for submit."
-Description:  "Audit example for a Claims Requestor requesting a submit on a Claim for ITI-YY5."
+Title:        "Audit example for ITI-126 for Claims Requestor for submit."
+Description:  "Audit example for a Claims Requestor requesting a submit on a Claim for ITI-126."
 Usage:        #example
 
 * subtype[anyCreate] = http://hl7.org/fhir/restful-interaction#create "create"
-* subtype[itiYY5] = urn:ihe:event-type-code#ITI-YY5 "Submit Claim"
+* subtype[iti126] = urn:ihe:event-type-code#ITI-126 "Submit Claim"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-claims-requestor)
