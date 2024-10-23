@@ -6,15 +6,26 @@ A definition for CodeSystem 'http://id.who.int/icd/release/11/mms' could not be 
 
 # Ok to use draft code system for these examples
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/insurance-plan-type|4.0.1
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/insurance-plan-type|4.0.1 from hl7.fhir.r4.core#4.0.1
 
 # This audit code system is Ok
 A definition for CodeSystem 'urn:ihe:event-type-code' could not be found, so the code cannot be validated
 
 # These aren't part of the slice definition because any resource is allowed
-This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.EnrollmentResponse.Bundle|1.0.0-comment (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.CEResponse.Bundle|1.0.0-comment (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.Claim.Bundle|1.0.0-comment (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.ClaimResponse.Bundle|1.0.0-comment (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.EnrollmentResponse.Bundle|%
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.CEResponse.Bundle|%
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.Claim.Bundle|%
+This element does not match any known slice defined in the profile https://profiles.ihe.net/ITI/FAIS/StructureDefinition/IHE.FAIS.ClaimResponse.Bundle|%
+
+# Core FHIR spec has these marked as experimental
+The definition for the element 'Claim.fundsReserve' binds to the value set 'http://hl7.org/fhir/ValueSet/fundsreserve' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Claim.payee.type' binds to the value set 'http://hl7.org/fhir/ValueSet/payeetype' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ClaimResponse.payeeType' binds to the value set 'http://hl7.org/fhir/ValueSet/payeetype' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ClaimResponse.fundsReserve' binds to the value set 'http://hl7.org/fhir/ValueSet/fundsreserve' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ClaimResponse.formCode' binds to the value set 'http://hl7.org/fhir/ValueSet/forms' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ClaimResponse.error.code' binds to the value set 'http://hl7.org/fhir/ValueSet/adjudication-error' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'CoverageEligibilityResponse.form' binds to the value set 'http://hl7.org/fhir/ValueSet/forms' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'CoverageEligibilityResponse.error.code' binds to the value set 'http://hl7.org/fhir/ValueSet/adjudication-error' which is experimental, but this structure is not labeled as experimental
 
 # These are the testing feature files
 Unknown file type ITI-122.feature

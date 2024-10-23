@@ -182,6 +182,7 @@ and updated the Claim to be cancelled
 """
 
 * status = #cancelled
+* extension[statusReason].valueCodeableConcept.text = "Service not completed."
 * type = http://terminology.hl7.org/CodeSystem/claim-type#institutional
 * use = #claim
 * patient = Reference(ex-beneficiary-1)
