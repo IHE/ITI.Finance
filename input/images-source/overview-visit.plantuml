@@ -39,7 +39,7 @@ if (eligibility ?) then (covered)
     :track claim\nTrack Claim &#91;ITI-YY6&#93;<
   endwhile (completed)
   if (claim is denied ?) then (yes)
-    :re-process claim\nRe-process Claim &#91;ITI-YY9&#93;>
+    :re-process claim\nRe-process Claim &#91;ITI-128&#93;>
     while (check results ?) is (queued)
       :track claim\nTrack Claim &#91;ITI-YY6&#93;<
     endwhile (completed)

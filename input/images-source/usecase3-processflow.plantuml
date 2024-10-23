@@ -26,8 +26,8 @@ alt accepted
 else rejected
 	FIS -> App: Return negative claim result\n&#91;ITI-126&#93; Submit Claim response
 	opt Re-process claim
-		App -> FIS: Re-submit claim for re-processing\n&#91;ITI-YY9&#93; Re-process Claim request
-		Fis -> App: Return claim re-process response\n&#91;ITI-YY9&#93; Re-processUpdate Claim response
+		App -> FIS: Re-submit claim for re-processing\n&#91;ITI-128&#93; Re-process Claim request
+		Fis -> App: Return claim re-process response\n&#91;ITI-128&#93; Re-processUpdate Claim response
 	end opt
 else queued
 	FIS -> App: Return queued status notification\n&#91;ITI-126&#93; Submit Claim response

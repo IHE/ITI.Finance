@@ -76,13 +76,13 @@ The Claims Requestor initiates a request to cancel a claim on the Claims Manager
 {%include_relative ITI-127.feature%}
 ```
 
-### Re-process Claim [[ITI-YY9]](ITI-YY9.html)
+### Re-process Claim [[ITI-128]](ITI-128.html)
 
-The Claims Requestor initiates a request to re-process a claim on the Claims Manager.  The Claims Manager responds to a claim re-process request and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITIYY9.html).
+The Claims Requestor initiates a request to re-process a claim on the Claims Manager.  The Claims Manager responds to a claim re-process request and returns a claim response to the Claims Requestor.  See [Test Definition](Binary-FeatureITI128.html).
 
-<p id="feature122" class="caption"><b>ITI-YY9 Re-process Claim Test</b></p>
+<p id="feature122" class="caption"><b>ITI-128 Re-process Claim Test</b></p>
 ```Gherkin
-{%include_relative ITI-YY9.feature%}
+{%include_relative ITI-128.feature%}
 ```
 
 ### Track Claim [[ITI-YY6]](ITI-YY6.html)

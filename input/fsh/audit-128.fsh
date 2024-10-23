@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when a Re-process Claim
 to call the $reprocess operation on a Claims Manager, as recorded by the Claims Requestor and Claims Manager.
 """
 * subtype 2..*
-* subtype contains itiYY9 1..1
-* subtype[itiYY9] = urn:ihe:event-type-code#ITI-YY9 "Re-process Claim"
+* subtype contains iti128 1..1
+* subtype[iti128] = urn:ihe:event-type-code#ITI-128 "Re-process Claim"
 * agent[client] ^short = "Claims Requestor"
 * agent[server] ^short = "Claims Manager"
 * entity[data]

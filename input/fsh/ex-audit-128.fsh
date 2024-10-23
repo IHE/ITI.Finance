@@ -1,11 +1,11 @@
 Instance:     ex-AuditFAISReprocessClaim
 InstanceOf:   AuditFAISReprocessClaim
-Title:        "Audit example for ITI-YY9 for Claims Requestor for re-process."
-Description:  "Audit example for a Claims Requestor requesting a re-process on a Claim for ITI-YY9."
+Title:        "Audit example for ITI-128 for Claims Requestor for re-process."
+Description:  "Audit example for a Claims Requestor requesting a re-process on a Claim for ITI-128."
 Usage:        #example
 
 * subtype[anyUpdate] = http://hl7.org/fhir/restful-interaction#update "update"
-* subtype[itiYY9] = urn:ihe:event-type-code#ITI-YY9 "Re-process Claim"
+* subtype[iti128] = urn:ihe:event-type-code#ITI-128 "Re-process Claim"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-claims-requestor)

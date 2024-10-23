@@ -33,7 +33,7 @@ and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
   - [Check Coverage Eligibility Status [ITI-125]](ITI-125.html)
   - [Submit Claim [ITI-126]](ITI-126.html)
   - [Cancel Claim [ITI-127]](ITI-127.html)
-  - [Re-process Claim [ITI-YY9]](ITI-YY9.html)
+  - [Re-process Claim [ITI-128]](ITI-128.html)
   - [Track Claim [ITI-YY6]](ITI-YY6.html)
 
 Figure 1:XX.1-1 below shows the actors directly
@@ -60,13 +60,13 @@ Profile and the relevant transactions between them.
 |         | Check Coverage Eligibility Status [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.125](ITI-125.html) |
 | Claims Requestor | Submit Claim [ITI-126] | Initiator | R               | [FAIS TF-2: 3.126](ITI-126.html) |
 |         | Cancel Claim [ITI-127] | Initiator  | R               | [FAIS TF-2: 3.127](ITI-127.html) |
-|         | Re-process Claim [ITI-YY9] | Initiator  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
+|         | Re-process Claim [ITI-128] | Initiator  | R               | [FAIS TF-2: 3.128](ITI-128.html) |
 |         | Track Claim [ITI-YY6] | Initiator  | O               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
 | Claims Manager | Check Coverage Eligibility [ITI-124] | Responder  | R               | [FAIS TF-2: 3.124](ITI-124.html) |
 |         | Check Coverage Eligibility Status [ITI-125] | Responder  | R               | [FAIS TF-2: 3.125](ITI-125.html) |
 |         | Submit Claim [ITI-126] | Responder | R               | [FAIS TF-2: 3.126](ITI-126.html) |
 |         | Cancel Claim [ITI-127] | Responder  | R               | [FAIS TF-2: 3.127](ITI-127.html) |
-|         | Re-process Claim [ITI-YY9] | Responder  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
+|         | Re-process Claim [ITI-128] | Responder  | R               | [FAIS TF-2: 3.128](ITI-128.html) |
 |         | Track Claim [ITI-YY6] | Responder  | R               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
 {: .grid}
 
@@ -159,11 +159,11 @@ This transaction is used to cancel a previously submitted claim.
 
 For more details see the detailed [transaction description](ITI-127.html)
 
-#### 1:XX.1.2.8 Re-process Claim Transaction [ITI-YY9] 128
+#### 1:XX.1.2.8 Re-process Claim Transaction [ITI-128] 128
 
 This transaction is used to re-process a previously submitted claim that was denied.
 
-For more details see the detailed [transaction description](ITI-YY9.html)
+For more details see the detailed [transaction description](ITI-128.html)
 
 #### 1:XX.1.2.9 Track Claim Transaction [ITI-YY6] 129
 

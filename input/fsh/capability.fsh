@@ -450,7 +450,7 @@ The Claims Requestor files a pre-determination, pre-authorization, or claim for 
 Supports these transactions:
 * [Submit Claim [ITI-126]](ITI-126.html)
 * [Cancel Claim [ITI-127]](ITI-127.html)
-* [Re-process Claim [ITI-YY9]](ITI-YY9.html)
+* [Re-process Claim [ITI-128]](ITI-128.html)
 """
     * operation[+]
       * extension
@@ -472,7 +472,7 @@ Supports these transactions:
         * valueCode = #SHALL
       * name = "reprocess"
       * definition = Canonical(FAISClaimReprocess)
-      * documentation = "Re-processes a claim.  FAIS Re-process Claim transaction [[ITI-YY9]](ITI-YY9.html)."
+      * documentation = "Re-processes a claim.  FAIS Re-process Claim transaction [[ITI-128]](ITI-128.html)."
   * resource[+]
     * type = #ClaimResponse
     * supportedProfile[+] = Canonical(FAISClaimResponse)
@@ -637,7 +637,7 @@ FAIS Check Coverage Eligibility Status transaction [[ITI-125]](ITI-125.html)
 Supports these transactions:
 * [Submit Claim [ITI-126]](ITI-126.html)
 * [Cancel Claim [ITI-127]](ITI-127.html)
-* [Re-process Claim [ITI-YY9]](ITI-YY9.html)
+* [Re-process Claim [ITI-128]](ITI-128.html)
 """
     * operation[+]
       * extension
@@ -659,7 +659,7 @@ Supports these transactions:
         * valueCode = #SHALL
       * name = "reprocess"
       * definition = Canonical(FAISClaimReprocess)
-      * documentation = "Re-processes a claim.  FAIS Re-process Claim transaction [[ITI-YY9]](ITI-YY9.html)."
+      * documentation = "Re-processes a claim.  FAIS Re-process Claim transaction [[ITI-128]](ITI-128.html)."
   * resource[+]
     * type = #ClaimResponse
     * supportedProfile[+] = Canonical(FAISClaimResponse)
