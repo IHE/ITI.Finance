@@ -449,7 +449,7 @@ The Claims Requestor files a pre-determination, pre-authorization, or claim for 
     * documentation = """
 Supports these transactions:
 * [Submit Claim [ITI-126]](ITI-126.html)
-* [Cancel Claim [ITI-YY8]](ITI-YY8.html)
+* [Cancel Claim [ITI-127]](ITI-127.html)
 * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
 """
     * operation[+]
@@ -465,7 +465,7 @@ Supports these transactions:
         * valueCode = #SHALL
       * name = "cancel"
       * definition = Canonical(FAISClaimCancel)
-      * documentation = "Cancels a claim.  FAIS Cancel Claim transaction [[ITI-YY8]](ITI-YY8.html)."
+      * documentation = "Cancels a claim.  FAIS Cancel Claim transaction [[ITI-127]](ITI-127.html)."
     * operation[+]
       * extension
         * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
@@ -636,7 +636,7 @@ FAIS Check Coverage Eligibility Status transaction [[ITI-125]](ITI-125.html)
     * documentation = """
 Supports these transactions:
 * [Submit Claim [ITI-126]](ITI-126.html)
-* [Cancel Claim [ITI-YY8]](ITI-YY8.html)
+* [Cancel Claim [ITI-127]](ITI-127.html)
 * [Re-process Claim [ITI-YY9]](ITI-YY9.html)
 """
     * operation[+]
@@ -652,7 +652,7 @@ Supports these transactions:
         * valueCode = #SHALL
       * name = "cancel"
       * definition = Canonical(FAISClaimCancel)
-      * documentation = "Cancels a claim.  FAIS Cancel Claim transaction [[ITI-YY8]](ITI-YY8.html)."
+      * documentation = "Cancels a claim.  FAIS Cancel Claim transaction [[ITI-127]](ITI-127.html)."
     * operation[+]
       * extension
         * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"

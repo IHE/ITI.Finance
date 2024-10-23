@@ -34,7 +34,7 @@ if (eligibility ?) then (covered)
   :submit claim\nSubmit Claim &#91;ITI-126&#93;>
   while (check results ?) is (queued)
     if (claim is cancelled ?) then (yes)
-      :cancel claim\nCancel Claim &#91;ITI-YY8&#93;>
+      :cancel claim\nCancel Claim &#91;ITI-127&#93;>
     endif
     :track claim\nTrack Claim &#91;ITI-YY6&#93;<
   endwhile (completed)

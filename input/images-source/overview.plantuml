@@ -131,18 +131,18 @@ group Patient Visit
   end
 
   opt Cancel Claim
-    CR->CM: Submit Claim (Claim/ID/$cancel)\nITI-YY8
+    CR->CM: Submit Claim (Claim/ID/$cancel)\nITI-127
     alt Success
-      CM->CR: Return Claim Response (ClaimResponse)\nITI-YY8
+      CM->CR: Return Claim Response (ClaimResponse)\nITI-127
     else Queued 
-      CM->CR: Return Queued Response (ClaimResponse)\nITI-YY8
+      CM->CR: Return Queued Response (ClaimResponse)\nITI-127
       loop Check Claim Status
         CR->CM: Check Claim Status (ClaimResponse)\nITI-YY6
         CM->CR: Return Claim Response (ClaimResponse)\nITI-YY6
         note right: Continue with workflow if completed or continue loop.
       end
     else Error
-      CM->CR: Return Error (OperationOutcome)\nITI-YY8
+      CM->CR: Return Error (OperationOutcome)\nITI-127
     end
   end
 

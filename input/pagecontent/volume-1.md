@@ -32,7 +32,7 @@ and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
   - [Check Coverage Eligibility [ITI-124]](ITI-124.html)
   - [Check Coverage Eligibility Status [ITI-125]](ITI-125.html)
   - [Submit Claim [ITI-126]](ITI-126.html)
-  - [Cancel Claim [ITI-YY8]](ITI-YY8.html)
+  - [Cancel Claim [ITI-127]](ITI-127.html)
   - [Re-process Claim [ITI-YY9]](ITI-YY9.html)
   - [Track Claim [ITI-YY6]](ITI-YY6.html)
 
@@ -59,13 +59,13 @@ Profile and the relevant transactions between them.
 | Coverage Requestor | Check Coverage Eligibility [ITI-124] | Initiator  | R               | [FAIS TF-2: 3.124](ITI-124.html) |
 |         | Check Coverage Eligibility Status [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.125](ITI-125.html) |
 | Claims Requestor | Submit Claim [ITI-126] | Initiator | R               | [FAIS TF-2: 3.126](ITI-126.html) |
-|         | Cancel Claim [ITI-YY8] | Initiator  | R               | [FAIS TF-2: 3.YY8](ITI-YY8.html) |
+|         | Cancel Claim [ITI-127] | Initiator  | R               | [FAIS TF-2: 3.127](ITI-127.html) |
 |         | Re-process Claim [ITI-YY9] | Initiator  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
 |         | Track Claim [ITI-YY6] | Initiator  | O               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
 | Claims Manager | Check Coverage Eligibility [ITI-124] | Responder  | R               | [FAIS TF-2: 3.124](ITI-124.html) |
 |         | Check Coverage Eligibility Status [ITI-125] | Responder  | R               | [FAIS TF-2: 3.125](ITI-125.html) |
 |         | Submit Claim [ITI-126] | Responder | R               | [FAIS TF-2: 3.126](ITI-126.html) |
-|         | Cancel Claim [ITI-YY8] | Responder  | R               | [FAIS TF-2: 3.YY8](ITI-YY8.html) |
+|         | Cancel Claim [ITI-127] | Responder  | R               | [FAIS TF-2: 3.127](ITI-127.html) |
 |         | Re-process Claim [ITI-YY9] | Responder  | R               | [FAIS TF-2: 3.YY9](ITI-YY9.html) |
 |         | Track Claim [ITI-YY6] | Responder  | R               | [FAIS TF-2: 3.YY6](ITI-YY6.html) |
 {: .grid}
@@ -153,11 +153,11 @@ This transaction is used to submit a claim.  This can be either a pre-determinat
 
 For more details see the detailed [transaction description](ITI-126.html)
 
-#### 1:XX.1.2.7 Cancel Claim Transaction [ITI-YY8] 127
+#### 1:XX.1.2.7 Cancel Claim Transaction [ITI-127] 127
 
 This transaction is used to cancel a previously submitted claim.
 
-For more details see the detailed [transaction description](ITI-YY8.html)
+For more details see the detailed [transaction description](ITI-127.html)
 
 #### 1:XX.1.2.8 Re-process Claim Transaction [ITI-YY9] 128
 

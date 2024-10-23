@@ -1,11 +1,11 @@
 Instance:     ex-AuditFAISCancelClaim
 InstanceOf:   AuditFAISCancelClaim
-Title:        "Audit example for ITI-YY8 for Claims Requestor for cancel."
-Description:  "Audit example for a Claims Requestor requesting a cancel on a Claim for ITI-YY8."
+Title:        "Audit example for ITI-127 for Claims Requestor for cancel."
+Description:  "Audit example for a Claims Requestor requesting a cancel on a Claim for ITI-127."
 Usage:        #example
 
 * subtype[anyUpdate] = http://hl7.org/fhir/restful-interaction#update "update"
-* subtype[itiYY8] = urn:ihe:event-type-code#ITI-YY8 "Cancel Claim"
+* subtype[iti127] = urn:ihe:event-type-code#ITI-127 "Cancel Claim"
 * recorded = 2024-07-17T19:33:45Z
 * source.site = "server.example.com"
 * source.observer = Reference(Device/ex-claims-requestor)

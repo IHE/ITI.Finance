@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when a Cancel Claim Tra
 to call the $cancel operation on a Claims Manager, as recorded by the Claims Requestor and Claims Manager.
 """
 * subtype 2..*
-* subtype contains itiYY8 1..1
-* subtype[itiYY8] = urn:ihe:event-type-code#ITI-YY8 "Cancel Claim"
+* subtype contains iti127 1..1
+* subtype[iti127] = urn:ihe:event-type-code#ITI-127 "Cancel Claim"
 * agent[client] ^short = "Claims Requestor"
 * agent[server] ^short = "Claims Manager"
 * entity[data]

@@ -1,4 +1,4 @@
-Feature: Test ITI-YY8 Transaction: Cancel Claim
+Feature: Test ITI-127 Transaction: Cancel Claim
   Background:
     * url 'http://localhost/fhir'
 
