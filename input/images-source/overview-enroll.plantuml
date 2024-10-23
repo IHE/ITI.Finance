@@ -8,7 +8,7 @@ start
 :build enrollment request|
 :submit enrollment request\nEnroll Beneficiary &#91;ITI-122&#93;>
 while (process results ?) is (queued)
-  :query response updates\nCheck Enrollment Status &#91;ITI-YY3&#93;<
+  :query response updates\nCheck Enrollment Status &#91;ITI-123&#93;<
 endwhile (completed)
 :process enrollment response|
 stop

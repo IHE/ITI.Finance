@@ -111,7 +111,7 @@ FAIS Enroll Beneficiary transaction [[ITI-122]](ITI-122.html)
     * type = #EnrollmentResponse
     * supportedProfile[+] = Canonical(FAISEnrollmentResponse)
     * documentation = """
-FAIS Check Enrollment Status transaction [[ITI-YY3]](ITI-YY3.html)
+FAIS Check Enrollment Status transaction [[ITI-123]](ITI-123.html)
 """
     * interaction[+]
       * extension
@@ -270,7 +270,7 @@ FAIS Enroll Beneficiary transaction [[ITI-122]](ITI-122.html)
     * type = #EnrollmentResponse
     * supportedProfile[+] = Canonical(FAISEnrollmentResponse)
     * documentation = """
-FAIS Check Enrollment Status transaction [[ITI-YY3]](ITI-YY3.html)
+FAIS Check Enrollment Status transaction [[ITI-123]](ITI-123.html)
 """
     * interaction[+]
       * extension

@@ -43,7 +43,7 @@ package " "  {
 }
 BenReq -> BenMan : "[[ITI-121.html Query Insurance Plan &#91;ITI-121&#93;]]"
 BenReq -> BenMan : "[[ITI-122.html Enroll Beneficiary &#91;ITI-122&#93;]]"
-BenReq -> BenMan : "[[ITI-YY3.html Check Enrollment Status &#91;ITI-YY3&#93;]]"
+BenReq -> BenMan : "[[ITI-123.html Check Enrollment Status &#91;ITI-123&#93;]]"
 BenReq -[hidden]-> CovReq: ""
 CovReq -[hidden]-> ClaimReq: ""
 BenMan -[hidden]-> ClaimMan1: ""

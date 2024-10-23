@@ -1,4 +1,4 @@
-Feature: Test ITI-YY3 Transaction: Check Enrollment Status
+Feature: Test ITI-123 Transaction: Check Enrollment Status
 
   Background:
     * url 'http://localhost/fhir'

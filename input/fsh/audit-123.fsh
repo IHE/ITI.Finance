@@ -7,8 +7,8 @@ Defines constraints on the AuditEvent Resource to record when a Check Enrollment
 to read an EnrollmentResponse, as recorded by the Beneficiary Requestor and Beneficiary Manager.
 """
 * subtype 2..*
-* subtype contains itiYY3 1..1
-* subtype[itiYY3] = urn:ihe:event-type-code#ITI-YY3 "Check Enrollment Status"
+* subtype contains iti123 1..1
+* subtype[iti123] = urn:ihe:event-type-code#ITI-123 "Check Enrollment Status"
 * agent[client] ^short = "Beneficiary Requestor"
 * agent[server] ^short = "Beneficiary Manager"
 * entity[data]
@@ -25,7 +25,7 @@ Defines constraints on the AuditEvent Resource to record when a Check Enrollment
 to query an EnrollmentResponse, as recorded by the Beneficiary Requestor and Beneficiary Manager.
 """
 * subtype 2..*
-* subtype contains itiYY3 1..1
-* subtype[itiYY3] = urn:ihe:event-type-code#ITI-YY3 "Check Enrollment Status"
+* subtype contains iti123 1..1
+* subtype[iti123] = urn:ihe:event-type-code#ITI-123 "Check Enrollment Status"
 * agent[client] ^short = "Beneficiary Requestor"
 * agent[server] ^short = "Beneficiary Manager"

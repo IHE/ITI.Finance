@@ -23,8 +23,8 @@ group Enroll Beneficiary
   else Queued
     BM->BR: Return Queued Response (EnrollmentResponse)\nITI-122
     loop Check Enrollment Status 
-      BR->BM: Check Enrollment Status (EnrollmentResponse/ID)\nITI-YY3
-      BM->BR: Return Enrolled Response (EnrollmentResponse)\nITI-YY3
+      BR->BM: Check Enrollment Status (EnrollmentResponse/ID)\nITI-123
+      BM->BR: Return Enrolled Response (EnrollmentResponse)\nITI-123
       note right: Continue with workflow if completed or continue loop
     end
   else Error

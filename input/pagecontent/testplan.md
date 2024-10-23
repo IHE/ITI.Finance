@@ -31,13 +31,13 @@ The Beneficiary Requestor initiates a request to enroll a beneficiary on the Ben
 {%include_relative ITI-122.feature%}
 ```
 
-### Check Enrollment Status [[ITI-YY3]](ITI-YY3.html)
+### Check Enrollment Status [[ITI-123]](ITI-123.html)
 
-The Beneficiary Requestor initiates a query on an enrollment response on the Beneficiary Manager.  The Beneficiary Manager responds to the enrollment response request and returns an enrollment response to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITIYY3.html).
+The Beneficiary Requestor initiates a query on an enrollment response on the Beneficiary Manager.  The Beneficiary Manager responds to the enrollment response request and returns an enrollment response to the Beneficiary Requestor.  See [Test Definition](Binary-FeatureITI123.html).
 
-<p id="feature122" class="caption"><b>ITI-YY3 Check Enrollment Status Test</b></p>
+<p id="feature122" class="caption"><b>ITI-123 Check Enrollment Status Test</b></p>
 ```Gherkin
-{%include_relative ITI-YY3.feature%}
+{%include_relative ITI-123.feature%}
 ```
 
 ### Check Coverage Eligibility [[ITI-YY4]](ITI-YY4.html)

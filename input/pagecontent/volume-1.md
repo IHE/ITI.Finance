@@ -28,7 +28,7 @@ and [Appendix B: Transactions](https://profiles.ihe.net/GeneralIntro/ch-B.html).
 - Transactions
   - [Query Insurance Plan [ITI-121]](ITI-121.html)
   - [Enroll Beneficiary [ITI-122]](ITI-122.html)
-  - [Check Enrollment Status [ITI-YY3]](ITI-YY3.html)
+  - [Check Enrollment Status [ITI-123]](ITI-123.html)
   - [Check Coverage Eligibility [ITI-YY4]](ITI-YY4.html)
   - [Check Coverage Eligibility Status [ITI-YY7]](ITI-YY7.html)
   - [Submit Claim [ITI-YY5]](ITI-YY5.html)
@@ -52,10 +52,10 @@ Profile and the relevant transactions between them.
 |---------|---------------|------------------------|-----------------|-----------------------------------|
 | Beneficiary Requestor | Query Insurance Plan [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.121](ITI-121.html) |
 |         | Enroll Beneficiary [ITI-122] | Initiator | R               | [FAIS TF-2: 3.122](ITI-122.html) |
-|         | Check Enrollment Status [ITI-YY3] | Initiator  | O               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+|         | Check Enrollment Status [ITI-123] | Initiator  | O               | [FAIS TF-2: 3.123](ITI-123.html) |
 | Beneficiary Manager | Query Insurance Plan [ITI-121] | Responder  | R               | [FAIS TF-2: 3.121](ITI-121.html) |
 |         | Enroll Beneficiary [ITI-122] | Responder | R               | [FAIS TF-2: 3.122](ITI-122.html) |
-|         | Check Enrollment Status [ITI-YY3] | Responder  | R               | [FAIS TF-2: 3.YY3](ITI-YY3.html) |
+|         | Check Enrollment Status [ITI-123] | Responder  | R               | [FAIS TF-2: 3.123](ITI-123.html) |
 | Coverage Requestor | Check Coverage Eligibility [ITI-YY4] | Initiator  | R               | [FAIS TF-2: 3.YY4](ITI-YY4.html) |
 |         | Check Coverage Eligibility Status [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.YY7](ITI-YY7.html) |
 | Claims Requestor | Submit Claim [ITI-YY5] | Initiator | R               | [FAIS TF-2: 3.YY5](ITI-YY5.html) |
@@ -129,11 +129,11 @@ This transaction is used to enroll or update a beneficiary.
 
 For more details see the detailed [transaction description](ITI-122.html)
 
-#### 1:XX.1.2.3 Check Enrollment Status Transaction [ITI-YY3] 123
+#### 1:XX.1.2.3 Check Enrollment Status Transaction [ITI-123] 123
 
 This transaction is used to check the status of an enrollment.
 
-For more details see the detailed [transaction description](ITI-YY3.html)
+For more details see the detailed [transaction description](ITI-123.html)
 
 #### 1:XX.1.2.4 Check Coverage Eligibility Transaction [ITI-YY4] 124
 
