@@ -45,7 +45,7 @@ POST [base]/Claim/<resourceId>/$reprocess
 
 Where <resourceId> is the resource id of the claim to be re-processed.
 
-The HTTP body SHALL consist of either a FHIR Claim resource conforming to the [FAIS Claim profile](StructureDefinition-IHE.FAIS.Claim.html) or a Claim Bundle including referenced resources conforming to the [FAIS Claim Bundle profile](StructureDefinition-IHE.FAIS.Claim.Bundle.html).  The Claim resource SHALL have the id element set to the <resourceId> being re-processed.
+The HTTP body MAY be either a FHIR Claim resource conforming to the [FAIS Claim profile](StructureDefinition-IHE.FAIS.Claim.html) or a Claim Bundle including referenced resources conforming to the [FAIS Claim Bundle profile](StructureDefinition-IHE.FAIS.Claim.Bundle.html).  If included, the Claim resource SHALL have the id element set to the <resourceId> being re-processed.
 
 ##### 2:3.YY9.4.1.3 Expected Actions
 

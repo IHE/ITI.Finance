@@ -21,7 +21,7 @@ Usage: #definition
 * parameter[+]
   * name = #resource
   * use = #in 
-  * min = 1
+  * min = 0
   * max = "1"
   * documentation = "A Claim resource or a Bundle with a Claim and any referenced resources."
   * type = #Resource
