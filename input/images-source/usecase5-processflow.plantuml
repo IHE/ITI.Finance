@@ -19,8 +19,8 @@ FIS -> FIS: Process pre-authorization
 
 alt approved
 	FIS -> POS: Return approved pre-authorization response\n&#91;ITI-126&#93; Submit Claim response
-else denited
-	FIS -> POS: Return denited pre-authorization response\n&#91;ITI-126&#93; Submit Claim response
+else denied
+	FIS -> POS: Return denied pre-authorization response\n&#91;ITI-126&#93; Submit Claim response
 else queued
 	FIS -> POS: Return queued pre-authorization response\n&#91;ITI-126&#93; Submit Claim response
 end

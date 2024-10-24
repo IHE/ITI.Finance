@@ -10,7 +10,7 @@ FIS -> FIS: Process query
 
 alt approved
 	FIS -> POS: Return approved claim response\n&#91;ITI-129&#93; Track Claim response
-else denited
+else denied
 	FIS -> POS: Return denied claim response\n&#91;ITI-129&#93; Track Claim response
 else queued
 	FIS -> POS: Return queued claim response\n&#91;ITI-129&#93; Track Claim response
