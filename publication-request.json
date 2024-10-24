@@ -1,16 +1,15 @@
 {
     "package-id" : "ihe.iti.fais",
-    "version" : "1.0.0-comment",
-    "path" : "https://profiles.ihe.net/ITI/FAIS/1.0.0-comment",
+    "version" : "1.0.0",
+    "path" : "https://profiles.ihe.net/ITI/FAIS/1.0.0",
     "mode" : "milestone",
-    "status" : "ballot",
+    "status" : "trial-use",
     "sequence" : "Publication",
-    "desc" : "Public Comment",
-    "descmd" : "Public comment release of the Finance and Insurance Service (FAIS) profile for IHE ITI.",
+    "desc" : "Trial Implementation",
+    "descmd" : "Trial Implementation release of the Finance and Insurance Service (FAIS) profile for IHE ITI.",
     "changes" : "issues.html",
-    "first": true,
+    "first": false,
     "title" : "IHE ITI Finance and Insurance Services",
     "ci-build" : "http://build.fhir.org/ig/IHE/ITI.Finance ",
-    "category" : "Financial",
-    "introduction" : "The Finance and Insurance Service (FAIS) stores, categorizes, and facilitates the administration of centralized claims and finance data for patient care. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them."
+    "category" : "Financial"
   }

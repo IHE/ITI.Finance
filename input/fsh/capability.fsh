@@ -94,6 +94,30 @@ FAIS Query Insurance Plan transaction [[ITI-121]](ITI-121.html)
       * name = "owned-by"
       * type = #reference
       * documentation = "Who owns the Insurance Plan"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * name = "network"
+      * definition = Canonical(InsurancePlan-network)
+      * type = #reference
+      * documentation = "The Insurance Plan network"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * name = "coverage-area"
+      * definition = Canonical(InsurancePlan-coverageArea)
+      * type = #reference
+      * documentation = "The Insurance Plan coverage area"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #MAY
+      * name = "benefit-type"
+      * definition = Canonical(InsurancePlan-benefitType)
+      * type = #token
+      * documentation = "The Insurance Plan type of benefit"
   * resource[+]
     * type = #EnrollmentRequest
     * supportedProfile[+] = Canonical(FAISEnrollmentRequest)
@@ -253,6 +277,30 @@ FAIS Query Insurance Plan transaction [[ITI-121]](ITI-121.html)
       * name = "owned-by"
       * type = #reference
       * documentation = "Who owns the Insurance Plan"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHOULD
+      * name = "network"
+      * definition = Canonical(InsurancePlan-network)
+      * type = #reference
+      * documentation = "The Insurance Plan network"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHOULD
+      * name = "coverage-area"
+      * definition = Canonical(InsurancePlan-coverageArea)
+      * type = #reference
+      * documentation = "The Insurance Plan coverage area"
+    * searchParam[+]
+      * extension
+        * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+        * valueCode = #SHOULD
+      * name = "benefit-type"
+      * definition = Canonical(InsurancePlan-benefitType)
+      * type = #token
+      * documentation = "The Insurance Plan type of benefit"
   * resource[+]
     * type = #EnrollmentRequest
     * supportedProfile[+] = Canonical(FAISEnrollmentRequest)
