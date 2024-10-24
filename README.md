@@ -6,5 +6,5 @@ curates the management of them.
 
 # Status
 
-Published Release: https://profiles.ihe.net/ITI/FAIS/
-Continuous Build: http://build.fhir.org/ig/IHE/ITI.Finance/index.html
+- Published Release: https://profiles.ihe.net/ITI/FAIS/
+- Continuous Build: http://build.fhir.org/ig/IHE/ITI.Finance/index.html
