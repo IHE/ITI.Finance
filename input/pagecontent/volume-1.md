@@ -46,11 +46,11 @@ Profile and the relevant transactions between them.
 
 <figure>
 {%include ActorsAndTransactions.svg%}
-<figcaption><b>Figure 1:57.1-1: FAIS Actor Diagram</b></figcaption>
+<figcaption><strong>Figure 1:57.1-1: FAIS Actor Diagram</strong></figcaption>
 </figure>
 <br clear="all">
 
-**Table 1:57.1-1: FAIS - Actors and Transactions**
+<p id ="t1:57.1-1" class="tableTitle"><strong>Table 1:57.1-1: FAIS - Actors and Transactions</strong></p>
 
 | Actors  | Transactions  | Initiator or Responder | Optionality     | Reference                         |
 |---------|---------------|------------------------|-----------------|-----------------------------------|
@@ -204,14 +204,15 @@ Figure 1:57.4.1-1 shows the enrollment workflow.
 
 <figure>
 {%include overview-enroll.svg%}
-<figcaption><b>Figure 1:57.4.1-1: FAIS Enrollment Workflow</b></figcaption>
+<figcaption><strong>Figure 1:57.4.1-1: FAIS Enrollment Workflow</strong></figcaption>
 </figure>
+
 
 Figure 1:57.4.1-2 shows the claims workflow.
 
 <figure>
 {%include overview-visit.svg%}
-<figcaption><b>Figure 1:57.4.1-1: FAIS Claims Workflow</b></figcaption>
+<figcaption><strong>Figure 1:57.4.1-1: FAIS Claims Workflow</strong></figcaption>
 </figure>
 <br clear="all">
 
@@ -243,7 +244,7 @@ to input the beneficiary information in the Financing and Insurance System.
 
 <figure>
 {%include usecase1-processflow.svg%}
-<figcaption><b>Figure 1:57.4.2.1.2-1: Enroll Household or Beneficiary Process Flow in Profile FAIS</b></figcaption>
+<figcaption><strong>Figure 1:57.4.2.1.2-1: Enroll Household or Beneficiary Process Flow in Profile FAIS</strong></figcaption>
 </figure>
 <br clear="all">
 
@@ -271,7 +272,7 @@ A patient is diagnosed with cancer in the local hospital. The responsible doctor
 
 <figure>
 {%include usecase2-processflow.svg%}
-<figcaption><b>Figure 1:57.4.2.2.2-1: Check Coverage Process Flow in Profile FAIS</b></figcaption>
+<figcaption><strong>Figure 1:57.4.2.2.2-1: Check Coverage Process Flow in Profile FAIS</strong></figcaption>
 </figure>
 <br clear="all">
 
@@ -303,7 +304,7 @@ In some instances a claim request may need to be canceled or re-submitted for re
 
 <figure>
 {%include usecase3-processflow.svg%}
-<figcaption><b>Figure 1:57.4.2.3.2-1: File a Claim Process Flow in Profile FAIS</b></figcaption>
+<figcaption><strong>Figure 1:57.4.2.3.2-1: File a Claim Process Flow in Profile FAIS</strong></figcaption>
 </figure>
 <br clear="all">
 
@@ -358,13 +359,13 @@ Pre-authorization: A POS system (e.g., Hospital) requests an approval for a spec
 
 <figure>
 {%include usecase5-processflow.svg%}
-<figcaption><b>Figure 1:57.4.2.5.2-1: Pre Authorization Process Flow in Profile FAIS</b></figcaption>
+<figcaption><strong>Figure 1:57.4.2.5.2-1: Pre Authorization Process Flow in Profile FAIS</strong></figcaption>
 </figure>
 <br clear="all">
 
 #### 1:57.4.2.6 Use Case \#6: Claim Tracking
 
-Request the current processing status of a claim in the FIS
+Request the current processing status of a claim in the FIS.
 
 ##### 1:57.4.2.6.1 Claim Tracking Use Case Description
 
@@ -419,4 +420,4 @@ A Beneficiary Requestor or Beneficiary Manager could also be grouped with a Pati
 
 ### 1:57.6.4 Mobile Care Services Discovery -- mCSD
 
-Any of the actors in this profile may need to look up other resources using mCSD, for example, for Practitioners, Facilities, or Organizations.  They Requestor actors could also look up the correct Endpoint for submitting the Beneficiary or Claims transaction from the Manager actors.
+Any of the actors in this profile may need to look up other resources using mCSD, for example, for Practitioners, Facilities, or Organizations.  The Requestor actors could also look up the correct Endpoint for submitting the Beneficiary or Claims transaction from the Manager actors.
