@@ -394,7 +394,7 @@ A hospital has sent an electronic reimbursement claim to the insurance company. 
 
 ## 1:57.5 FAIS Security Considerations
 
-See ITI TF-2x: [Appendix Z.8 "Mobile Security Considerations"](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations)
+See ITI TF-2: [Appendix Z.8 "Mobile Security Considerations"](https://profiles.ihe.net/ITI/TF/Volume2/ch-Z.html#z.8-mobile-security-considerations)
 
 The resources exchanged in this profile may contain information which pose a privacy risk.  This includes PII for the beneficiaries as well as information about performed procedures.
 
