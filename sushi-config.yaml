@@ -4,15 +4,15 @@
 # e.g. ihe.iti.mhds, or ihe.iti.basicaudit
 id: ihe.iti.fais
 canonical: https://profiles.ihe.net/ITI/FAIS
-version: 1.0.0-current
+version: 1.0.0
 name: IHE_ITI_FAIS
 title: "Finance and Insurance Service (FAIS)"
 description: The Finance and Insurance Service (FAIS) stores, categorizes, and facilitates the administration of centralized claims and finance data for patient care. The service receives claims/financial data from Point of Service applications (including financing applications acting as a point of service interface outside of other PoS systems) and curates the management of them.
-releaseLabel: ci-build
+#releaseLabel: ci-build
 #releaseLabel: ballot
-#releaseLabel: trial-use
+releaseLabel: trial-use
 #releaseLabel: release
-#date: 2024-08-09
+date: 2024-11-21
 status: active
 publisher:
   ## Find your domain contact on the https://www.ihe.net/ihe_domains page
@@ -30,7 +30,7 @@ jurisdiction: 'http://unstats.un.org/unsd/methods/m49/m49.htm#001'
 #copyright: IHE http://www.ihe.net/Governance/#Intellectual_Property
 copyrightYear: 2024+
 dependencies:
-  ihe.iti.balp: 1.1.x # current # 1.1.1
+  ihe.iti.balp: 1.1.x # current # 1.1.x
 
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:

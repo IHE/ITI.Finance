@@ -8,8 +8,5 @@
     "desc" : "Trial Implementation",
     "descmd" : "Trial Implementation release of the Finance and Insurance Service (FAIS) profile for IHE ITI.",
     "changes" : "issues.html",
-    "first": false,
-    "title" : "IHE ITI Finance and Insurance Services",
-    "ci-build" : "http://build.fhir.org/ig/IHE/ITI.Finance ",
-    "category" : "Financial"
+    "first": false
   }
