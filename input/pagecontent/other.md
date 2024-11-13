@@ -28,15 +28,15 @@ This section modifies other IHE profiles or the General Introduction appendices 
 
 | Transaction                    | Definition                                                                              |
 | ------------------------------ | --------------------------------------------------------------------------------------- |
-| Enroll Beneficiary | Enroll a beneficiary under the requested coverage. |
-| Check Enrollment Status | Check the status of a pending enrollment response. |
-| Query Insurance Plan | Search for insurance plans. |
-| Check Coverage Eligibility | Check a beneficiary for the requested coverage. |
-| Check Coverage Eligibility Status | Check the status of a pending coverage eligiblity request. |
-| Submit Claim | Submit a new claim for a beneficiary. |
-| Cancel Claim | Cancel a previously submitted claim. |
-| Re-process Claim | Re-process a previously denied claim. |
-| Track Claim | Check the status of a pending claim. |
+| Query Insurance Plan [ITI-121] | Search for insurance plans. |
+| Enroll Beneficiary [ITI-122] | Enroll a beneficiary under the requested coverage. |
+| Check Enrollment Status [ITI-123]| Check the status of an enrollment response. |
+| Check Coverage Eligibility [ITI-124] | Check a beneficiary for the requested coverage. |
+| Check Coverage Eligibility Status [ITI-125]| Check the status of a coverage eligibility request. |
+| Submit Claim [ITI-126] | Submit a new claim for a beneficiary. |
+| Cancel Claim [ITI-127]| Cancel a previously submitted claim. |
+| Re-process Claim [ITI-128]| Re-process a previously denied claim. |
+| Track Claim [ITI-129] | Check the status of a claim. |
 {:.grid .table-striped}
 
 ## IHE Technical Frameworks General Introduction Appendix D: Glossary
