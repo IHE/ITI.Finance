@@ -61,7 +61,7 @@ Profile and the relevant transactions between them.
 |         | Enroll Beneficiary [ITI-122] | Responder | R               | [FAIS TF-2: 3.122](ITI-122.html) |
 |         | Check Enrollment Status [ITI-123] | Responder  | R               | [FAIS TF-2: 3.123](ITI-123.html) |
 | Coverage Requestor | Check Coverage Eligibility [ITI-124] | Initiator  | R               | [FAIS TF-2: 3.124](ITI-124.html) |
-|         | Check Coverage Eligibility Status [ITI-121] | Initiator  | O               | [FAIS TF-2: 3.125](ITI-125.html) |
+|         | Check Coverage Eligibility Status [ITI-125] | Initiator  | O               | [FAIS TF-2: 3.125](ITI-125.html) |
 | Claims Requestor | Submit Claim [ITI-126] | Initiator | R               | [FAIS TF-2: 3.126](ITI-126.html) |
 |         | Cancel Claim [ITI-127] | Initiator  | R               | [FAIS TF-2: 3.127](ITI-127.html) |
 |         | Re-process Claim [ITI-128] | Initiator  | R               | [FAIS TF-2: 3.128](ITI-128.html) |
