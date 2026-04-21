@@ -4,7 +4,7 @@ Id:           IHE.FAIS.Audit.ClaimResponse.Read
 Title:        "Audit Event for Track Claim Transaction by the Claims Requestor and Claims Manager for Read"
 Description:  """
 Defines constraints on the AuditEvent Resource to record when a Track Claim Transaction happens
-to read a ClaimResponse, as recorded by the Coverage Requestor and Claims Manager.
+to read a ClaimResponse, as recorded by the Claims Requestor and Claims Manager.
 """
 * subtype 2..*
 * subtype contains iti129 1..1
@@ -19,10 +19,10 @@ to read a ClaimResponse, as recorded by the Coverage Requestor and Claims Manage
 Profile:      AuditFAISClaimResponseQuery
 Parent:       https://profiles.ihe.net/ITI/BALP/StructureDefinition/IHE.BasicAudit.PatientQuery
 Id:           IHE.FAIS.Audit.ClaimResponse.Query
-Title:        "Audit Event for Track Claim Transaction by the Coverage Requestor and Claims Manager for Query"
+Title:        "Audit Event for Track Claim Transaction by the Claims Requestor and Claims Manager for Query"
 Description:  """
 Defines constraints on the AuditEvent Resource to record when a Track Claim Transaction happens
-to query a ClaimResponse, as recorded by the Coverage Requestor and Claims Manager.
+to query a ClaimResponse, as recorded by the Claims Requestor and Claims Manager.
 """
 * subtype 2..*
 * subtype contains iti129 1..1
